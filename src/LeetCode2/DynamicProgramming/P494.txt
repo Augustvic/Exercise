@@ -1,0 +1,33 @@
+public class P494 {
+    public int findTargetSumWays(int[] nums, int S) {
+        int sum = getSum(nums);
+        if (sum < S || (S + sum) % 2 != 0)
+            return 0;
+        int W = (S + sum) / 2;
+        int[] dp = new int[W + 1];
+        dp[0] = 1;
+        for (int num : nums) {
+            for (int i = W; i >= num; i--)
+                dp[i] = dp[i] + dp[i - num];
+        }
+        return dp[W];
+    }
+
+    public int getSum(int[] nums) {
+        int sum = 0;
+        for (int num : nums)
+            sum += num;
+        return sum;
+    }
+
+    public int findTargetSumWaysWithDFS(int[] nums, int S) {
+        return findTargetSumWaysWithDFSHelp(nums, S, 0);
+    }
+
+    public int findTargetSumWaysWithDFSHelp(int[] nums, int S, int start) {
+        if (start == nums.length)
+            return S == 0 ? 1 : 0;
+        return findTargetSumWaysWithDFSHelp(nums, S + nums[start], start + 1)
+                + findTargetSumWaysWithDFSHelp(nums, S - nums[start], start + 1);
+    }
+}

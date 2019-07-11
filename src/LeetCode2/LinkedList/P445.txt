@@ -1,0 +1,27 @@
+public class P445 {
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        Stack<Integer> st1 = buildStack(l1);
+        Stack<Integer> st2 = buildStack(l2);
+        ListNode head = new ListNode(-1);
+        int carry = 0;
+        while (!st1.isEmpty() || !st2.isEmpty() || carry != 0) {
+            int x = st1.isEmpty() ? 0 : st1.pop();
+            int y = st2.isEmpty() ? 0 : st2.pop();
+            int sum = x + y + carry;
+            ListNode curr = new ListNode(sum % 10);
+            carry = sum / 10;
+            curr.next = head.next;
+            head.next = curr;
+        }
+        return head.next;
+    }
+
+    public Stack<Integer> buildStack(ListNode l) {
+        Stack<Integer> st = new Stack();
+        while (l != null) {
+            st.push(l.val);
+            l = l.next;
+        }
+        return st;
+    }
+}

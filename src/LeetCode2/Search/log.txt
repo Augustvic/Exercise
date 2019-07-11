@@ -1,0 +1,18 @@
+ShortestPathLength    ****
+P279. Perfect Squares
+P127. Word Ladder    ****
+P695. Max Area of Island    ****
+P547. Friend Circles
+P130. Surrounded Regions
+P417. Pacific Atlantic Water Flow
+P17. Letter Combinations of a Phone Number
+P93. Restore IP Addresses
+P257. Binary Tree Paths     ****
+P46. Permutations
+P77. Combinations    ****
+P39. Combination Sum
+P40. Combination Sum II    ****
+P78. Subsets    ****
+P90. Subsets II
+P37. Sudoku Solver    ****
+P51. N-Queens    ****

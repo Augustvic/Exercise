@@ -1,0 +1,6 @@
+P204. Count Primes
+P504. Base 7
+P405. Convert a Number to Hexadecimal
+P168. Excel Sheet Column Title
+P172. Factorial Trailing Zeroes
+P462. Minimum Moves to Equal Array Elements II

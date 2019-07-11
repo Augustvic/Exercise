@@ -1,0 +1,15 @@
+public class P141 {
+    public boolean hasCycle(ListNode head) {
+        if (head == null)
+            return false;
+        ListNode pQuick = head.next;
+        ListNode pSlow = head;
+        while (pQuick != null && pSlow != null && pQuick.next != null) {
+            if (pQuick == pSlow)
+                return true;
+            pSlow = pSlow.next;
+            pQuick = pQuick.next.next;
+        }
+        return false;
+    }
+}

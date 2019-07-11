@@ -1,0 +1,18 @@
+public class P91 {
+    public int numDecodings(String s) {
+        if (s.length() == 1)
+            return s.charAt(0) == '0' ? 0 : 1;
+        int[] dp = new int[s.length()];
+        for (int i = s.length() - 1; i >= 0; i--) {
+            int count = (i < s.length() - 1) ? count[i + 1] : 1;
+            if (i < s.length() - 1) {
+                int num = (s.charAt(i) - '0') * 10 + (s.charAt(i + 1) - '0');
+                if (10 <= num && num <= 26) {
+                    count = (i < s.length() - 2) ? dp[i + 1] + dp[i + 2] : dp[i + 1] + 1;
+                }
+            }
+            dp[i] = count;
+        }
+        return dp[0];
+    }
+}

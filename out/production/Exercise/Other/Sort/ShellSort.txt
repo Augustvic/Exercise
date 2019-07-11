@@ -1,0 +1,21 @@
+public class ShellSort {
+    public void shellSort(int[] nums){
+        if(nums == null || nums.length <= 1){
+                return;
+        }
+        int incrementNum = nums.length/2;
+        while (incrementNum >= 1){
+            for (int i = 0; i < incrementNum; i++){
+                //冒泡排序
+                for (int j = i; j < nums.length - incrementNum; j = j + incrementNum){
+                    if (nums[j] > nums[j + incrementNum]){
+                        int temple = nums[j];
+                        nums[j] = nums[j + incrementNum];
+                        nums[j + incrementNum] = temple;
+                    }
+                }
+            }
+            incrementNum = incrementNum/2;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+public class P3 {
+    public int lengthOfLongestSubstring(String s) {
+        if (s == null || s.length() == 0)
+            return 0;
+        int[] max = new int[s.length()];
+        max[0] = 1;
+        Map<Character, Integer> hm = new HashMap<>();
+        hm.put(s.charAt(0), 0);
+        for (int i = 1; i < s.length(); i++) {
+            char c = s.charAt(i);
+            if (!hm.containsKey(c)) {
+                max[i] = max[i - 1] + 1;
+            }
+            else {
+                int d = i - hm.get(c);
+                max[i] = (d <= max[i - 1]) ? d : (max[i - 1] + 1);
+            }
+            hm.put(c, i);
+        }
+        int res = 0;
+        for (int val : max)
+            if (val > res)
+                res = val;
+        return res;
+    }
+}

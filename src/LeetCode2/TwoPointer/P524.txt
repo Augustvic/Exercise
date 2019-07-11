@@ -1,0 +1,25 @@
+public class P524 {
+    public String findLongestWord(String s, List<String> d) {
+        String res = "";
+        for (String target : d) {
+            int len1 = res.length();
+            int len2 = target.length();
+            if ((len1 > len2) || (len1 == len2 && res.compareTo(target) < 0))
+                continue;
+            if (isValid(s, target))
+                res = target;
+        }
+        return res;
+    }
+
+    public boolean isValid(String s, String target) {
+        int i = 0;
+        int j = 0;
+        while (i < s.length() && j < target.length()) {
+            if (s.charAt(i) == target.charAt(j))
+                j++;
+            i++;
+        }
+        return j == target.length();
+    }
+}

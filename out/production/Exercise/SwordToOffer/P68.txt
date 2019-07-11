@@ -1,0 +1,39 @@
+public class P68 {
+    public TreeNode getCommonParentNode(TreeNode root, TreeNode r1, TreeNode r2) {
+        if (root == null || r1 == null || r2 == null)
+            return null;
+        LinkedList<TreeNode> l1 = getPath(root, r1);
+        LinkedList<TreeNode> l2 = getPath(root, r2);
+        return getCommonNode(l1, l2);
+    }
+
+    public LinkedList<TreeNode> getPath(TreeNode root, TreeNode r) {
+        LinkedList<TreeNode> l = new LinkedList<>();
+        getPathHelp(root, r, l);
+        return l;
+    }
+
+    public boolean getPathHelp(TreeNode root, TreeNode r, LinkedList<TreeNode> l) {
+        if (root == null)
+            return false;
+        if (root == r) {
+            l.add(r);
+            return true;
+        }
+        boolean flag = false;
+        l.add(root);
+        Iterator<TreeNode> it = root.child.iterator();
+        while (!flag && it.hasNext())
+            flag = getPathHelp(it.next(), r, l);
+        if (!flag)
+            l.removeLast();
+        return flag;
+    }
+
+    public TreeNode getCommonNode(LinkedList<TreeNode> l1, LinkedList<TreeNode> l2) {
+        int i = 0;
+        while (i < l1.size() && i < l2.size() && l1.get(i) == l2.get(i))
+            i++;
+        return l1.get(i - 1) == l2.get(i - 1) ? l1.get(i - 1) : null;
+    }
+}

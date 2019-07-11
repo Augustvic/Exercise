@@ -1,0 +1,12 @@
+public class P198 {
+    public int rob(int[] nums) {
+        int pre1 = 0;
+        int pre2 = 0;
+        for (int i = 0; i < nums.length; i++) {
+            int curr = Math.max(pre1 + nums[i], pre2);
+            pre1 = pre2;
+            pre2 = curr;
+        }
+        return pre2;
+    }
+}

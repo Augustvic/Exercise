@@ -1,0 +1,29 @@
+public class P763 {
+    public List<Integer> partitionLabels(String S) {
+        List<Integer> list = new LinkedList<>();
+        if (S == null || S.length() == 0)
+            return list;
+        //此处使用hashmap通过leetcode测试需要9ms,用int[]只需要3ms
+        int[] arr = new int[26];
+        for (int i = 0; i < S.length(); i++) {
+            arr[char2Index(S.charAt(i))] = i;
+        }
+        int start = 0;
+        int len = S.length();
+        while (start < len) {
+            int end = start;
+            for (int i = start; i < len && i <= end; i++) {
+                int lastIndex = arr[char2Index(S.charAt(i))];
+                if (lastIndex > end)
+                    end = lastIndex;
+            }
+            list.add(end - start + 1);
+            start = end + 1;
+        }
+        return list;
+    }
+
+    public int char2Index(char c) {
+        return c - 'a';
+    }
+}

@@ -1,0 +1,15 @@
+public class P53 {
+    public int maxSubArray(int[] nums) {
+        if (nums == null || nums.length == 0)
+            return 0;
+        int[] max = new int[nums.length];
+        max[0] = nums[0];
+        for (int i = 1; i < nums.length; i++)
+            max[i] = Math.max(nums[i], max[i - 1] + nums[i]);
+        int res = max[0];
+        for (int k : max)
+            if (k > res)
+                res = k;
+        return res;
+    }
+}

@@ -1,0 +1,16 @@
+difficult:
+P1. Two Sum
+P2. Add Two Numbers
+P5. Longest Common Substring
+P7. Regular Expression Matching
+P11. Container With Most Water
+P12. Integer to Roman
+P14. Longest Common Prefix
+P15. Three Sum                              *****
+
+
+important:
+
+
+log:
+2019/5/13 train before P7 twice

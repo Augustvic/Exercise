@@ -1,0 +1,57 @@
+public class P56 {
+
+    public void find1(int[] nums) {
+        if (nums == null || nums.length == 0)
+            return;
+        int xorAll = 0;
+        for (int k : nums)
+            xorAll = xorAll ^ k;
+        int index = indexOfLast1(xorAll);
+        int a = 0;
+        int b = 0;
+        for (int k : nums) {
+            if (numInIndexIs1(k, index)) {
+                a = a ^ k;
+            }
+            else {
+                b = b ^ k;
+            }
+        }
+        System.out.println(a);
+        System.out.println(b);
+    }
+
+    public int indexOfLast1(int k) {
+        int index = 0;
+        while ((k & 1) == 0) {
+            index++;
+            k = k >> 1;
+        }
+        return index;
+    }
+
+    public boolean numInIndexIs1(int k, int index) {
+        k = k >> index;
+        return (k & 1) == 1;
+    }
+
+    public int find2(int[] nums) {
+        if (nums == null || nums.length == 0)
+            return -1;
+        int[] bits = new int[32];
+        for (int i = 0; i < 32; i++) {
+            for (int j = 0; j < nums.length; j++) {
+                bits[i] += (nums[j] & 1);
+                nums[j] = nums[j] >> 1;
+            }
+        }
+        int res = 0;
+        for (int i = 31; i >= 0; i--) {
+            res = res << 1;
+            if (bits[i] % 3 == 1) {
+                res += 1;
+            }
+        }
+        return res;
+    }
+}

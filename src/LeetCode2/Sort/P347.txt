@@ -1,0 +1,22 @@
+public class P347 {
+    public List<Integer> topKFrequent(int[] nums, int k) {
+        Map<Integer, Integer> hm = new HashMap<>();
+        for (int m : nums) {
+             int val = hm.containsKey(m) ? hm.get(m) + 1 : 1;
+             hm.put(m, val);
+        }
+        PriorityQueue<Integer> maxHeap = new PriorityQueue<Integer> (new Comparator<Integer>() {
+            @Override
+            public int compare(Integer i1, Integer i2) {
+                return hm.get(i2) - hm.get(i1);
+            }
+        });
+        for (int m : hm.keySet())
+            maxHeap.add(m);
+        List<Integer> res = new LinkedList<>();
+        for (int i = 0; i < k; i++) {
+            res.add(maxHeap.poll());
+        }
+        return res;
+    }
+}
