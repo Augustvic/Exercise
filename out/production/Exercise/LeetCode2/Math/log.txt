@@ -4,3 +4,10 @@ P405. Convert a Number to Hexadecimal
 P168. Excel Sheet Column Title
 P172. Factorial Trailing Zeroes
 P462. Minimum Moves to Equal Array Elements II
+P169. Majority Element
+P367. Valid Perfect Square
+P326. Power of Three
+P238. Product of Array Except Self
+P628. Maximum Product of Three Numbers
+
+2019/6/22 第一次完成

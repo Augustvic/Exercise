@@ -1,0 +1,38 @@
+public class P501 {
+
+    private int maxCnt = 1;
+    private int currCnt = 1;
+    private TreeNode preNode;
+
+    public int[] findMode(TreeNode root) {
+        List<Integer> maxCntNum = new LinkedList<>();
+        inOrder(root, maxCntNum);
+        int[] ret = new int[maxCntNum.size()];
+        int idx = 0;
+        for (int num : maxCntNum) {
+            ret[idx++] = num;
+        }
+        return ret;
+    }
+
+    public void inOrder(TreeNode root, List<Integer> maxCntNum) {
+        if (root == null)
+            return;
+        inOrder(root.left, maxCntNum);
+        if (preNode != null) {
+            if (preNode.val == root.val)
+                currCnt++;
+            else
+                currCnt = 1;
+        }
+        if (currCnt > maxCnt) {
+            maxCnt = currCnt;
+            maxCntNum.clear();
+            maxCntNum.add(root.val);
+        }
+        else if (currCnt == maxCnt)
+            maxCntNum.add(root.val);
+        preNode = root;
+        inOrder(root.right, maxCntNum);
+    }
+}

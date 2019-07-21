@@ -1,14 +1,4 @@
-import java.util.*;
-
-public class test {
-
-    public static void main(String[] args) {
-        int[] nums = {2, 7, 11, 15};
-        System.out.println();
-    }
-
-    public static test t = new test();
-
+public class P594 {
     public int findLHS(int[] nums) {
         Map<Integer, Integer> hm = new HashMap<>();
         for (int k : nums) {

@@ -1,0 +1,16 @@
+public class P503 {
+    public int[] nextGreaterElements(int[] nums) {
+        int n = nums.length;
+        int[] min = new int[n];
+        Arrays.fill(min, -1);
+        Stack<Integer> st = new Stack<>();
+        for (int i = 0; i < 2 * n; i++) {
+            int curr = nums[i % n];
+            while (!st.isEmpty() && nums[st.peek()] < curr)
+                min[st.pop()] = curr;
+            if (i < n)
+                st.push(i);
+        }
+        return min;
+    }
+}

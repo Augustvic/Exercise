@@ -16,7 +16,7 @@ public class P462 {
         int move = 0;
         int median = findKthSmallest(nums, nums.length / 2);
         for (int val : nums)
-            move = Math.abs(val - median);
+            move += Math.abs(val - median);
         return move;
     }
 
