@@ -1,14 +1,4 @@
-import java.util.*;
-
-public class test {
-
-    public static void main(String[] args) {
-        int[][] nums = {{1,  5,  9}, {10, 11, 13}, {12, 13, 15}};
-        System.out.println(t.kthSmallest(nums, 8));
-    }
-
-    public static test t = new test();
-
+public class P378 {
     public int kthSmallest(int[][] matrix, int k) {
         int m = matrix.length;
         int n = matrix[0].length;
