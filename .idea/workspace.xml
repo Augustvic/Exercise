@@ -1,174 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="21ede45d-40f1-4a38-a689-ef3978ae4e70" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/CyC2018/ArrayAndMatrix/P378.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CyC2018/ArrayAndMatrix/P645.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/BinarySearch/P153.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/BinarySearch/P154.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/BinarySearch/P278.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/BinarySearch/P34.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/BinarySearch/P540.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/BinarySearch/P69.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/BinarySearch/P744.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/BinarySearch/log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/DivideAndConquer/P241.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/DivideAndConquer/P95.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/DivideAndConquer/log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/DynamicProgramming/01背包" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/DynamicProgramming/P123.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/DynamicProgramming/P139.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/DynamicProgramming/P198.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/DynamicProgramming/P213.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/DynamicProgramming/P279.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/DynamicProgramming/P300.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/DynamicProgramming/P303.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/DynamicProgramming/P309.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/DynamicProgramming/P322.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/DynamicProgramming/P343.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/DynamicProgramming/P376.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/DynamicProgramming/P377.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/DynamicProgramming/P413.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/DynamicProgramming/P416.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/DynamicProgramming/P474.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/DynamicProgramming/P494.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/DynamicProgramming/P518.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/DynamicProgramming/P583.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/DynamicProgramming/P62.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/DynamicProgramming/P64.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/DynamicProgramming/P646.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/DynamicProgramming/P650.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/DynamicProgramming/P70.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/DynamicProgramming/P714.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/DynamicProgramming/P718.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/DynamicProgramming/P72.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/DynamicProgramming/P91.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/DynamicProgramming/log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Greedy/P121.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Greedy/P122.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Greedy/P392.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Greedy/P406.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Greedy/P452.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Greedy/P455.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Greedy/P53.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Greedy/P605.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Greedy/P665.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Greedy/P763.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Greedy/log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/HashTable/P1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/HashTable/P217.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/HashTable/log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/LinkedList/P160.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/LinkedList/P19.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/LinkedList/P206.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/LinkedList/P21.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/LinkedList/P234.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/LinkedList/P24.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/LinkedList/P328.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/LinkedList/P445.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/LinkedList/P725.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/LinkedList/P83.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/LinkedList/log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Math/GCDAndLCM.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Math/P168.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Math/P169.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Math/P172.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Math/P204.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Math/P238.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Math/P326.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Math/P367.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Math/P405.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Math/P415.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Math/P462.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Math/P504.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Math/P628.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Math/P67.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Math/log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Math/位操作和减法求最大公约数.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Search/P127.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Search/P130.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Search/P131.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Search/P17.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Search/P200.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Search/P216.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Search/P257.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Search/P279.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Search/P37.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Search/P39.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Search/P40.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Search/P417.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Search/P46.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Search/P47.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Search/P51.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Search/P547.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Search/P695.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Search/P77.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Search/P78.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Search/P79.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Search/P90.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Search/P93.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Search/ShortestPathLength.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Search/log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Sort/P215.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Sort/P347.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Sort/P451.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Sort/P75.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Sort/log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/StackAndQueue/P155.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/StackAndQueue/P20.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/StackAndQueue/P225.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/StackAndQueue/P232.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/StackAndQueue/P503.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/StackAndQueue/P739.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/StackAndQueue/log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Tree/BST/P108.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Tree/BST/P109.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Tree/BST/P230.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Tree/BST/P235.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Tree/BST/P236.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Tree/BST/P501.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Tree/BST/P530.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Tree/BST/P538.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Tree/BST/P653.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Tree/BST/P669.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Tree/BST/log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Tree/LevelOrderTraversal/P513.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Tree/LevelOrderTraversal/P637.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Tree/LevelOrderTraversal/log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Tree/Recursive/P101.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Tree/Recursive/P104.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Tree/Recursive/P110.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Tree/Recursive/P111.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Tree/Recursive/P112.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Tree/Recursive/P226.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Tree/Recursive/P337.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Tree/Recursive/P404.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Tree/Recursive/P437.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Tree/Recursive/P543.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Tree/Recursive/P572.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Tree/Recursive/P617.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Tree/Recursive/P671.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Tree/Recursive/P687.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Tree/Recursive/log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Tree/Traversal/P144.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Tree/Traversal/P145.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Tree/Traversal/P94.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Tree/Traversal/log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Tree/Trie/P208.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Tree/Trie/P677.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/Tree/Trie/log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/TwoPointer/P141.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/TwoPointer/P345.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/TwoPointer/P524.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/TwoPointer/P633.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/TwoPointer/P680.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/TwoPointer/P88.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/LeetCode2/TwoPointer/log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Exercise/test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CyC2018/ArrayAndMatrix/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/CyC2018/ArrayAndMatrix/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.java" afterDir="false" />
-    </list>
+    <list default="true" id="21ede45d-40f1-4a38-a689-ef3978ae4e70" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -181,7 +14,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="156">
@@ -190,10 +23,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/LinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1586">
+            <state relative-caret-position="824">
               <caret line="84" column="25" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="25" />
             </state>
           </provider>
@@ -265,7 +98,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/LeetCode2/Tree/Recursive/P671.txt" />
         <option value="$PROJECT_DIR$/src/LeetCode2/Tree/LevelOrderTraversal/P637.txt" />
         <option value="$PROJECT_DIR$/src/LeetCode2/Tree/Recursive/log.txt" />
         <option value="$PROJECT_DIR$/src/LeetCode2/Tree/LevelOrderTraversal/P513.txt" />
@@ -316,10 +148,11 @@
         <option value="$PROJECT_DIR$/src/test.java" />
         <option value="$PROJECT_DIR$/src/CyC2018/ArrayAndMatrix/log.txt" />
         <option value="$PROJECT_DIR$/src/CyC2018/ArrayAndMatrix/P645.txt" />
+        <option value="$USER_HOME$/Desktop/JAVA/JAVA源码/JavaSourceCodeAnalysis/JAVASourceCodeAnalysis.iml" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="933" />
     <option name="width" value="996" />
     <option name="height" value="1047" />
@@ -366,7 +199,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/JAVA/JAVA源码/JAVASourceCodeAnalysis" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/JAVA/JAVA源码/JavaSourceCodeAnalysis" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -430,16 +263,15 @@
       <workItem from="1563707922449" duration="2805000" />
       <workItem from="1563760431719" duration="448000" />
       <workItem from="1563776252675" duration="595000" />
-      <workItem from="1563795801025" duration="3413000" />
+      <workItem from="1563795801025" duration="4038000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75501000" />
+    <option name="totallyTimeSpent" value="76126000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28051737" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -472,20 +304,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/CyC2018/Tree/BST/P235.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="1" selection-start-line="1" selection-end-line="7" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CyC2018/Tree/BST/P236.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SwordToOffer/P68.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
@@ -742,13 +560,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/LinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1586">
-          <caret line="84" column="25" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36036">
@@ -820,6 +631,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/JAVA/JAVA源码/JavaSourceCodeAnalysis/JAVASourceCodeAnalysis.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Exercise.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="824">
+          <caret line="84" column="25" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="25" />
         </state>
       </provider>
     </entry>
