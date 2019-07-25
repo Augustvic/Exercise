@@ -4,6 +4,7 @@ public class test {
 
     public static void main(String[] args) {
         System.out.println(t.maxChunksToSorted(new int[]{1, 2, 0, 3}));
+        ArrayList<Integer> l = new ArrayList<>();
     }
 
     public static test t = new test();
