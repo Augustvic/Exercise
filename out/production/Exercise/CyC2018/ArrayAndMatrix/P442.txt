@@ -1,0 +1,17 @@
+public class P442 {
+    public List<Integer> findDuplicates(int[] nums) {
+        List<Integer> ret = new LinkedList<>();
+        if (nums == null || nums.length == 0)
+            return ret;
+        int n = nums.length;
+        for (int i = 0; i < n; i++) {
+            int index = (nums[i] - 1) % n;
+            nums[index] += n;
+        }
+        for (int i = 0; i < n; i++) {
+            if (nums[i] > 2 * n)
+                ret.add(i + 1);
+        }
+        return ret;
+    }
+}
