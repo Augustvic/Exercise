@@ -3,16 +3,9 @@ import java.util.*;
 public class test {
 
     public static void main(String[] args) {
-        List<Integer> l = new ArrayList<>();
-        l.add(1);
-        l.add(2);
-        l.add(3);
-        Iterator<Integer> it = l.iterator();
-        while (it.hasNext()) {
-            System.out.println(it.next());
-            it.remove();
-        }
-        System.out.println(t.hammingDistance(1, 4));
+        int mask = 1 << 30;
+        System.out.println(mask);
+        System.out.println(Integer.toBinaryString(mask));
     }
 
     public static test t = new test();

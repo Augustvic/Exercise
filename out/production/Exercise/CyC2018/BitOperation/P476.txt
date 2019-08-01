@@ -1,0 +1,6 @@
+public class P476 {
+    public int findComplement(int num) {
+        int mask = 1 << 30;
+
+    }
+}
