@@ -2,16 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8314d278-575b-465a-8b92-78576787221f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/CyC2018/BitOperation/P318.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CyC2018/BitOperation/P338.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CyC2018/BitOperation/P371.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CyC2018/BitOperation/P476.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CyC2018/BitOperation/P693.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/BitOperation/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Exercise/CyC2018/BitOperation/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Exercise/test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CyC2018/BitOperation/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/CyC2018/BitOperation/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeetCode/P1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeetCode/P10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeetCode/P11.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeetCode/P12.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeetCode/P13.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeetCode/P14.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeetCode/P15.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeetCode/P16.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeetCode/P2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeetCode/P3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeetCode/P5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeetCode/P7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeetCode/P9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeetCode/troubles.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,35 +29,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CyC2018/BitOperation/log.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/CyC2018/BitOperation/P338.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -79,10 +56,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="768" />
-    <option name="width" value="1161" />
-    <option name="height" value="1032" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="702" />
+    <option name="width" value="1229" />
+    <option name="height" value="1031" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -92,7 +69,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -105,23 +81,11 @@
               <item name="Exercise" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Exercise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Exercise" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="CyC2018" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Exercise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Exercise" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="CyC2018" type="462c0819:PsiDirectoryNode" />
-              <item name="BitOperation" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -129,7 +93,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/JAVA/JAVA源码/JavaSourceCodeAnalysis" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -177,25 +141,26 @@
       <workItem from="1564272118867" duration="2643000" />
       <workItem from="1564530450191" duration="490000" />
       <workItem from="1564571012609" duration="2361000" />
-      <workItem from="1564619650280" duration="5441000" />
+      <workItem from="1564619650280" duration="6172000" />
+      <workItem from="1564704077401" duration="1842000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16184000" />
+    <option name="totallyTimeSpent" value="18757000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26596606" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2700081" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3283859" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3283859" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39888683" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -317,10 +282,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test.java">
+    <entry file="file://$PROJECT_DIR$/src/CyC2018/BitOperation/P338.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -331,12 +296,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CyC2018/BitOperation/P338.txt">
+    <entry file="file://$PROJECT_DIR$/src/test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        <state relative-caret-position="18">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LeetCode/troubles.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
