@@ -1,23 +1,4 @@
-import Tools.*;
-
-import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
-
-public class test {
-
-    public static void main(String[] args) {
-        LinkedList<Integer> l = new LinkedList<>();
-        l.add(1);
-        l.add(2);
-        l.add(3);
-        Iterator<Integer> it = l.iterator();
-        it.next();
-        it.remove();
-        System.out.println(l.toString());
-    }
-
-    public static test t = new test();
-
+public class P5 {
     public String replace(String s) {
         if (StringUtil.isEmpty(s))
             return s;

@@ -1,0 +1,49 @@
+public class P3 {
+    public int find(int[] nums) {
+        if (nums == null || nums.length == 0)
+            return false;
+        int index = 0;
+        while (index < nums.length) {
+            if (nums[index] == index)
+                index++;
+            else {
+                if (nums[nums[index]] == nums[index])
+                    return nums[index];
+                else
+                    swap(nums, index, nums[index]);
+            }
+        }
+        return false;
+    }
+
+    public void swap(int[] nums, int i, int j) {
+        int t = nums[i];
+        nums[i] = nums[j];
+        nums[j] = t;
+    }
+
+    public int findWithoutChange(int[] nums) {
+        if (nums == null || nums.length == 0)
+            return -1;
+        int l = 0;
+        int r = nums.length - 1;
+        while (l < r) {
+            int mid = l + (r - l) / 2;
+            int numOfRange = count(nums, l, mid);
+            if (numOfRange > (mid - l + 1))
+                r = mid;
+            else
+                l = mid + 1;
+        }
+        return l;
+    }
+
+    public int count(int[] nums, int l, int r) {
+        int ret = 0;
+        for (int k : nums) {
+            if (k >= l && k <= r)
+                ret++;
+        }
+        return ret;
+    }
+}
