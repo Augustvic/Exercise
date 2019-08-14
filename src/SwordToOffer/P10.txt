@@ -1,18 +1,4 @@
-import DataStructure.BinaryTreeNode;
-import DataStructure.ListNode;
-import Tools.*;
-
-import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
-
-public class test {
-
-    public static void main(String[] args) {
-        System.out.println(t.fibonacci(10));
-    }
-
-    public static test t = new test();
-
+public class P10 {
     public int fibonacci(int n) {
         if (n == 0)
             return 0;
