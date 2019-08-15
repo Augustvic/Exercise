@@ -1,0 +1,39 @@
+public class P12 {
+    public boolean hasPath(char[][] cs, String s) {
+        if (ArrayUtil.isEmpty(cs))
+            return false;
+        int m = cs.length;
+        int n = cs[0].length;
+        boolean[][] visited = new boolean[m][n];
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (cs[i][j] == s.charAt(0)) {
+                    visited[i][j] = true;
+                    boolean flag = hasPathHelp(cs, visited, s.substring(1), i - 1, j) ||
+                                  hasPathHelp(cs, visited, s.substring(1), i + 1, j) ||
+                                  hasPathHelp(cs, visited, s.substring(1), i, j - 1) ||
+                                  hasPathHelp(cs, visited, s.substring(1), i, j + 1);
+                    if (flag)
+                        return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    public boolean hasPathHelp(char[][] cs, boolean[][] visited, String s, int i, int j) {
+        if (s.length() == 0)
+            return true;
+        if (i < 0 || i >= cs.length || j < 0 || j >= cs[0].length)
+            return false;
+        if (!visited[i][j] && cs[i][j] == s.charAt(0)) {
+            visited[i][j] = true;
+            return hasPathHelp(cs, visited, s.substring(1), i - 1, j) ||
+                          hasPathHelp(cs, visited, s.substring(1), i + 1, j) ||
+                          hasPathHelp(cs, visited, s.substring(1), i, j - 1) ||
+                          hasPathHelp(cs, visited, s.substring(1), i, j + 1);
+        }
+        else
+            return false;
+    }
+}

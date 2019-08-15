@@ -1,22 +1,6 @@
-import DataStructure.BinaryTreeNode;
-import DataStructure.ListNode;
-import Tools.*;
-
-import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
-
-public class test {
-
-    public static void main(String[] args) {
-        int m = 100;
-        int n = 100;
-        System.out.print(t.movingCount(18, m, n));
-    }
-
-    public static test t = new test();
-
+public class P13 {
     public int movingCount(int threshold, int m, int n) {
-        if (threshold < 0)
+        if (threshold <= 0)
             return 0;
         boolean[][] visited = new boolean[m][n];
         return movingCountHelp(threshold, visited, m, n, 0, 0);
