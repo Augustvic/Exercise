@@ -1,0 +1,17 @@
+public class P14 {
+    public int cut(int n) {
+        if (n <= 1)
+            return 0;
+        if (n == 2)
+            return 1;
+        if (n == 3)
+            return 2;
+        int numOfThree = n / 3;
+
+        if (n % numOfThree == 1) {
+            numOfThree--;
+        }
+        int numOfTwo = (n - 3 * numOfThree) / 2;
+        return (int)(Math.pow(3, numOfThree) * Math.pow(2, numOfTwo));
+    }
+}

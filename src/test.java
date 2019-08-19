@@ -8,40 +8,64 @@ import java.util.concurrent.ConcurrentHashMap;
 public class test {
 
     public static void main(String[] args) {
-        int m = 100;
-        int n = 100;
-        System.out.print(t.movingCount(18, m, n));
+        String s1 = "+100";
+        String s2 = "5e2";
+        String s3 = "-123";
+        String s4 = "3.14159";
+        String s5 = "12e";
+        String s6 = "1a3.14";
+        String s7 = "1.2.3";
+        String s8 = "12e+5.4";
+        String s9 = "12e+";
+        String s10 = "+.e";
+        String s11 = ".12e+10";
+        String s12 = "5.e+10";
+        System.out.println(t.isNumeric(s1));
+        System.out.println(t.isNumeric(s2));
+        System.out.println(t.isNumeric(s3));
+        System.out.println(t.isNumeric(s4));
+        System.out.println(t.isNumeric(s5));
+        System.out.println(t.isNumeric(s6));
+        System.out.println(t.isNumeric(s7));
+        System.out.println(t.isNumeric(s8));
+        System.out.println(t.isNumeric(s9));
+        System.out.println(t.isNumeric(s10));
+        System.out.println(t.isNumeric(s11));
+        System.out.println(t.isNumeric(s12));
     }
 
     public static test t = new test();
 
-    public int movingCount(int threshold, int m, int n) {
-        if (threshold < 0)
-            return 0;
-        boolean[][] visited = new boolean[m][n];
-        return movingCountHelp(threshold, visited, m, n, 0, 0);
-    }
+    private int pos = 0;
 
-    public int movingCountHelp(int threshold, boolean[][] visited, int m, int n, int i, int j) {
-        if(i < 0 || i >= m || j < 0 || j >= n || visited[i][j] || !check(threshold, i, j))
-            return 0;
-        visited[i][j] = true;
-        return 1 + movingCountHelp(threshold, visited, m, n, i + 1, j) +
-                movingCountHelp(threshold, visited, m, n, i - 1, j) +
-                movingCountHelp(threshold, visited, m, n, i, j + 1) +
-                movingCountHelp(threshold, visited, m, n, i, j - 1);
-    }
-
-    public boolean check(int threshold, int i, int j) {
-          return getSum(i) + getSum(j) <= threshold;
-    }
-
-    public int getSum(int k) {
-        int sum = 0;
-        while (k != 0) {
-            sum += k % 10;
-            k = k / 10;
+    public boolean isNumeric(String s) {
+        pos = 0;
+        if (s == null || s.length() == 0)
+            return false;
+        // scanInteger 有返回值是为了检测小数点前后必须至少有一个整数
+        boolean res = scanInteger(s);
+        if (pos < s.length() && s.charAt(pos) == '.') {
+            pos++;
+            res = scanUnsignedInteger(s) || res;
         }
-        return sum;
+        if (pos < s.length() && (s.charAt(pos) == 'e' || s.charAt(pos) == 'E')) {
+            pos++;
+            res = res && scanInteger(s);
+        }
+        return res && (pos == s.length());
+    }
+
+    public boolean scanInteger(String s) {
+        if (pos < s.length() && (s.charAt(pos) == '+' || s.charAt(pos) == '-'))
+            pos++;
+        return scanUnsignedInteger(s);
+    }
+
+    public boolean scanUnsignedInteger(String s) {
+        int start = pos;
+        while (pos < s.length() && s.charAt(pos) >= '0' && s.charAt(pos) <= '9') {
+            pos++;
+        }
+        return pos > start;
     }
 }
