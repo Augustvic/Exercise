@@ -3,33 +3,33 @@ public class P20 {
     private int pos = 0;
 
     public boolean isNumeric(String s) {
-        if (s == null || s.length == 0)
+        pos = 0;
+        if (s == null || s.length() == 0)
             return false;
-        scanInteger(s);
+        // scanInteger 函数有返回值是为了检测小数点前后必须至少有一个整数
+        boolean res = scanInteger(s);
         if (pos < s.length() && s.charAt(pos) == '.') {
             pos++;
-            scanUnsignedInteger(s);
+            res = scanUnsignedInteger(s) || res;
         }
-        if (pos < s.length() && (s.charAt(pos) == 'e' || s.charAt(pos) == 'E') {
+        if (pos < s.length() && (s.charAt(pos) == 'e' || s.charAt(pos) == 'E')) {
             pos++;
-            scanInteger(s);
+            res = res && scanInteger(s);
         }
-        return pos == s.length();
+        return res && (pos == s.length());
     }
 
-    public void scanInteger(String s) {
-        if (s == null || s.length() == 0)
-            return;
-        if (s.charAt(0) == '+' || s.charAt(0) == '-')
+    public boolean scanInteger(String s) {
+        if (pos < s.length() && (s.charAt(pos) == '+' || s.charAt(pos) == '-'))
             pos++;
-        scanUnsignedInteger(s);
+        return scanUnsignedInteger(s);
     }
 
-    public void scanUnsignedInteger(String s) {
-        if (s == null || s.length() == 0)
-            return;
-        while (s.charAt(pos) >= '0' && s.charAt(pos) <= '9') {
+    public boolean scanUnsignedInteger(String s) {
+        int start = pos;
+        while (pos < s.length() && s.charAt(pos) >= '0' && s.charAt(pos) <= '9') {
             pos++;
         }
+        return pos > start;
     }
 }

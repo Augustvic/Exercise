@@ -1,0 +1,21 @@
+public class P21 {
+    public void reorder(int[] nums) {
+        int l = 0;
+        int r = nums.length - 1;
+        while (l < r) {
+            while (l < r && check(nums, l)) l++;
+            while (l < r && !check(nums, r)) r--;
+            swap(nums, l, r);
+        }
+    }
+
+    private boolean check(int[] nums, int i) {
+        return nums[i] % 2 == 1;
+    }
+
+    private void swap(int[] nums, int l, int r) {
+        int tmp = nums[l];
+        nums[l] = nums[r];
+        nums[r] = tmp;
+    }
+}

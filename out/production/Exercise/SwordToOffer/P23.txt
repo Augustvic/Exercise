@@ -1,29 +1,4 @@
-import DataStructure.BinaryTreeNode;
-import DataStructure.ListNode;
-import Tools.*;
-
-import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
-
-public class test {
-
-    public static void main(String[] args) {
-        ListNode head = new ListNode(1);
-        head.next = new ListNode(2);
-        head.next.next = new ListNode(3);
-        head.next.next.next = new ListNode(4);
-        head.next.next.next.next = new ListNode(5);
-        head.next.next.next.next.next = new ListNode(6);
-        head.next.next.next.next.next.next = head.next;
-        ListNode res = t.findEntry(head);
-        if(res == null)
-            System.out.print("None");
-        else
-            System.out.print(res.val);
-    }
-
-    public static test t = new test();
-
+public class P23 {
     public ListNode findEntry(ListNode head) {
         if (head == null || head.next == null)
             return null;
@@ -45,7 +20,6 @@ public class test {
             }
             return p;
         }
-        return null;
     }
 
     private ListNode hasCycle(ListNode head) {
