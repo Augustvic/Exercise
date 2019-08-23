@@ -8,55 +8,36 @@ import java.util.concurrent.ConcurrentHashMap;
 public class test {
 
     public static void main(String[] args) {
-        ListNode head = new ListNode(1);
-        head.next = new ListNode(2);
-        head.next.next = new ListNode(3);
-        head.next.next.next = new ListNode(4);
-        head.next.next.next.next = new ListNode(5);
-        head.next.next.next.next.next = new ListNode(6);
-        head.next.next.next.next.next.next = head.next;
-        ListNode res = t.findEntry(head);
-        if(res == null)
-            System.out.print("None");
-        else
-            System.out.print(res.val);
+        BinaryTreeNode root = new BinaryTreeNode(8);
+        root.left = new BinaryTreeNode(6);
+        root.right = new BinaryTreeNode(10);
+        root.left.left = new BinaryTreeNode(5);
+        root.left.right = new BinaryTreeNode(7);
+        root.right.left = new BinaryTreeNode(9);
+        root.right.right = new BinaryTreeNode(11);
+        t.print(root);
+        System.out.println();
+        t.getMirror(root);
+        t.print(root);
     }
 
     public static test t = new test();
 
-    public ListNode findEntry(ListNode head) {
-        if (head == null || head.next == null)
-            return null;
-        ListNode meet = hasCycle(head);
-        if (meet != null) {
-            ListNode p = meet.next;
-            int lengthOfCycle = 1;
-            while (p != meet) {
-                lengthOfCycle++;
-                p = p.next;
-            }
-            p = head;
-            for (int i = 0; i < lengthOfCycle; i++)
-                p = p.next;
-            ListNode q = head;
-            while (p != q) {
-                p = p.next;
-                q = q.next;
-            }
-            return p;
-        }
-        return null;
+    public void getMirror(BinaryTreeNode root) {
+        if (root == null)
+            return;
+        BinaryTreeNode tmp = root.left;
+        root.left = root.right;
+        root.right = tmp;
+        getMirror(root.left);
+        getMirror(root.right);
     }
 
-    private ListNode hasCycle(ListNode head) {
-        ListNode slow = head;
-        ListNode fast = head.next;
-        while (fast != null && fast.next != null && fast != slow) {
-            fast = fast.next.next;
-            slow = slow.next;
-        }
-        if (fast == null || fast.next == null)
-            return null;
-        return fast;
+    public void print(BinaryTreeNode root) {
+        if(root == null)
+            return;
+        print(root.left);
+        System.out.print(root.val + " ");
+        print(root.right);
     }
 }
