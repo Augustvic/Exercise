@@ -8,36 +8,50 @@ import java.util.concurrent.ConcurrentHashMap;
 public class test {
 
     public static void main(String[] args) {
-        BinaryTreeNode root = new BinaryTreeNode(8);
-        root.left = new BinaryTreeNode(6);
-        root.right = new BinaryTreeNode(10);
-        root.left.left = new BinaryTreeNode(5);
-        root.left.right = new BinaryTreeNode(7);
-        root.right.left = new BinaryTreeNode(9);
-        root.right.right = new BinaryTreeNode(11);
-        t.print(root);
-        System.out.println();
-        t.getMirror(root);
-        t.print(root);
+        t.push(3);
+        t.push(4);
+        t.push(2);
+        t.push(1);
+        System.out.println("MIN:" + t.min());
+        System.out.println("POP:" + t.pop());
+        System.out.println("POP:" + t.pop());
+        System.out.println("MIN:" + t.min());
+        System.out.println("POP:" + t.pop());
+        System.out.println("POP:" + t.pop());
+        System.out.println("POP:" + t.pop());
     }
 
     public static test t = new test();
 
-    public void getMirror(BinaryTreeNode root) {
-        if (root == null)
-            return;
-        BinaryTreeNode tmp = root.left;
-        root.left = root.right;
-        root.right = tmp;
-        getMirror(root.left);
-        getMirror(root.right);
+    private Stack<Integer> dataSt;
+    private Stack<Integer> minSt;
+
+    public test() {
+        dataSt = new Stack<>();
+        minSt = new Stack<>();
     }
 
-    public void print(BinaryTreeNode root) {
-        if(root == null)
-            return;
-        print(root.left);
-        System.out.print(root.val + " ");
-        print(root.right);
+    public int min() {
+        if (!minSt.isEmpty())
+            return minSt.peek();
+        else
+            throw new NullPointerException();
+    }
+
+    public void push(int val) {
+        dataSt.push(val);
+        if (minSt.isEmpty() || val < minSt.peek())
+            minSt.push(val);
+        else
+            minSt.push(minSt.peek());
+    }
+
+    public int pop() {
+        if (!dataSt.isEmpty()) {
+            minSt.pop();
+            return dataSt.pop();
+        }
+        else
+            throw new NullPointerException();
     }
 }

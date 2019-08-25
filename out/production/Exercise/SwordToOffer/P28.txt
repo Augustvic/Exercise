@@ -1,0 +1,17 @@
+public class P28 {
+    public boolean isSymmetry(BinaryTreeNode root) {
+        if (root == null)
+            return false;
+        return isSymmetryHelp(root.left, root.right);
+    }
+
+    public boolean isSymmetryHelp(BinaryTreeNode left, BinaryTreeNode right) {
+        if (left == null && right == null)
+            return true;
+        if (left == null || right == null)
+            return false;
+        if (left.val != right.val)
+            return false;
+        return isSymmetryHelp(left.left, right.right) && isSymmetryHelp(left.right, right.left);
+    }
+}
