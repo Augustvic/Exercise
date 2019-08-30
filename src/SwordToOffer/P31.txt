@@ -1,0 +1,5 @@
+public class P31 {
+    public boolean isPopOrder(int[] in, int[] out) {
+
+    }
+}

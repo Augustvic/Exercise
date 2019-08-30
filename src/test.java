@@ -8,17 +8,10 @@ import java.util.concurrent.ConcurrentHashMap;
 public class test {
 
     public static void main(String[] args) {
-        t.push(3);
-        t.push(4);
-        t.push(2);
-        t.push(1);
-        System.out.println("MIN:" + t.min());
-        System.out.println("POP:" + t.pop());
-        System.out.println("POP:" + t.pop());
-        System.out.println("MIN:" + t.min());
-        System.out.println("POP:" + t.pop());
-        System.out.println("POP:" + t.pop());
-        System.out.println("POP:" + t.pop());
+        int i = 2;
+        Comparable<Integer> key = (Comparable<Integer>) i;
+        int j = 1;
+        System.out.println(key.compareTo(j));
     }
 
     public static test t = new test();
