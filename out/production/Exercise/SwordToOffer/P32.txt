@@ -1,0 +1,74 @@
+public class P32 {
+     public void printWithOneLine(BinaryTreeNode root) {
+         if (root == null)
+             return;
+         LinkedList<BinaryTreeNode> l = new LinkedList<>();
+         l.add(root);
+         while (!l.isEmpty()) {
+             BinaryTreeNode now = l.removeFirst();
+             System.out.print(now.val + " ");
+             if (now.left != null)
+                 l.add(now.left);
+             if (now.right != null)
+                 l.add(now.right);
+         }
+     }
+
+     public void printWithMultipleLine(BinaryTreeNode root) {
+         if (root == null)
+             return;
+         LinkedList<BinaryTreeNode> l = new LinkedList<>();
+         l.add(root);
+         int currLine = 1;
+         int nextLine = 0;
+         while (!l.isEmpty()) {
+             if (currLine == 0) {
+                 System.out.println();
+                 currLine = nextLine;
+             }
+             BinaryTreeNode now = l.removeFirst();
+             System.out.print(now.val + " ");
+             currLine--;
+             if (now.left != null) {
+                 l.add(now.left);
+                 nextLine++;
+             }
+             if (now.right != null) {
+                 l.add(now.right);
+                 nextLine++;
+             }
+         }
+     }
+
+     public void printWithZhiShape(BinaryTreeNode root) {
+         if (root == null)
+             return;
+         Stack<BinaryTreeNode> leftToRight = new Stack<>();
+         Stack<BinaryTreeNode> rightToLeft = new Stack<>();
+         leftToRight.push(root);
+         while (!leftToRight.isEmpty() || !rightToLeft.isEmpty()) {
+             if (!leftToRight.isEmpty()) {
+                 while (!leftToRight.isEmpty()) {
+                     BinaryTreeNode now = leftToRight.pop();
+                     System.out.print(now.val + " ");
+                     if (now.left != null)
+                         rightToLeft.push(now.left);
+                     if (now.right != null)
+                         rightToLeft.push(now.right);
+                 }
+                 System.out.println();
+             }
+             else if (!rightToLeft.isEmpty()) {
+                 while (!rightToLeft.isEmpty()) {
+                     BinaryTreeNode now = rightToLeft.pop();
+                     System.out.print(now.val + " ");
+                     if (now.right != null)
+                         leftToRight.push(now.right);
+                     if (now.left != null)
+                         leftToRight.push(now.left);
+                 }
+                 System.out.println();
+             }
+         }
+     }
+}
