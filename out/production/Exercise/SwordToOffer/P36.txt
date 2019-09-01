@@ -1,6 +1,5 @@
 public class P36 {
-
-    private BinaryTreeNode curr, head;
+   private BinaryTreeNode curr, head;
 
     public BinaryTreeNode convert(BinaryTreeNode root) {
         if (root == null)

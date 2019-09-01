@@ -4,7 +4,7 @@ public class P33 {
             return false;
         if (nums.length == 1)
             return true;
-        return isPostOrderOfBSTHelp(nums, 0, nums.length);
+        return isPostOrderOfBSTHelp(nums, 0, nums.length - 1);
     }
 
     public boolean isPostOrderOfBSTHelp(int[] nums, int l, int r) {

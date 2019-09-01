@@ -1,4 +1,5 @@
 import DataStructure.BinaryTreeNode;
+import DataStructure.ComplexListNode;
 import DataStructure.ListNode;
 import Tools.*;
 
@@ -8,45 +9,45 @@ import java.util.concurrent.ConcurrentHashMap;
 public class test {
 
     public static void main(String[] args) {
-        int[] nums1 = {7, 4, 6, 5};
-        int[] nums2 = {5, 7, 6, 9, 11, 10, 8};
-        int[] nums3 = {13, 12, 11, 10, 9, 8};
-        int[] nums4 = {8, 9, 10, 11, 12, 13};
-        System.out.println(t.isPostOrderOfBST(nums1));
-        System.out.println(t.isPostOrderOfBST(nums2));
-        System.out.println(t.isPostOrderOfBST(nums3));
-        System.out.println(t.isPostOrderOfBST(nums4));
+        BinaryTreeNode root = new BinaryTreeNode(10);
+        root.left = new BinaryTreeNode(6);
+        root.right = new BinaryTreeNode(14);
+        root.left.left = new BinaryTreeNode(4);
+        root.left.right = new BinaryTreeNode(8);
+        root.right.left = new BinaryTreeNode(12);
+        root.right.right = new BinaryTreeNode(16);
+        BinaryTreeNode res = t.convert(root);
+        BinaryTreeNode curr = res;
+        while(curr != null) {
+            System.out.print(curr.val + " ");
+            curr = curr.right;
+        }
     }
 
     public static test t = new test();
 
-    public boolean isPostOrderOfBST(int[] nums) {
-        if (nums == null || nums.length == 0)
-            return false;
-        if (nums.length == 1)
-            return true;
-        return isPostOrderOfBSTHelp(nums, 0, nums.length - 1);
+    private BinaryTreeNode curr, head;
+
+    public BinaryTreeNode convert(BinaryTreeNode root) {
+        if (root == null)
+            return null;
+        convertHelp(root);
+        return head;
     }
 
-    public boolean isPostOrderOfBSTHelp(int[] nums, int l, int r) {
-        if (l >= r)
-            return true;
-        int index = l;
-        int rootVal = nums[r];
-        while (index < r && nums[index] < rootVal)
-            index++;
-        if (isRightSubtree(nums, index, r - 1, rootVal)) {
-            return isPostOrderOfBSTHelp(nums, l, index - 1)
-                    && isPostOrderOfBSTHelp(nums, index, r - 1);
+    public void convertHelp(BinaryTreeNode root) {
+        if (root == null)
+            return;
+        convertHelp(root.left);
+        if (head == null) {
+            head = root;
+            curr = root;
         }
-        return false;
-    }
-
-    public boolean isRightSubtree(int[] nums, int l, int r, int k) {
-        for (int i = l; i <= r; i++) {
-            if (nums[i] < k)
-                return false;
+        else {
+            curr.right = root;
+            root.left = curr;
+            curr = curr.right;
         }
-        return true;
+        convertHelp(root.right);
     }
 }
