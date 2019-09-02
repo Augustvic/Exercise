@@ -1,20 +1,4 @@
-import DataStructure.BinaryTreeNode;
-import DataStructure.ComplexListNode;
-import DataStructure.ListNode;
-import Tools.*;
-
-import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
-
-public class test {
-
-    public static void main(String[] args) {
-        String s = "aabc";
-        t.permutation(s);
-    }
-
-    public static test t = new test();
-
+public class P38 {
     public void permutation(String s) {
         if (s == null || s.length() == 0)
             return;

@@ -1,0 +1,44 @@
+public class P37 {
+    public String serialize(BinaryTreeNode root) {
+        if (root == null)
+            return null;
+        StringBuilder sb = new StringBuilder();
+        serializeHelp(root, sb);
+        return sb.toString();
+    }
+
+    private void serializeHelp(BinaryTreeNode root, StringBuilder sb) {
+        if (root == null) {
+            sb.append("$,");
+            return;
+        }
+        int val = root.val;
+        sb.append(String.valueOf(val) + ",");
+        serializeHelp(root.left, sb);
+        serializeHelp(root.right, sb);
+    }
+
+    public BinaryTreeNode deserialize(String s) {
+        if (s == null || s.length() == 0)
+            return null;
+        StringBuilder sb = new StringBuilder(s);
+        return deserializeHelp(sb);
+    }
+
+    private BinaryTreeNode deserializeHelp(StringBuilder sb) {
+        if (sb.length() == 0)
+            return null;
+        if (sb.charAt(0) == '$') {
+            sb.delete(0, 2);
+            return null;
+        }
+        int index = 0;
+        while (sb.charAt(index) != ',') index++;
+        String val = sb.substring(0, index);
+        sb.delete(0, index + 1);
+        BinaryTreeNode root = new BinaryTreeNode(Integer.valueOf(val));
+        root.left = deserializeHelp(sb);
+        root.right = deserializeHelp(sb);
+        return root;
+    }
+}
