@@ -1,23 +1,4 @@
-import DataStructure.BinaryTreeNode;
-import DataStructure.ComplexListNode;
-import DataStructure.ListNode;
-import Tools.*;
-
-import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
-
-public class test {
-
-    public static void main(String[] args) {
-        int[] nums = {4, 5, 1, 6, 2, 7, 3, 8};
-        int k = 5;
-        int[] res = t.find(nums, k);
-        for (int val : res)
-            System.out.print(val + " ");
-        System.out.println();
-    }
-
-    public static test t = new test();
+public class P40 {
 
     public int[] find(int[] nums, int k) {
         if (nums == null || nums.length == 0)
@@ -57,7 +38,6 @@ public class test {
         nums[r] = tmp;
     }
 
-
     public int[] findOptimal(int[] nums, int k) {
         if (nums == null || nums.length == 0)
             return null;
@@ -78,10 +58,6 @@ public class test {
                 }
             }
         }
-        int[] ret = new int[k];
-        int pos = 0;
-        for(int val : minHeap)
-            ret[pos++] = val;
-        return ret;
+        return minHeap.toArray();
     }
 }
