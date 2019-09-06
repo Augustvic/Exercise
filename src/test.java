@@ -9,8 +9,6 @@ import java.util.concurrent.ConcurrentHashMap;
 public class test {
 
     public static void main(String[] args) {
-        int[] nums = {1, -2, 3, 10, -4, 7, 2, -5};
-        System.out.print(t.max(nums));
     }
 
     public static test t = new test();
