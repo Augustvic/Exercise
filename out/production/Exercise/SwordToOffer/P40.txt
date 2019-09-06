@@ -58,6 +58,10 @@ public class P40 {
                 }
             }
         }
-        return minHeap.toArray();
+        int[] ret = new int[k];
+        int pos = 0;
+        for(int val : minHeap)
+            ret[pos++] = val;
+        return ret;
     }
 }
