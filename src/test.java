@@ -9,8 +9,12 @@ import java.util.concurrent.ConcurrentHashMap;
 public class test {
 
     public static void main(String[] args) {
-        String s = "aabc";
-        t.permutation(s);
+        TreeMap
+        HashMap<String, String> hm = new HashMap<>();
+        hm.put("1", "11111");
+        hm.put("2", "22222");
+        hm.put("3", "33333");
+        System.out.println(hm.toString());
     }
 
     public static test t = new test();
