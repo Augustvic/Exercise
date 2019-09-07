@@ -1,5 +1,4 @@
 public class P43 {
-
     public int count(int n) {
         if (n <= 0)
             return 0;
@@ -7,7 +6,7 @@ public class P43 {
         return countHelp(s);
     }
 
-    public int countHelp(String s) {
+    private int countHelp(String s) {
         if (s.length() == 0)
             return 0;
         if (s.length() == 1)
@@ -15,10 +14,9 @@ public class P43 {
         int first = s.charAt(0) - '0';
         int len = s.length();
         s = s.substring(1);
-        while (s.length() > 1 && s.charAt(0) == '0')
+        while (s.length() > 0 && s.charAt(0) == '0')
             s = s.substring(1);
         int count = 0;
-        //注意：first等于1时后面加了1
         count += (first == 1) ? Integer.valueOf(s) + 1 : (int)Math.pow(10, len - 1);
         count += first * (len - 1) * (int)Math.pow(10, len - 2);
         count += countHelp(s);

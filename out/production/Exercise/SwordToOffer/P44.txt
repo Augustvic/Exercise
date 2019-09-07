@@ -1,0 +1,22 @@
+public class P44 {
+    public int digitOfIndex(int index) {
+        if (index < 0)
+            return -1;
+        int num = 1;
+        int count = 0;
+        while (index > (count = numOfDigits(num))) {
+            index = index - count;
+            num++;
+        }
+        int kthNum = index / num;
+        int kthDigit = index % num;
+        String s = String.valueOf(Math.pow(10, num - 1) + kthNum);
+        return s.charAt(kthDigit) - '0';
+    }
+
+    private int numOfDigits(int num) {
+        if (num == 1)
+            return 10;
+        return 9 * (int)Math.pow(10, num - 1);
+    }
+}

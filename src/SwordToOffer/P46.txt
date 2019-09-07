@@ -1,24 +1,4 @@
-import DataStructure.BinaryTreeNode;
-import DataStructure.ComplexListNode;
-import DataStructure.ListNode;
-import Tools.*;
-
-import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
-
-public class test {
-
-    public static void main(String[] args) {
-        int num1 = 12258;
-        int num2 = 12268;
-        int num3 = 8;
-        System.out.println(t.translate(num1));
-        System.out.println(t.translate(num2));
-        System.out.println(t.translate(num3));
-    }
-
-    public static test t = new test();
-
+public class P46 {
     public int translate(int num) {
         if (num < 0)
             return 0;
