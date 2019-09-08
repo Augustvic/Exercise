@@ -1,20 +1,4 @@
-import DataStructure.BinaryTreeNode;
-import DataStructure.ComplexListNode;
-import DataStructure.ListNode;
-import Tools.*;
-
-import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
-
-public class test {
-
-    public static void main(String[] args) {
-        int k = 1500;
-        System.out.println(t.getUglyNumber(k));
-    }
-
-    public static test t = new test();
-
+public class P49 {
     public int getUglyNumber(int k) {
         if (k <= 0)
             return 0;
