@@ -1,35 +1,4 @@
-import DataStructure.BinaryTreeNode;
-import DataStructure.ComplexListNode;
-import DataStructure.ListNode;
-import Tools.*;
-
-import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
-
-public class test {
-
-    public static void main(String[] args) {
-        int[] nums1 = {1, 2, 3, 3, 3, 3, 3, 3};
-        int[] nums2 = {1, 2, 4, 5, 6, 7, 8, 9};
-        int[] nums3 = {1, 2, 3, 4, 5, 6, 7, 8};
-        int[] nums4 = {1, 2, 3};
-        int k = 3;
-        System.out.println("1. Count: " + t.count(nums1, k));
-        System.out.println("1. Count: " + t.count(nums2, k));
-        System.out.println("1. Count: " + t.count(nums3, k));
-        System.out.println("1. Count: " + t.count(nums4, k));
-        int[] nums5 = {1, 2, 3, 4, 5, 6, 7};
-        int[] nums6 = {0, 2, 3, 4, 5, 6, 7};
-        System.out.println("2. Missing Number: " + t.missingNumber(nums5));
-        System.out.println("2. Missing Number: " + t.missingNumber(nums6));
-        int[] nums7 = {-1, 0, 2, 4, 5};
-        int[] nums8 = {-1, 0, 4, 5};
-        System.out.println("3. Number Same As Index: " + t.numberSameAsIndex(nums7));
-        System.out.println("3. Number Same As Index: " + t.numberSameAsIndex(nums8));
-    }
-
-    public static test t = new test();
-
+public class P53 {
     public int count(int[] nums, int k) {
         if (nums == null || nums.length == 0)
             return -1;
@@ -111,6 +80,6 @@ public class test {
             else
                 l = mid + 1;
         }
-        return Integer.MIN_VALUE;
+        return -1;
     }
 }
