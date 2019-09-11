@@ -1,36 +1,4 @@
-import DataStructure.BinaryTreeNode;
-import DataStructure.ComplexListNode;
-import DataStructure.ListNode;
-import Tools.*;
-
-import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
-
-public class test {
-
-    public static void main(String[] args) {
-//        String s = "abaccdeff";
-//        String s = "afaccddff";
-        String s = "afaccdeff";
-        System.out.println(t.first(s));
-
-        String s1 = "We are students.";
-        String s2 = "aeiou";
-        System.out.println(t.deleteCharsInString(s1, s2));
-
-        String s3 = "google";
-        System.out.println(t.deleteDumplicated(s3));
-
-        String s4 = "silent";
-        String s5 = "listen";
-        String s6 = "silentes";
-        String s7 = "listened";
-        System.out.println(t.isAnagram(s4, s5));
-        System.out.println(t.isAnagram(s6, s7));
-    }
-
-    public static test t = new test();
-
+public class P50 {
     public char first(String s) {
         if (StringUtil.isEmpty(s))
             return '1';

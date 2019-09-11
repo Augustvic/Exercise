@@ -1,0 +1,76 @@
+public class P50 {
+    public char first(String s) {
+        if (StringUtil.isEmpty(s))
+            return '';
+        HashMap<Character, Integer> hm = new HashMap<>();
+        for (char c : s) {
+            int value = hm.getOrDefault(c, 0);
+            hm.put(c, value + 1);
+        }
+        for (char c : s) {
+            if (hm.get(c) == 1)
+                return c;
+        }
+        return '';
+    }
+
+    public String deleteCharsInString(String s1, String s2) {
+        if (StringUtil.isEmpty(s1))
+            return null;
+        if (StringUtil.isEmpty(s2))
+            return s1;
+        HashSet<Character> hs = new HashSet<>();
+        for (char c : s2) {
+            hs.add(c);
+        }
+        StringBuilder sb = new StringBuilder(s1);
+        int index = 0;
+        while (index < s1.length) {
+            if (hs.contains(s1.charAt(index)) {
+                sb.replace(index, index + 1, "");
+            }
+            else
+                index++;
+        }
+        return sb.toString();
+    }
+
+    public String deleteDumplicated(String s) {
+        if (StringUtil.isEmpty(s))
+            return null;
+        HashSet<Character> hs = new HashSet<>();
+        StringBuilder sb = new StringBuilder(s);
+        int index = 0
+        while (index < sb.length) {
+            if (hs.contains(sb.charAt(index))) {
+                sb.replace(index, index + 1, "");
+            }
+            else {
+                hs.add(sb.charAt(index));
+                index++;
+            }
+        }
+        return sb.toString();
+    }
+
+    public boolean isAnagram(String s1, String s2) {
+        if (StringUtil.isEmpty(s1) || StringUtil.isEmpty(s2))
+            return false;
+        HashMap<Character, Integer> hm = new HashMap<>();
+        for (char c : s1) {
+            int value = hm.getOrDefault(c, 0);
+            hm.put(c, value + 1);
+        }
+        for (char c : s2) {
+            if (hm.containsKey(c)) {
+                int value = hm.get(c);
+                if (value <= 0)
+                    return false;
+                hm.put(c, value - 1);
+            }
+            else
+                return false;
+        }
+        return true;
+    }
+}
