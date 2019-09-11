@@ -1,0 +1,30 @@
+public class P55 {
+
+    public int getDepth(BinaryTreeNode root) {
+        if (root == null)
+            return 0;
+        int leftDepth = getDepth(root.left);
+        int rightDepth = getDepth(root.right);
+        return Math.max(leftDepth, rightDepth) + 1;
+    }
+
+    private boolean flag = true;
+
+    public boolean isBalancedOptimal(BinaryTreeNode root) {
+        if (root == null)
+            return true;
+        isBalancedWithDepth(root);
+        return flag;
+    }
+
+    private int isBalancedWithDepth(BinaryTreeNode root) {
+        if (root == null)
+            return 0;
+        int left = isBalancedWithDepth(root.left);
+        int right = isBalancedWithDepth(root.right);
+        if (Math.abs(left - right) > 1) {
+            flag = false;
+        }
+        return Math.max(left, right) + 1;
+    }
+}
