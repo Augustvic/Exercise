@@ -1,25 +1,4 @@
-import DataStructure.BinaryTree;
-import DataStructure.BinaryTreeNode;
-import DataStructure.ComplexListNode;
-import DataStructure.ListNode;
-import Tools.*;
-
-import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
-
-public class test {
-
-    public static void main(String[] args) {
-        int[] nums = {1, 2, 3, 4, 11, 15};
-        int sum = 18;
-        if(!t.find1(nums, sum))
-            System.out.println("Error");
-        int sum2 = 15;
-        t.find2(sum2);
-    }
-
-    public static test t = new test();
-
+public class P57 {
     public boolean find1(int[] nums, int sum) {
         if (nums == null || nums.length == 0)
             return false;
@@ -50,16 +29,16 @@ public class test {
         while (l <= r && r < sum) {
             if (currSum == sum) {
                 print(l, r);
-                currSum -= l;
                 l++;
+                sum -= l;
             }
             else if (currSum > sum) {
-                currSum -= l;
                 l++;
+                sum -= l;
             }
             else {
                 r++;
-                currSum += r;
+                sum += r;
             }
         }
     }

@@ -4,7 +4,7 @@ public class P56 {
             return;
         int xorAll = 0;
         for (int num : nums) {
-            xorAll = xorAll ^ k;
+            xorAll = xorAll ^ num;
         }
         int index = indexOfLast1(xorAll);
         int a = 0;
