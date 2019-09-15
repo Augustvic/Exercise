@@ -1,7 +1,4 @@
-import DataStructure.BinaryTree;
-import DataStructure.BinaryTreeNode;
-import DataStructure.ComplexListNode;
-import DataStructure.ListNode;
+import DataStructure.*;
 import Tools.*;
 
 import java.util.*;
@@ -10,64 +7,60 @@ import java.util.concurrent.ConcurrentHashMap;
 public class test {
 
     public static void main(String[] args) {
-        int[] nums = {1, 2, 3, 4, 11, 15};
-        int sum = 18;
-        if(!t.find1(nums, sum))
-            System.out.println("Error");
-        int sum2 = 15;
-        t.find2(sum2);
+        t.pushBack(1);
+        t.pushBack(6);
+        t.pushBack(3);
+        t.pushBack(2);
+        t.pushBack(7);
+        t.pushBack(5);
+        System.out.println(t.max());
+        System.out.println(t.popFront());
+        System.out.println(t.max());
+        System.out.println(t.popFront());
+        System.out.println(t.max());
+        System.out.println(t.popFront());
+        System.out.println(t.max());
+        System.out.println(t.popFront());
+        System.out.println(t.max());
+        System.out.println(t.popFront());
+        System.out.println(t.max());
+        System.out.println(t.popFront());
+        System.out.println(t.max());
     }
 
     public static test t = new test();
 
-    public boolean find1(int[] nums, int sum) {
-        if (nums == null || nums.length == 0)
-            return false;
-        int left = 0;
-        int right = nums.length - 1;
-        while (left < right) {
-            int tmp = nums[left] + nums[right];
-            if (tmp == sum) {
-                System.out.println("[" + nums[left] + "," + nums[right] + "]");
-                return true;
-            }
-            else if (tmp > sum) {
-                right--;
-            }
-            else {
-                left++;
-            }
-        }
-        return false;
+    private Deque<InternalData> maxDq;
+    private Deque<InternalData> dataDq;
+    private int currIndex;
+
+    public test() {
+        maxDq = new ArrayDeque<>();
+        dataDq = new ArrayDeque<>();
+        currIndex = 0;
     }
 
-    public void find2(int sum) {
-        if (sum < 0)
-            return;
-        int l = 1;
-        int r = 2;
-        int currSum = 3;
-        while (l <= r && r < sum) {
-            if (currSum == sum) {
-                print(l, r);
-                currSum -= l;
-                l++;
-            }
-            else if (currSum > sum) {
-                currSum -= l;
-                l++;
-            }
-            else {
-                r++;
-                currSum += r;
-            }
+    public void pushBack(int k) {
+        InternalData d = new InternalData(k, currIndex++);
+        dataDq.addLast(d);
+        while (!maxDq.isEmpty() && k > maxDq.getLast().val) {
+            maxDq.removeLast();
         }
+        maxDq.addLast(d);
     }
 
-    private void print(int l, int r) {
-        for (int i = l; i <= r; i++) {
-            System.out.print(i + " ");
+    public int max() {
+        if (dataDq.isEmpty())
+            return -1;
+        return maxDq.getFirst().val;
+    }
+
+    public int popFront() {
+        if (dataDq.isEmpty())
+            return -1;
+        if (dataDq.getFirst().index == maxDq.getFirst().index) {
+            maxDq.removeFirst();
         }
-        System.out.println();
+        return dataDq.removeFirst().val;
     }
 }
