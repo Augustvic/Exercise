@@ -7,60 +7,28 @@ import java.util.concurrent.ConcurrentHashMap;
 public class test {
 
     public static void main(String[] args) {
-        t.pushBack(1);
-        t.pushBack(6);
-        t.pushBack(3);
-        t.pushBack(2);
-        t.pushBack(7);
-        t.pushBack(5);
-        System.out.println(t.max());
-        System.out.println(t.popFront());
-        System.out.println(t.max());
-        System.out.println(t.popFront());
-        System.out.println(t.max());
-        System.out.println(t.popFront());
-        System.out.println(t.max());
-        System.out.println(t.popFront());
-        System.out.println(t.max());
-        System.out.println(t.popFront());
-        System.out.println(t.max());
-        System.out.println(t.popFront());
-        System.out.println(t.max());
+        int[] nums = {9, 11, 8, 5, 7, 12, 16, 14};
+        int[] nums1 = {7, 8, 9, 10, 11};
+        int[] nums2 = {11, 10, 9, 8, 7, 6};
+        System.out.println(t.maxProfit(nums));
+        System.out.println(t.maxProfit(nums1));
+        System.out.println(t.maxProfit(nums2));
     }
 
     public static test t = new test();
 
-    private Deque<InternalData> maxDq;
-    private Deque<InternalData> dataDq;
-    private int currIndex;
-
-    public test() {
-        maxDq = new ArrayDeque<>();
-        dataDq = new ArrayDeque<>();
-        currIndex = 0;
-    }
-
-    public void pushBack(int k) {
-        InternalData d = new InternalData(k, currIndex++);
-        dataDq.addLast(d);
-        while (!maxDq.isEmpty() && k > maxDq.getLast().val) {
-            maxDq.removeLast();
+    public int maxProfit(int[] nums) {
+        if (nums == null || nums.length == 0)
+            return 0;
+        int minPrice = nums[0];
+        int maxProfit = 0;
+        for (int i = 1; i < nums.length; i++) {
+           int diff = nums[i] - minPrice;
+            if (diff > maxProfit)
+                maxProfit = diff;
+            if (nums[i] < minPrice)
+                minPrice = nums[i];
         }
-        maxDq.addLast(d);
-    }
-
-    public int max() {
-        if (dataDq.isEmpty())
-            return -1;
-        return maxDq.getFirst().val;
-    }
-
-    public int popFront() {
-        if (dataDq.isEmpty())
-            return -1;
-        if (dataDq.getFirst().index == maxDq.getFirst().index) {
-            maxDq.removeFirst();
-        }
-        return dataDq.removeFirst().val;
+        return maxProfit;
     }
 }

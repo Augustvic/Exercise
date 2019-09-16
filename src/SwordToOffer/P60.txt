@@ -2,24 +2,27 @@ public class P60 {
 
     private int dim = 6;
 
-    public void print(int n) {
+    public void printProbabilityOptimal(int n) {
         if (n <= 0)
             return;
-        int[][] count = new int[dim * n + 1][2];
+        int max = dim * n;
+        int[][] arr = new int[2][max + 1];
         int index = 0;
-        for (int i = 1; i <= dim; i++)
-            count[index][i] = 1;
+        for (int i = 1; i <= dim; i++) {
+            arr[index][i] = 1;
+        }
         for (int i = 2; i <= n; i++) {
             index = 1 - index;
             for (int j = i; j <= i * dim; j++) {
-                count[index][j] = 0;
+                arr[index][j] = 0;
                 for (int t = 1; t <= dim && j - t >= i - 1; t++) {
-                    count[index][j] += count[1 - index][j - t];
+                    arr[index][j] += arr[1 - index][j - t];
                 }
             }
         }
         double sum = Math.pow(dim, n);
-        for (int i = n; i <= n * dim; i++)
-            System.out.println(i + ": " + String.format("%.5f", count[index][i] / sum));
+        for (int i = n; i <= dim * n; i++) {
+            System.out.println(i + ": " + String.format("%.5f", arr[index][i] / sum));
+        }
     }
 }
