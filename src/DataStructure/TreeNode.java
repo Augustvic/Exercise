@@ -11,21 +11,21 @@ import java.util.List;
  */
 
 public class TreeNode {
-//        public int val;
-//        public TreeNode parent;
-//        public List<TreeNode> child = new LinkedList<>();
-//        public TreeNode(int val) {
-//            this.val = val;
-//        }
-//        public TreeNode(int val, TreeNode parent) {
-//            this.val = val;
-//            this.parent = parent;
-//        }
+        public int val;
+        public TreeNode parent;
+        public List<TreeNode> child = new LinkedList<>();
+        public TreeNode(int val) {
+            this.val = val;
+        }
+        public TreeNode(int val, TreeNode parent) {
+            this.val = val;
+            this.parent = parent;
+        }
 
-    public int val;
-    public TreeNode left = null;
-    public TreeNode right = null;
-    public TreeNode(int val) {
-        this.val = val;
-    }
+//    public int val;
+//    public TreeNode left = null;
+//    public TreeNode right = null;
+//    public TreeNode(int val) {
+//        this.val = val;
+//    }
 }
