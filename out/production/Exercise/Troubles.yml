@@ -5,7 +5,9 @@ Algorithm:
     shellSort, mergeSort, quickSort, heapSort, threeWayQuickSort
 
 CyC2018:
+  TwoPointer:
+    680, 524
 
 SwordToOffer:
   3, 5, 8, 10, 11, 14, 15, 16, 17, 18, 19, 20, 22, 23, 29, 31, 32, 34, 36, 38,
-  39, 40, 41, 43, 46, 49, 53, 54, 56, 57, 59, 60, 67
+  39, 40, 41, 43, 46, 49, 53, 54, 56, 57, 59, 60, 67, 68

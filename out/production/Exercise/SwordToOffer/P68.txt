@@ -5,7 +5,7 @@ public class P68 {
         LinkedList<TreeNode> l1 = getPath(root, r1);
         LinkedList<TreeNode> l2 = getPath(root, r2);
         TreeNode ret = null;
-        while (l1.getFirst() == l2.getFirst()) {
+        while (!l1.isEmpty() && !l2.isEmpty() && l1.getFirst() == l2.getFirst()) {
             ret = l1.getFirst();
             l1.removeFirst();
             l2.removeFirst();
@@ -29,6 +29,7 @@ public class P68 {
             l.add(root);
             return true;
         }
+        boolean found = false;
         l.add(root);
         Iterator<TreeNode> it = root.child.iterator();
         while (!found && it.hasNext()) {
