@@ -9,7 +9,7 @@ import java.util.Random;
 public class TimeCostForSortTest {
 
     // 待排序数组长度
-    public static final int N = 10000;
+    public static final int N = 1000000;
 
     public static final int numOfSortAl = 7;
 

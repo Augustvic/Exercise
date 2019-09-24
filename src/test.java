@@ -7,32 +7,32 @@ import java.util.concurrent.ConcurrentHashMap;
 public class test {
 
     public static void main(String[] args) {
-        String s = "abpcplea";
-        List<String> l = Arrays.asList("ale","apple","monkey","plea");
-        System.out.println(t.findLongestWord(s, l));
+        int[] nums = {2, 0, 1};
+        t.sortColors(nums);
+        System.out.println();
     }
 
     public static test t = new test();
 
-    public String findLongestWord(String s, List<String> d) {
-        String res = "";
-        for (String tmp : d) {
-            if (tmp.length() < res.length() || res.compareTo(tmp) < 0)
-                continue;
-            if (isValid(s, tmp))
-                res = tmp;
+    public void sortColors(int[] nums) {
+        if (nums == null || nums.length == 0)
+            return;
+        int l = 0;
+        int r = nums.length - 1;
+        int curr = 0;
+        while (curr <= r) {
+            if (nums[curr] == 0)
+                swap(nums, l++, curr++);
+            else if (nums[curr] == 2)
+                swap(nums, curr, r--);
+            else
+                curr++;
         }
-        return res;
     }
 
-    private boolean isValid(String s, String tmp) {
-        int i = 0;
-        int j = 0;
-        while (i < s.length() && j < tmp.length()) {
-            if (s.charAt(i) == tmp.charAt(j))
-                j++;
-            i++;
-        }
-        return j == tmp.length();
+    private void swap(int[] nums, int l, int r) {
+        int t = nums[l];
+        nums[l] = nums[r];
+        nums[r] = t;
     }
 }

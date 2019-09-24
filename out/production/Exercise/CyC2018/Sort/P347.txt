@@ -1,9 +1,11 @@
 public class P347 {
     public List<Integer> topKFrequent(int[] nums, int k) {
-        Map<Integer, Integer> hm = new HashMap<>();
-        for (int m : nums) {
-             int val = hm.containsKey(m) ? hm.get(m) + 1 : 1;
-             hm.put(m, val);
+        if (nums == null || nums.length == 0 || k <= 0)
+            return null;
+        HashMap<Integer, Integer> hm = new HashMap<>();
+        for (int num : nums) {
+            int val = hm.getOrDefault(num, 0) + 1;
+            hm.put(num, val);
         }
         PriorityQueue<Integer> maxHeap = new PriorityQueue<Integer> (new Comparator<Integer>() {
             @Override
@@ -11,12 +13,11 @@ public class P347 {
                 return hm.get(i2) - hm.get(i1);
             }
         });
-        for (int m : hm.keySet())
-            maxHeap.add(m);
-        List<Integer> res = new LinkedList<>();
+        maxHeap.addAll(hm.keySet());
+        List<Integer> ret = new ArrayList<>();
         for (int i = 0; i < k; i++) {
-            res.add(maxHeap.poll());
+            ret.add(maxHeap.poll());
         }
-        return res;
+        return ret;
     }
 }
