@@ -1,9 +1,0 @@
-public class P217 {
-    public boolean containsDuplicate(int[] nums) {
-        Set<Integer> hs = new HashSet<>();
-        for (int k : nums) {
-            hs.add(k);
-        }
-        return hs.size() < nums.length;
-    }
-}

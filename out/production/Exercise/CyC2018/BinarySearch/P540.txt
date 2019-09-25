@@ -1,8 +1,0 @@
-public class P540 {
-    public int singleNonDuplicate(int[] nums) {
-        int res = 0;
-        for (int k : nums)
-            res = res ^ k;
-        return res;
-    }
-}
