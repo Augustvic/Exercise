@@ -7,7 +7,6 @@ import java.util.concurrent.ConcurrentHashMap;
 public class test {
 
     public static void main(String[] args) {
-
         // 栈：先进后出，后进先出(LIFO)
         Stack<Integer> iStack = new Stack<Integer>(); //实例化一个存储Integer类型对象的栈对象
 
