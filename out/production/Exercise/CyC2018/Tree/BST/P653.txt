@@ -1,0 +1,26 @@
+public class P653 {
+    public boolean findTarget(TreeNode root, int k) {
+        List<TreeNode> nums = new LinkedList<>();
+        inOrder(root, nums);
+        int l = 0;
+        int r = nums.size() - 1;
+        while (l < r) {
+            int sum = nums.get(l).val + nums.get(r).val;
+            if (sum == k)
+                return true;
+            else if (sum > k)
+                r--;
+            else
+                l++;
+        }
+        return false;
+    }
+
+    public void inOrder(TreeNode root, List<TreeNode> nums) {
+        if (root == null)
+            return;
+        inOrder(root.left, nums);
+        nums.add(root);
+        inOrder(root.right, nums);
+    }
+}

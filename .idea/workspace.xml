@@ -2,296 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d57f698a-a54a-483c-8d2c-9bb2518ef410" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/CyC2018/Greedy/P435.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/Algorithm/BinaryTree/InOrder.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/Algorithm/BinaryTree/PostOrder.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/Algorithm/BinaryTree/PreOrder" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/Algorithm/Sort/Exercise.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/Algorithm/Sort/HeapSort.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/Algorithm/Sort/MergeSort.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/Algorithm/Sort/QuickSort.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/Algorithm/Sort/ShellSort.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/Algorithm/Sort/SimpleSort.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/Algorithm/Sort/TimeCostForSortTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/ArrayAndMatrix/P240.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/ArrayAndMatrix/P283.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/ArrayAndMatrix/P287.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/ArrayAndMatrix/P378.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/ArrayAndMatrix/P442.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/ArrayAndMatrix/P448.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/ArrayAndMatrix/P485.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/ArrayAndMatrix/P565.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/ArrayAndMatrix/P566.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/ArrayAndMatrix/P645.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/ArrayAndMatrix/P667.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/ArrayAndMatrix/P697.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/ArrayAndMatrix/P766.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/ArrayAndMatrix/P769.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/ArrayAndMatrix/log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/BinarySearch/P153.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/BinarySearch/P154.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/BinarySearch/P278.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/BinarySearch/P34.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/BinarySearch/P540.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/BinarySearch/P69.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/BinarySearch/P744.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/BinarySearch/log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/BitOperation/P136.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/BitOperation/P190.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/BitOperation/P231.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/BitOperation/P260.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/BitOperation/P268.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/BitOperation/P318.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/BitOperation/P338.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/BitOperation/P342.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/BitOperation/P371.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/BitOperation/P461.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/BitOperation/P476.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/BitOperation/P693.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/BitOperation/log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/DivideAndConquer/P241.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/DivideAndConquer/P95.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/DivideAndConquer/log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/DynamicProgramming/01背包" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/DynamicProgramming/P123.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/DynamicProgramming/P139.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/DynamicProgramming/P198.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/DynamicProgramming/P213.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/DynamicProgramming/P279.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/DynamicProgramming/P300.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/DynamicProgramming/P303.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/DynamicProgramming/P309.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/DynamicProgramming/P322.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/DynamicProgramming/P343.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/DynamicProgramming/P376.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/DynamicProgramming/P377.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/DynamicProgramming/P413.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/DynamicProgramming/P416.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/DynamicProgramming/P474.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/DynamicProgramming/P494.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/DynamicProgramming/P518.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/DynamicProgramming/P583.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/DynamicProgramming/P62.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/DynamicProgramming/P64.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/DynamicProgramming/P646.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/DynamicProgramming/P650.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/DynamicProgramming/P70.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/DynamicProgramming/P714.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/DynamicProgramming/P718.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/DynamicProgramming/P72.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/DynamicProgramming/P91.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/DynamicProgramming/log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Graph/P785.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Graph/log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Greedy/P121.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Greedy/P122.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Greedy/P392.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Greedy/P406.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Greedy/P452.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Greedy/P455.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Greedy/P53.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Greedy/P605.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Greedy/P665.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Greedy/P763.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Greedy/log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/HashTable/P1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/HashTable/P128.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/HashTable/P217.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/HashTable/P594.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/HashTable/log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/LinkedList/P160.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/LinkedList/P19.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/LinkedList/P206.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/LinkedList/P21.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/LinkedList/P234.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/LinkedList/P24.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/LinkedList/P328.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/LinkedList/P445.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/LinkedList/P725.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/LinkedList/P83.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/LinkedList/log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Math/GCDAndLCM.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Math/P168.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Math/P169.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Math/P172.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Math/P204.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Math/P238.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Math/P326.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Math/P367.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Math/P405.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Math/P415.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Math/P462.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Math/P504.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Math/P628.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Math/P67.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Math/log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Math/位操作和减法求最大公约数.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Search/P127.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Search/P130.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Search/P131.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Search/P17.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Search/P200.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Search/P216.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Search/P257.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Search/P279.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Search/P37.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Search/P39.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Search/P40.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Search/P417.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Search/P46.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Search/P47.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Search/P51.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Search/P547.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Search/P695.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Search/P77.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Search/P78.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Search/P79.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Search/P90.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Search/P93.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Search/ShortestPathLength.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Search/log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Sort/HeapSort.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Sort/P215.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Sort/P347.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Sort/P451.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Sort/P75.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Sort/log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/StackAndQueue/P155.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/StackAndQueue/P20.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/StackAndQueue/P225.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/StackAndQueue/P232.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/StackAndQueue/P503.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/StackAndQueue/P739.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/StackAndQueue/log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/String/P205.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/String/P242.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/String/P409.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/String/P647.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/String/P696.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/String/P9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/String/log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Tree/BST/P108.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Tree/BST/P109.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Tree/BST/P230.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Tree/BST/P235.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Tree/BST/P236.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Tree/BST/P501.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Tree/BST/P530.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Tree/BST/P538.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Tree/BST/P653.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Tree/BST/P669.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Tree/BST/log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Tree/LevelOrderTraversal/P513.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Tree/LevelOrderTraversal/P637.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Tree/LevelOrderTraversal/log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Tree/Recursive/P101.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Tree/Recursive/P104.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Tree/Recursive/P110.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Tree/Recursive/P111.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Tree/Recursive/P112.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Tree/Recursive/P226.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Tree/Recursive/P337.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Tree/Recursive/P404.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Tree/Recursive/P437.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Tree/Recursive/P543.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Tree/Recursive/P572.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Tree/Recursive/P617.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Tree/Recursive/P671.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Tree/Recursive/P687.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Tree/Recursive/log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Tree/Traversal/P144.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Tree/Traversal/P145.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Tree/Traversal/P94.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Tree/Traversal/log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Tree/Trie/P208.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Tree/Trie/P677.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/Tree/Trie/log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/TwoPointer/P141.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/TwoPointer/P345.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/TwoPointer/P524.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/TwoPointer/P633.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/TwoPointer/P680.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/CyC2018/TwoPointer/P88.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/DataStructure/BinaryTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/DataStructure/BinaryTreeNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/DataStructure/ComplexListNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/DataStructure/InternalData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/DataStructure/ListNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/DataStructure/TreeNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P11.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P12.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P13.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P14.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P15.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P16.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P17.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P18.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P19.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P20.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P21.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P22.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P23.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P24.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P25.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P26.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P27.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P28.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P29.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P30.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P31.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P32.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P33.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P34.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P35.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P36.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P37.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P38.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P39.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P40.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P41.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P42.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P43.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P44.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P45.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P46.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P47.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P48.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P49.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P50.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P51.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P52.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P53.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P54.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P55.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P56.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P57.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P58.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P59A.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P59B.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P60.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P61.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P62.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P63.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P64.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P65.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P66.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P67.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P68.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P9A.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/P9B.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/SwordToOffer/test.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/Tools/ArrayUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/Tools/StringUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/Troubles.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercise/test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Troubles.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Troubles.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Algorithm/BinaryTree/PreOrder.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithm/BinaryTree/InOrder.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/BinaryTree/InOrder.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithm/BinaryTree/PostOrder.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/BinaryTree/PostOrder.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithm/BinaryTree/PreOrder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataStructure/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataStructure/BinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -301,16 +18,20 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Algorithm/Sort/TimeCostForSortTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-805">
-              <caret line="26" column="24" lean-forward="true" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+            <state relative-caret-position="99">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+              <folding>
+                <element signature="e#246#255#0" expanded="true" />
+                <element signature="e#954#955#0" expanded="true" />
+                <element signature="e#1002#1003#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -325,6 +46,11 @@
       <list>
         <option value="$PROJECT_DIR$/src/CyC2018/Greedy/P435.txt" />
         <option value="$PROJECT_DIR$/src/Troubles.yml" />
+        <option value="$PROJECT_DIR$/src/DataStructure/BinaryTree.java" />
+        <option value="$PROJECT_DIR$/src/Algorithm/BinaryTree/InOrder.txt" />
+        <option value="$PROJECT_DIR$/src/Algorithm/BinaryTree/PreOrder.txt" />
+        <option value="$PROJECT_DIR$/src/Algorithm/BinaryTree/PostOrder.txt" />
+        <option value="$PROJECT_DIR$/src/test.java" />
       </list>
     </option>
   </component>
@@ -341,6 +67,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -364,27 +92,18 @@
               <item name="Exercise" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="Sort" type="462c0819:PsiDirectoryNode" />
+              <item name="BinaryTree" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Exercise" type="b2602c69:ProjectViewProjectNode" />
               <item name="Exercise" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="CyC2018" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Exercise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Exercise" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="CyC2018" type="462c0819:PsiDirectoryNode" />
-              <item name="Greedy" type="462c0819:PsiDirectoryNode" />
+              <item name="DataStructure" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -411,6 +130,20 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <module name="Exercise" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.test" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -422,43 +155,57 @@
       <option name="presentableId" value="Default" />
       <updated>1569409795164</updated>
       <workItem from="1569409801659" duration="5261000" />
+      <workItem from="1569458385325" duration="4749000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5261000" />
+    <option name="totallyTimeSpent" value="10010000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.51932776" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2918351" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.32935154" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32935154" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3993174" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test.java</url>
+          <line>11</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/CyC2018/Greedy/P455.txt">
@@ -494,8 +241,69 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Algorithm/Sort/TimeCostForSortTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-805">
-          <caret line="26" column="24" lean-forward="true" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+        <state relative-caret-position="23">
+          <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algorithm/BinaryTree/InOrderx.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algorithm/BinaryTree/PreOrder">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algorithm/BinaryTree/PreOrder.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algorithm/BinaryTree/InOrder.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algorithm/BinaryTree/PostOrderx.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algorithm/BinaryTree/PostOrder.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataStructure/BinaryTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#246#255#0" expanded="true" />
+            <element signature="e#954#955#0" expanded="true" />
+            <element signature="e#1002#1003#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

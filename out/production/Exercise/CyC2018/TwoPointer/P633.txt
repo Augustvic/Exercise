@@ -1,0 +1,18 @@
+public class P633 {
+    public boolean judgeSquareSum(int c) {
+        if (c < 0)
+            return false;
+        int l = 0;
+        int r = (int)Math.sqrt(c);
+        while (l <= r) {
+            int tmp = l * l + r * r;
+            if (tmp == c)
+                return true;
+            else if (tmp > c)
+                r--;
+            else
+                l++;
+        }
+        return false;
+    }
+}

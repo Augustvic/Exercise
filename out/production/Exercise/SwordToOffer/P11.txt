@@ -1,0 +1,25 @@
+public class P11 {
+    public int min(int[] nums) {
+        if (ArrayUtil.isEmpty(nums))
+            return Integer.MIN_VALUE;
+        int l = 0;
+        int r = nums.length - 1;
+        while (l < r) {
+            int mid = l + (r - l) / 2;
+            if (nums[l] == nums[mid])
+                return traverse(nums, l, r);
+            else if (nums[l] > nums[mid])
+                r = mid;
+            else
+                l = mid;
+        }
+        return nums[l];
+    }
+
+    public int traverse(int[] nums, int l, int r) {
+        int min = nums[l];
+        for (int i = l + 1; i <= r; i++)
+            min = Math.min(min, nums[i]);
+        return min;
+    }
+}

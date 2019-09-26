@@ -1,0 +1,21 @@
+public class P20 {
+    public boolean isValid(String s) {
+        Stack<Character> st = new Stack<>();
+        for (char c : s.toCharArray()) {
+            if (c == '(' || c == '[' || c == '{')
+                st.push(c);
+            else {
+                if (st.isEmpty())
+                    return false;
+                char bc = st.pop();
+                boolean b1 = (bc == '(' && c == ')');
+                boolean b2 = (bc == '[' && c == ']');
+                boolean b3 = (bc == '{' && c == '}');
+                if (!(b1 || b2 || b3)) {
+                    return false;
+                }
+            }
+        }
+        return st.isEmpty();
+    }
+}

@@ -1,0 +1,28 @@
+public class P5 {
+    public String replace(String s) {
+        if (StringUtil.isEmpty(s))
+            return s;
+        int numOfBlank = 0;
+        for (char c : s.toCharArray()) {
+            if (c == ' ')
+                numOfBlank++;
+        }
+        StringBuilder sb = new StringBuilder();
+        sb.setLength(s.length() + 2 * numOfBlank);
+        int p = s.length() - 1;
+        int q = sb.length() - 1;
+        while (p >= 0 && q >= 0) {
+            if (s.charAt(p) == ' ') {
+                sb.replace(q - 2, q + 1, "%20");
+                p = p - 1;
+                q = q - 3;
+            }
+            else {
+                sb.setCharAt(q, s.charAt(p));
+                p = p - 1;
+                q = q - 1;
+            }
+        }
+        return sb.toString();
+    }
+}

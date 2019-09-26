@@ -1,0 +1,20 @@
+public class PreOrder {
+    public void preOrder(BinaryTreeNode root) {
+        if (root == null)
+            return;
+        Stack<BinaryTreeNode> st = new Stack<>();
+        while (root != null || !st.isEmpty()) {
+            while (root != null) {
+                visit(root);
+                st.push(root);
+                root = root.left;
+            }
+            root = st.pop();
+            root = root.right;
+        }
+    }
+
+    private void visit(BinaryTreeNode root) {
+        System.out.print(root.val + " ");
+    }
+}

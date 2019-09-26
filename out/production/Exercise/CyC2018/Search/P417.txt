@@ -1,0 +1,42 @@
+public class P417 {
+    private int m = 0;
+    private int n = 0;
+    private int[][] matrix = null;
+    private int[][] direction = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+    public List<int[]> pacificAtlantic(int[][] matrix) {
+        List<int[]> res = new ArrayList<>();
+        if (matrix == null || matrix.length == 0 || matrix[0].length == 0)
+            return res;
+        m = matrix.length;
+        n = matrix[0].length;
+        this.matrix = matrix;
+        boolean[][] canReachP = new boolean[m][n];
+        boolean[][] canReachA = new boolean[m][n];
+        for (int i = 0; i < m; i++) {
+            dfs(i, 0, canReachP);
+            dfs(i, n - 1, canReachA);
+        }
+        for (int j = 0; j < n; j++) {
+            dfs(0, j, canReachP);
+            dfs(m - 1, j, canReachA);
+        }
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (canReachP[i][j] && canReachA[i][j])
+                    res.add(new int[]{i, j});
+            }
+        }
+        return res;
+    }
+    public void dfs(int r, int c, boolean[][] canReach) {
+        if (canReach[r][c])
+            return;
+        canReach[r][c] = true;
+        for (int[] d : direction) {
+            int nextR = r + d[0];
+            int nextC = c + d[1];
+            if (nextR >= 0 && nextR < m && nextC >= 0 && nextC < n && matrix[nextR][nextC] >= matrix[r][c])
+                dfs(nextR, nextC, canReach);
+        }
+    }
+}

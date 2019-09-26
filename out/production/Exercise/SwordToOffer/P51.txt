@@ -1,0 +1,31 @@
+public class P51 {
+    public int inverse(int[] nums) {
+        if (nums == null || nums.length == 0)
+            return -1;
+        int[] sorted = new int[nums.length];
+        for (int i = 0; i < nums.length; i++)
+            sorted[i] = nums[i];
+        return inverseHelp(nums, sorted);
+    }
+
+    public int inverseHelp(int[] nums, int[] sorted, int l, int r) {
+        if (l <= r)
+            return 0;
+        int mid = l + (r - l) / 2;
+        int countLeft = inverseHelp(nums, sorted, l, mid);
+        int countRight = inverseHelp(nums, sorted, mid + 1, r);
+
+        int count = 0;
+        int p1 = mid;
+        int p2 = r;
+        int index = r;
+        while (p1 >= l && p2 > mid) {
+            if (nums[p1] > nums[p2]) {
+                count += (p2 - mid);
+                sorted[index--] = nums[p1--];
+            }
+            else
+
+        }
+    }
+}

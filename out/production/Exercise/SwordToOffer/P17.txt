@@ -1,0 +1,61 @@
+public class P17 {
+    public void print(int n) {
+        if (n <= 0)
+            return;
+        StringBuilder sb = new StringBuilder();
+        sb.setLength(n);
+        printHelp(n, 0, sb);
+    }
+
+    private void printHelp(int n, int pos, StringBuilder sb) {
+        if (pos == n) {
+            printString(sb);
+            return;
+        }
+        for (int i = 0; i <= 9; i++) {
+            sb.setCharAt(pos, (char)(i + '0'));
+            printHelp(n, pos + 1, sb);
+        }
+    }
+
+    private void printString(StringBuilder sb) {
+        int start = 0;
+        while (start < sb.length() && sb.charAt(start) == '0')
+            start++;
+        String ret = sb.toString().substring(start);
+        System.out.println(ret);
+    }
+
+    public String add(String s1, String s2) {
+        StringBuilder sb1 = new StringBuilder(s1);
+        StringBuilder sb2 = new StringBuilder(s2);
+        reverse(sb1);
+        reverse(sb2);
+        StringBuilder maxString = sb1.length() > sb2.length() ? sb1 : sb2;
+        StringBuilder minString = sb1.length() > sb2.length() ? sb2 : sb1;
+        int carry = 0;
+        for (int i = 0; i < maxString.length(); i++) {
+            int maxValue = maxString.charAt(i) - '0';
+            int minValue = (i >= minString.length()) ? 0 : (minString.charAt(i) - '0');
+            int ret = carry + maxValue + minValue;
+            maxString.setCharAt(i, (char)(ret % 10 + '0'));
+            carry = ret / 10;
+        }
+        if(carry != 0)
+            maxString.append((char)(carry + '0'));
+        reverse(maxString);
+        return maxString.toString();
+    }
+
+    private void reverse(StringBuilder sb) {
+        int l = 0;
+        int r = sb.length() - 1;
+        while (l < r) {
+            char c = sb.charAt(l);
+            sb.setCharAt(l, sb.charAt(r));
+            sb.setCharAt(r, c);
+            l++;
+            r--;
+        }
+    }
+}

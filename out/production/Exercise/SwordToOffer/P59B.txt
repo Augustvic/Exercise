@@ -1,0 +1,36 @@
+public class P59B {
+
+    private Deque<InternalData> maxDq;
+    private Deque<InternalData> dataDq;
+    private int currIndex;
+
+    public P59B() {
+        maxDq = new ArrayDeque<>();
+        dataDq = new ArrayDeque<>();
+        currIndex = 0;
+    }
+
+    public void pushBack(int k) {
+        InternalData d = new InternalData(k, currIndex++);
+        dataDq.addLast(d);
+        while (!maxDq.isEmpty() && k > maxDq.getLast().val) {
+            maxDq.removeLast();
+        }
+        maxDq.addLast(d);
+    }
+
+    public int max() {
+        if (dataDq.isEmpty())
+            return -1;
+        return maxDq.getFirst().val;
+    }
+
+    public int popFront() {
+        if (dataDq.isEmpty())
+            return -1;
+        if (dataDq.getFirst().index == maxDq.getFirst().index) {
+            maxDq.removeFirst();
+        }
+        return dataDq.removeFirst().val;
+    }
+}
