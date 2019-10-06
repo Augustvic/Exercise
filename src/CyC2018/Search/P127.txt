@@ -4,6 +4,7 @@ public class P127 {
         int n = wordList.size();
         int start = n - 1;
         int end = 0;
+        // 找到 endWord 在 wordList 中的位置
         while (end < n && !wordList.get(end).equals(endWord))
             end++;
         if (end == n)
@@ -16,6 +17,7 @@ public class P127 {
         List<Integer>[] graphic = new List[wordList.size()];
         for (int i = 0; i < wordList.size(); i++) {
             graphic[i] = new LinkedList<>();
+            // 找到所有和当前单词只相差一个字符的单词
             for (int j = 0; j < wordList.size(); j++) {
                 if (j != i && isConnect(wordList.get(i), wordList.get(j)))
                     graphic[i].add(j);
@@ -24,6 +26,7 @@ public class P127 {
         return graphic;
     }
 
+    // 判断两个单词是否只相差一个字符
     public boolean isConnect(String s1, String s2) {
         if (s1.length() != s2.length())
             return false;
@@ -35,6 +38,7 @@ public class P127 {
         return diff == 1;
     }
 
+    // 广度优先遍历图，得到想要的单词路径则返回，即为最短路径
     public int getShortestPath(List<Integer>[] graphic, List<String> wordList, int start, int end) {
         Queue<Integer> queue = new LinkedList<>();
         boolean[] marked = new boolean[wordList.size()];
