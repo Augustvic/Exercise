@@ -8,33 +8,27 @@ import java.util.concurrent.ConcurrentHashMap;
 public class test {
 
     public static void main(String[] args) {
-        int[][] M = {{1,1,0},
-                {1,1,0},
-                {0,0,1}};
-        System.out.println(t.findCircleNum(M));
+        System.out.println(t.fibr(6));
     }
 
     public static test t = new test();
 
-    public int findCircleNum(int[][] M) {
-        if (M == null || M.length == 0 || M[0].length == 0)
-            return 0;
-        int cnt = 0;
-        boolean[] visited = new boolean[M.length];
-        for (int i = 0; i < M.length; i++) {
-            if (!visited[i]) {
-                cnt++;
-                dfs(M, i, visited);
-            }
+    public int fibr(int n) {
+        if (n == 1) {
+            return 1;
         }
-        return cnt;
-    }
-
-    private void dfs(int[][] M, int i, boolean[] visited) {
-        visited[i] = true;
-        for (int j = 0; j < M.length; j++) {
-            if (M[i][j] == '1' && !visited[j])
-                dfs(M, j, visited);
+        if (n == 2) {
+            return 1;
         }
+        Stack<Integer> S = new Stack<>();
+        S.push(1);
+        S.push(1);
+        while (n-- > 2) {
+            int a = S.pop();
+            int b = a + S.peek();
+            S.push(a);
+            S.push(b);
+        }
+        return S.peek();
     }
 }
