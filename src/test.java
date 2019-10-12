@@ -8,27 +8,53 @@ import java.util.concurrent.ConcurrentHashMap;
 public class test {
 
     public static void main(String[] args) {
-        System.out.println(t.fibr(6));
     }
 
     public static test t = new test();
 
-    public int fibr(int n) {
-        if (n == 1) {
-            return 1;
+    private boolean[][] rowUsed = new boolean[9][10];
+    private boolean[][] columnUsed = new boolean[9][10];
+    private boolean[][] cubeUsed = new boolean[9][10];
+
+    public void solveSudoku(char[][] board) {
+        for (int i = 0; i < 9; i++) {
+            for (int j = 0; j < 9; j++) {
+                if (board[i][j] != '.') {
+                    int num = board[i][j] - '0';
+                    rowUsed[i][num] = true;
+                    columnUsed[j][num] = true;
+                    cubeUsed[cubeNum(i, j)][num] = true;
+                }
+            }
         }
-        if (n == 2) {
-            return 1;
+        solveSudokuHelp(board, 0, 0);
+    }
+
+    private boolean solveSudokuHelp(char[][] board, int i, int j) {
+        while (i < 9 && board[i][j] != '.') {
+            i = (j == 8) ? (i + 1) : i;
+            j = (j == 8) ? 0 : j + 1;
         }
-        Stack<Integer> S = new Stack<>();
-        S.push(1);
-        S.push(1);
-        while (n-- > 2) {
-            int a = S.pop();
-            int b = a + S.peek();
-            S.push(a);
-            S.push(b);
+        for (int k = 1; k <= 9; k++) {
+            if (!rowUsed[i][k] && !columnUsed[j][k] && !cubeUsed[cubeNum(i, j)][k]) {
+                board[i][j] = (char)(k + '0');
+                rowUsed[i][k] = true;
+                columnUsed[j][k] = true;
+                cubeUsed[cubeNum(i, j)][k] = true;
+                if (solveSudokuHelp(board, i, j))
+                    return true;
+                board[i][j] = '.';
+                rowUsed[i][k] = false;
+                columnUsed[j][k] = false;
+                cubeUsed[cubeNum(i, j)][k] = false;
+            }
         }
-        return S.peek();
+        return false;
+    }
+
+    private int cubeNum(int i, int j) {
+        i = i / 3;
+        j = j / 3;
+        return i * 3 + j;
     }
 }
