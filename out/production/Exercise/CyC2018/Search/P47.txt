@@ -14,6 +14,7 @@ public class P47 {
             return;
         }
         for (int i = 0; i < nums.length; i++) {
+            // 核心代码
             if (i != 0 && nums[i - 1] == nums[i] && !visited[i - 1])
                 continue;
             if (visited[i])
