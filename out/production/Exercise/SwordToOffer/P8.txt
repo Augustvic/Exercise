@@ -15,7 +15,7 @@ public class P8 {
         // 父节点不为空，那么找到最近的未遍历的根节点，即为下一个节点
         while (root.parent.left != root) {
             root = root.parent;
-            if (root == null)
+            if (root == null || root.parent == null)
                 return null;
         }
         return root.parent;
