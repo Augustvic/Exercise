@@ -32,4 +32,22 @@ public class P18 {
          }
          return head;
      }
+
+    public ListNode deleteDuplication(ListNode pHead)
+    {
+        ListNode curr = new ListNode(0);
+        ListNode preHead = curr;
+        curr.next = pHead;
+        while (curr != null && curr.next != null) {
+            ListNode p = curr.next;
+            while (p.next != null && p.next.val == p.val) {
+                p = p.next;
+            }
+            if (p != curr.next)
+                curr.next = p.next;
+            else
+                curr = curr.next;
+        }
+        return preHead.next;
+    }
 }
