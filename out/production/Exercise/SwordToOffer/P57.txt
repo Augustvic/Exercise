@@ -20,33 +20,33 @@ public class P57 {
         return false;
     }
 
-    public void find2(int sum) {
-        if (sum < 0)
-            return;
+    public ArrayList<ArrayList<Integer>> FindContinuousSequence(int sum) {
+        ArrayList<ArrayList<Integer>> ret = new ArrayList<>();
         int l = 1;
         int r = 2;
         int currSum = 3;
         while (l <= r && r < sum) {
             if (currSum == sum) {
-                print(l, r);
+                add(ret, l, r);
+                currSum -= l;
                 l++;
-                sum -= l;
             }
             else if (currSum > sum) {
+                currSum -= l;
                 l++;
-                sum -= l;
             }
             else {
                 r++;
-                sum += r;
+                currSum += r;
             }
         }
+        return ret;
     }
 
-    private void print(int l, int r) {
-        for (int i = l; i <= r; i++) {
-            System.out.print(i + " ");
-        }
-        System.out.println();
+    private void add(ArrayList<ArrayList<Integer>> ret, int l, int r) {
+        ArrayList<Integer> temp = new ArrayList<>();
+        for (int i = l; i <= r; i++)
+            temp.add(i);
+        ret.add(temp);
     }
 }

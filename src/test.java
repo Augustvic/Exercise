@@ -8,27 +8,29 @@ import java.util.concurrent.ConcurrentHashMap;
 public class test {
 
     public static void main(String[] args) {
-        System.out.println(t.translate(12058));
+        t.probablity(2);
     }
 
     public static test t = new test();
 
-    private int pos = 0;
+    private int dim = 6;
 
-    public int translate(int num) {
-        if (num < 0)
-            return 0;
-        if (num < 10)
-            return 1;
-        String s = String.valueOf(num);
-        int[] dp = new int[s.length()];
-        dp[0] = 1;
-        int two = (s.charAt(0) - '0') * 10 + (s.charAt(1) - '0');
-        dp[1] = (two >= 10 && two <= 25) ? 2 : 1;
-        for (int i = 2; i < s.length(); i++) {
-            int t = (s.charAt(i - 1) - '0') * 10 + (s.charAt(i) - '0');
-            dp[i] = (t >= 10 && t <= 25) ? dp[i - 2] + dp[i - 1] : dp[i - 1];
+    private void probablity(int n) {
+        int[][] ret = new int[2][dim * n + 1];
+        int index = 0;
+        for (int i = 1; i <= dim; i++)
+            ret[index][i] = 1;
+        for (int i = 2; i <= n; i++) {
+            index = 1 - index;
+            for (int j = i; j <= i * dim; j++) {
+                ret[index][j] = 0;
+                for (int t = 1; t <= dim && j- t >= i - 1; t++)
+                    ret[index][j] += ret[1 - index][j - t];
+            }
         }
-        return dp[s.length() - 1];
+        double sum = Math.pow(dim, n);
+        for (int i = n; i <= n * dim; i++) {
+            System.out.println(i + ":" + String.format("%.5f", ret[index][i] / sum));
+        }
     }
 }
