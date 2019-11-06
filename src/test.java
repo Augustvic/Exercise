@@ -1,5 +1,6 @@
 import DataStructure.*;
 import Tools.*;
+import com.sun.javafx.css.parser.LadderConverter;
 import javafx.util.Pair;
 
 import java.util.*;
@@ -8,29 +9,70 @@ import java.util.concurrent.ConcurrentHashMap;
 public class test {
 
     public static void main(String[] args) {
-        t.probablity(2);
+        String beginWord = "hit";
+        String endWord = "cog";
+        List<String> wordList = new ArrayList<>();
+        wordList.add("hot");
+        wordList.add("dot");
+        wordList.add("dog");
+        wordList.add("lot");
+        wordList.add("log");
+        wordList.add("cog");
+        System.out.println(t.ladderLength(beginWord, endWord, wordList));
     }
 
     public static test t = new test();
 
-    private int dim = 6;
+    public int ladderLength(String beginWord, String endWord, List<String> wordList) {
+        wordList.add(beginWord);
+        int begin = wordList.size() - 1;
+        int end = wordList.indexOf(endWord);
+        List<Integer>[] graph = buildGraph(wordList);
+        return getShortestPath(wordList, graph, begin, end);
+    }
 
-    private void probablity(int n) {
-        int[][] ret = new int[2][dim * n + 1];
-        int index = 0;
-        for (int i = 1; i <= dim; i++)
-            ret[index][i] = 1;
-        for (int i = 2; i <= n; i++) {
-            index = 1 - index;
-            for (int j = i; j <= i * dim; j++) {
-                ret[index][j] = 0;
-                for (int t = 1; t <= dim && j- t >= i - 1; t++)
-                    ret[index][j] += ret[1 - index][j - t];
+    private List<Integer>[] buildGraph(List<String> wordList) {
+        List<Integer>[] graph = new List[wordList.size()];
+        for (int i = 0; i < wordList.size(); i++) {
+            graph[i] = new LinkedList<>();
+            for (int j = 0; j < wordList.size(); j++) {
+                if (j != i && isConnect(wordList.get(i), wordList.get(j)))
+                    graph[i].add(j);
             }
         }
-        double sum = Math.pow(dim, n);
-        for (int i = n; i <= n * dim; i++) {
-            System.out.println(i + ":" + String.format("%.5f", ret[index][i] / sum));
+        return graph;
+    }
+
+    private boolean isConnect(String s1, String s2) {
+        int diff = 0;
+        for (int i = 0; i < s1.length() && diff <= 1; i++) {
+            if (s1.charAt(i) != s2.charAt(i))
+                diff++;
         }
+        return diff == 1;
+    }
+
+    private int getShortestPath(List<String> wordList, List<Integer>[] graph, int begin, int end) {
+        Deque<Integer> aq = new ArrayDeque<>();
+        boolean[] visited = new boolean[wordList.size()];
+        aq.offer(begin);
+        visited[begin] = true;
+        int path = 0;
+        while (!aq.isEmpty()) {
+            int len = aq.size();
+            path++;
+            while (len-- > 0) {
+                int curr = aq.poll();
+                for (int k : graph[curr]) {
+                    if (curr == end)
+                        return path + 1;
+                    if (visited[k])
+                        continue;
+                    visited[k] = true;
+                    aq.offer(k);
+                }
+            }
+        }
+        return 0;
     }
 }

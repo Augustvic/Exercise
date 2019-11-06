@@ -52,7 +52,7 @@ public class P127 {
                 int curr = queue.poll();
                 for (int next : graphic[curr]) {
                     if (next == end)
-                        return path + 1;
+                        return path;
                     if (marked[next])
                         continue;
                     marked[next] = true;
