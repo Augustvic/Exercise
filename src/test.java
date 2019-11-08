@@ -9,70 +9,35 @@ import java.util.concurrent.ConcurrentHashMap;
 public class test {
 
     public static void main(String[] args) {
-        String beginWord = "hit";
-        String endWord = "cog";
-        List<String> wordList = new ArrayList<>();
-        wordList.add("hot");
-        wordList.add("dot");
-        wordList.add("dog");
-        wordList.add("lot");
-        wordList.add("log");
-        wordList.add("cog");
-        System.out.println(t.ladderLength(beginWord, endWord, wordList));
+        String s = "2552551113";
+        List<String> l = t.restoreIpAddresses(s);
+        System.out.println();
     }
 
     public static test t = new test();
 
-    public int ladderLength(String beginWord, String endWord, List<String> wordList) {
-        wordList.add(beginWord);
-        int begin = wordList.size() - 1;
-        int end = wordList.indexOf(endWord);
-        List<Integer>[] graph = buildGraph(wordList);
-        return getShortestPath(wordList, graph, begin, end);
+    public List<String> restoreIpAddresses(String s) {
+        List<String> ret = new ArrayList<>();
+        restoreHelp(s, new StringBuilder(), ret, 0);
+        return ret;
     }
 
-    private List<Integer>[] buildGraph(List<String> wordList) {
-        List<Integer>[] graph = new List[wordList.size()];
-        for (int i = 0; i < wordList.size(); i++) {
-            graph[i] = new LinkedList<>();
-            for (int j = 0; j < wordList.size(); j++) {
-                if (j != i && isConnect(wordList.get(i), wordList.get(j)))
-                    graph[i].add(j);
+    private void restoreHelp(String s, StringBuilder sb, List<String> ret, int cnt) {
+        if (s.length() == 0 || cnt == 4) {
+            if (s.length() == 0 &&cnt == 4) {
+                ret.add(sb.toString().substring(0, sb.length() - 1));
+            }
+            return;
+        }
+        for (int i = 0; i < s.length() && i < 3; i++) {
+            String st = s.substring(0, i + 1);
+            int it = Integer.valueOf(st);
+            if (it >= 0 && it <= 255) {
+                int len = st.length() + 1;
+                sb.append(st + '.');
+                restoreHelp(s.substring(i + 1), sb, ret, cnt + 1);
+                sb.delete(sb.length() - len, sb.length());
             }
         }
-        return graph;
-    }
-
-    private boolean isConnect(String s1, String s2) {
-        int diff = 0;
-        for (int i = 0; i < s1.length() && diff <= 1; i++) {
-            if (s1.charAt(i) != s2.charAt(i))
-                diff++;
-        }
-        return diff == 1;
-    }
-
-    private int getShortestPath(List<String> wordList, List<Integer>[] graph, int begin, int end) {
-        Deque<Integer> aq = new ArrayDeque<>();
-        boolean[] visited = new boolean[wordList.size()];
-        aq.offer(begin);
-        visited[begin] = true;
-        int path = 0;
-        while (!aq.isEmpty()) {
-            int len = aq.size();
-            path++;
-            while (len-- > 0) {
-                int curr = aq.poll();
-                for (int k : graph[curr]) {
-                    if (curr == end)
-                        return path + 1;
-                    if (visited[k])
-                        continue;
-                    visited[k] = true;
-                    aq.offer(k);
-                }
-            }
-        }
-        return 0;
     }
 }
