@@ -11,7 +11,7 @@ CyC2018:
   BinarySearch: 69, 540, 34
   DivideAndConquer: 241, 95
   Search: minPathLength, 279, 127, 547, 417, 93, 47, 40, 131, 37, 51
-  DynamicProgramming: 198, 213, 303, 413, 91, 300, 376, 718, 416, 474, 322, 518, 139, 583, 72, 650, 309, 123
+  DynamicProgramming: 198, 213, 303, 413, 300, 376, 718, 416, 474, 322, 518, 139, 583, 72, 650, 309, 123
 
 SwordToOffer:
   8, 16, 17, 19, 20, 34, 36, 38, 41, 43, 49, 54, 57, 60, 68
@@ -23,4 +23,4 @@ Passed:
   CyC2018:
     Sort: 347
     Search: 79, 257, 46
-    DynamicProgramming: 343, 279
+    DynamicProgramming: 343, 279, 91
