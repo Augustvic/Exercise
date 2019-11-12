@@ -9,35 +9,18 @@ import java.util.concurrent.ConcurrentHashMap;
 public class test {
 
     public static void main(String[] args) {
-        String s = "2552551113";
-        List<String> l = t.restoreIpAddresses(s);
-        System.out.println();
+        System.out.println(t.minDistance("sea","eat"));
     }
 
     public static test t = new test();
 
-    public List<String> restoreIpAddresses(String s) {
-        List<String> ret = new ArrayList<>();
-        restoreHelp(s, new StringBuilder(), ret, 0);
-        return ret;
-    }
-
-    private void restoreHelp(String s, StringBuilder sb, List<String> ret, int cnt) {
-        if (s.length() == 0 || cnt == 4) {
-            if (s.length() == 0 &&cnt == 4) {
-                ret.add(sb.toString().substring(0, sb.length() - 1));
-            }
-            return;
-        }
-        for (int i = 0; i < s.length() && i < 3; i++) {
-            String st = s.substring(0, i + 1);
-            int it = Integer.valueOf(st);
-            if (it >= 0 && it <= 255) {
-                int len = st.length() + 1;
-                sb.append(st + '.');
-                restoreHelp(s.substring(i + 1), sb, ret, cnt + 1);
-                sb.delete(sb.length() - len, sb.length());
+    public int minDistance(String word1, String word2) {
+        int[][] dp = new int[word1.length() + 1][word2.length() + 1];
+        for (int i = 1; i <= word1.length(); i++) {
+            for (int j = 1; j <= word2.length(); j++) {
+                dp[i][j] = (word1.charAt(i - 1) == word2.charAt(j - 1)) ? (dp[i - 1][j - 1] + 1) : Math.max(dp[i - 1][j], dp[i][j - 1]);
             }
         }
+        return word1.length() + word2.length() - 2 * dp[word1.length()][word2.length()];
     }
 }
