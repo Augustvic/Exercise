@@ -9,18 +9,49 @@ import java.util.concurrent.ConcurrentHashMap;
 public class test {
 
     public static void main(String[] args) {
-        System.out.println(t.minDistance("sea","eat"));
+        ListNode headA = new ListNode(1);
+        ListNode headB = new ListNode(2);
+        ListNode intersection = new ListNode(8);
+        headA.next = new ListNode(4);
+        headA.next.next = intersection;
+        headB.next = intersection;
+        ListNode ret = t.getIntersectionNode(headA, headB);
+        System.out.println(ret.val);
     }
 
     public static test t = new test();
 
-    public int minDistance(String word1, String word2) {
-        int[][] dp = new int[word1.length() + 1][word2.length() + 1];
-        for (int i = 1; i <= word1.length(); i++) {
-            for (int j = 1; j <= word2.length(); j++) {
-                dp[i][j] = (word1.charAt(i - 1) == word2.charAt(j - 1)) ? (dp[i - 1][j - 1] + 1) : Math.max(dp[i - 1][j], dp[i][j - 1]);
+    public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
+        int lenA = getLength(headA);
+        int lenB = getLength(headB);
+        if (lenA > lenB) {
+            while (lenA > lenB) {
+                headA = headA.next;
+                lenA--;
             }
         }
-        return word1.length() + word2.length() - 2 * dp[word1.length()][word2.length()];
+        else if (lenA < lenB) {
+            while (lenA < lenB) {
+                headB = headB.next;
+                lenB--;
+            }
+        }
+        while (headA != null && headB != null) {
+            if (headA == headB) {
+                return headA;
+            }
+            headA = headA.next;
+            headB = headB.next;
+        }
+        return null;
+    }
+
+    private int getLength(ListNode head) {
+        int cnt = 0;
+        while (head != null) {
+            cnt++;
+            head = head.next;
+        }
+        return cnt;
     }
 }
