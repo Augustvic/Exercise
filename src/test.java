@@ -5,53 +5,37 @@ import javafx.util.Pair;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class test {
 
     public static void main(String[] args) {
-        ListNode headA = new ListNode(1);
-        ListNode headB = new ListNode(2);
-        ListNode intersection = new ListNode(8);
-        headA.next = new ListNode(4);
-        headA.next.next = intersection;
-        headB.next = intersection;
-        ListNode ret = t.getIntersectionNode(headA, headB);
-        System.out.println(ret.val);
-    }
-
-    public static test t = new test();
-
-    public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
-        int lenA = getLength(headA);
-        int lenB = getLength(headB);
-        if (lenA > lenB) {
-            while (lenA > lenB) {
-                headA = headA.next;
-                lenA--;
-            }
+        ExecutorService service = Executors.newFixedThreadPool(3);
+        CountDownLatch latch = new CountDownLatch(3);
+        for (int i = 0; i < 3; i++) {
+            Runnable runnable = new Runnable() {
+                @Override
+                public void run() {
+                    try {
+                        System.out.println("子线程 " + Thread.currentThread().getName() + " 开始执行");
+                        Thread.sleep((long) (Math.random() * 10000));
+                        System.out.println("子线程 " + Thread.currentThread().getName() + " 执行完毕");
+                        latch.countDown();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                }
+            };
+            service.execute(runnable);
         }
-        else if (lenA < lenB) {
-            while (lenA < lenB) {
-                headB = headB.next;
-                lenB--;
-            }
+        try{
+            System.out.println("主线程 " + Thread.currentThread().getName() + " 等待子线程完成");
+            latch.await();
+            System.out.println("主线程 " + Thread.currentThread().getName() + " 执行完毕");
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-        while (headA != null && headB != null) {
-            if (headA == headB) {
-                return headA;
-            }
-            headA = headA.next;
-            headB = headB.next;
-        }
-        return null;
-    }
-
-    private int getLength(ListNode head) {
-        int cnt = 0;
-        while (head != null) {
-            cnt++;
-            head = head.next;
-        }
-        return cnt;
     }
 }
