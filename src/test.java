@@ -12,6 +12,7 @@ import java.util.concurrent.Executors;
 public class test {
 
     public static void main(String[] args) {
+        System.out.println(Runtime.getRuntime().availableProcessors());
         ExecutorService service = Executors.newFixedThreadPool(3);
         CountDownLatch latch = new CountDownLatch(3);
         for (int i = 0; i < 3; i++) {
@@ -34,6 +35,7 @@ public class test {
             System.out.println("主线程 " + Thread.currentThread().getName() + " 等待子线程完成");
             latch.await();
             System.out.println("主线程 " + Thread.currentThread().getName() + " 执行完毕");
+            service.shutdown();
         } catch (Exception e) {
             e.printStackTrace();
         }
