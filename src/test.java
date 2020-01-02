@@ -9,34 +9,38 @@ import java.util.concurrent.*;
 
 public class test {
     public static void main(String[] args) {
-        t.print(4);
+        System.out.println(t.isNumeric("123.45e+6"));
     }
 
     public static test t = new test();
 
-    public void print(int n) {
-        StringBuilder sb = new StringBuilder();
-        sb.setLength(n);
-        printHelp(sb, 0);
+    private int pos = 0;
+
+    public boolean isNumeric(String s) {
+        pos = 0;
+        boolean res = scanInteger(s);
+        if (pos < s.length() && s.charAt(pos) == '.') {
+            pos++;
+            res = scanUnsignedInteger(s) || res;
+        }
+        if (pos < s.length() && (s.charAt(pos) == 'E' || s.charAt(pos) == 'e')) {
+            pos++;
+            res = res && scanInteger(s);
+        }
+        return res && (pos == s.length());
     }
 
-    private void printHelp(StringBuilder sb, int pos) {
-        if (pos == sb.length()) {
-            printInteger(sb.toString());
-            return;
-        }
-        for (int i = 0; i <= 9; i++) {
-            sb.setCharAt(pos, (char)(i + '0'));
-            printHelp(sb, pos + 1);
-        }
+    private boolean scanInteger(String s) {
+        if (pos < s.length() && (s.charAt(pos) == '+' || s.charAt(pos) == '-'))
+            pos++;
+        return scanUnsignedInteger(s);
     }
 
-    private void printInteger(String s) {
-        int start = 0;
-        while (start < s.length() && s.charAt(start) == '0')
-            start++;
-        if (start < s.length())
-            System.out.println(s.substring(start));
+    private boolean scanUnsignedInteger(String s) {
+        int start = pos;
+        while (pos < s.length() && s.charAt(pos) <= '9' && s.charAt(pos) >= '0')
+            pos++;
+        return pos > start;
     }
 
 }
