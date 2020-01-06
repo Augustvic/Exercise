@@ -9,38 +9,33 @@ import java.util.concurrent.*;
 
 public class test {
     public static void main(String[] args) {
-        System.out.println(t.isNumeric("123.45e+6"));
+        t.print(BinaryTree.complete_binary_tree());
     }
 
     public static test t = new test();
 
-    private int pos = 0;
-
-    public boolean isNumeric(String s) {
-        pos = 0;
-        boolean res = scanInteger(s);
-        if (pos < s.length() && s.charAt(pos) == '.') {
-            pos++;
-            res = scanUnsignedInteger(s) || res;
+    public void print(BinaryTreeNode root) {
+        ArrayDeque<BinaryTreeNode> aq = new ArrayDeque<>();
+        aq.offer(root);
+        int currLevel = 1;
+        int nextLevel = 0;
+        while (!aq.isEmpty()) {
+            if (currLevel == 0) {
+                System.out.println();
+                currLevel = nextLevel;
+                nextLevel = 0;
+            }
+            BinaryTreeNode tn = aq.poll();
+            System.out.print(tn.val + " ");
+            currLevel--;
+            if (tn.left != null) {
+                aq.offer(tn.left);
+                nextLevel++;
+            }
+            if (tn.right != null) {
+                aq.offer(tn.right);
+                nextLevel++;
+            }
         }
-        if (pos < s.length() && (s.charAt(pos) == 'E' || s.charAt(pos) == 'e')) {
-            pos++;
-            res = res && scanInteger(s);
-        }
-        return res && (pos == s.length());
     }
-
-    private boolean scanInteger(String s) {
-        if (pos < s.length() && (s.charAt(pos) == '+' || s.charAt(pos) == '-'))
-            pos++;
-        return scanUnsignedInteger(s);
-    }
-
-    private boolean scanUnsignedInteger(String s) {
-        int start = pos;
-        while (pos < s.length() && s.charAt(pos) <= '9' && s.charAt(pos) >= '0')
-            pos++;
-        return pos > start;
-    }
-
 }
