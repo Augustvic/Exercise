@@ -10,53 +10,55 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class test {
     public static void main(String[] args) {
-        int[] input = {4,5,1,6,2,7,3,8};
-        t.GetLeastNumbers_Solution(input, 4);
+        t.printProbability(4);
+        System.out.println();
+        t.printProbabilityOptimal(4);
     }
 
     private static test t = new test();
 
-    public ArrayList<Integer> GetLeastNumbers_Solution(int [] input, int k) {
-        int l = 0;
-        int r = input.length - 1;
-        ArrayList<Integer> ret = new ArrayList<>();
-        while (l <= r) {
-            int index = partition(input, l, r);
-            if (index == k - 1 && copy(ret, input, k)) {
-                return ret;
-            }
-            else if (index > k - 1) {
-                r = index - 1;
-            }
-            else {
-                l = index + 1;
+    private static final int dim = 6;
+
+    public void printProbability(int n) {
+        int[][] count = new int[2][dim * n + 1];
+        int index = 0;
+        for (int i = 1; i <= dim; i++)
+            count[index][i] = 1;
+        for (int i = 2; i <= n; i++) {
+            index = 1 - index;
+            for (int j = i; j <= i * dim; j++) {
+                count[index][j] = 0;
+                for (int t = j - 1; t >= i - 1 && t >= j - dim; t--)
+                    count[index][j] += count[1 - index][t];
             }
         }
-        return ret;
-    }
-
-    private int partition(int[] input, int l, int r) {
-        int pivot = r;
-        while (l < r) {
-            while (l < r && input[l] < input[pivot]) l++;
-            while (l < r && input[r] >= input[pivot]) r--;
-            swap(input, l, r);
+        double sum = Math.pow(dim, n);
+        for (int i = n; i <= dim * n; i++) {
+            System.out.println(i + ": " + String.format("%.5f", count[index][i] / sum));
         }
-        swap(input, l, pivot);
-        return l;
     }
 
-    private void swap(int[] input, int l, int r) {
-        int t = input[l];
-        input[l] = input[r];
-        input[r] = t;
-    }
-
-    private boolean copy(ArrayList<Integer> ret, int[] input, int end) {
-        for (int i = 0; i < end; i++) {
-            ret.add(input[i]);
+    public void printProbabilityOptimal(int n) {
+        if (n <= 0)
+            return;
+        int max = dim * n;
+        int[][] arr = new int[2][max + 1];
+        int index = 0;
+        for (int i = 1; i <= dim; i++) {
+            arr[index][i] = 1;
         }
-        return true;
+        for (int i = 2; i <= n; i++) {
+            index = 1 - index;
+            for (int j = i; j <= i * dim; j++) {
+                arr[index][j] = 0;
+                for (int t = 1; t <= dim && j - t >= i - 1; t++) {
+                    arr[index][j] += arr[1 - index][j - t];
+                }
+            }
+        }
+        double sum = Math.pow(dim, n);
+        for (int i = n; i <= dim * n; i++) {
+            System.out.println(i + ": " + String.format("%.5f", arr[index][i] / sum));
+        }
     }
-
 }
