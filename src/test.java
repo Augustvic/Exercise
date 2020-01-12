@@ -1,64 +1,54 @@
 import DataStructure.*;
-import Tools.*;
-import com.sun.javafx.css.parser.LadderConverter;
-import javafx.util.Pair;
 
-import java.text.SimpleDateFormat;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.concurrent.atomic.AtomicInteger;
+import java.util.Iterator;
+import java.util.LinkedList;
 
 public class test {
     public static void main(String[] args) {
-        t.printProbability(4);
-        System.out.println();
-        t.printProbabilityOptimal(4);
+        TreeNode root = Tree.treeInstance();
+        TreeNode ret = t.getCommonParentNode(root, root.child.get(0), root.child.get(1));
+        System.out.println(ret.val);
     }
 
     private static test t = new test();
 
-    private static final int dim = 6;
-
-    public void printProbability(int n) {
-        int[][] count = new int[2][dim * n + 1];
-        int index = 0;
-        for (int i = 1; i <= dim; i++)
-            count[index][i] = 1;
-        for (int i = 2; i <= n; i++) {
-            index = 1 - index;
-            for (int j = i; j <= i * dim; j++) {
-                count[index][j] = 0;
-                for (int t = j - 1; t >= i - 1 && t >= j - dim; t--)
-                    count[index][j] += count[1 - index][t];
-            }
+    public TreeNode getCommonParentNode(TreeNode root, TreeNode r1, TreeNode r2) {
+        if (root == null || r1 == null || r2 == null)
+            return null;
+        LinkedList<TreeNode> l1 = getPath(root, r1);
+        LinkedList<TreeNode> l2 = getPath(root, r2);
+        TreeNode ret = null;
+        while (!l1.isEmpty() && !l2.isEmpty() && l1.getFirst() == l2.getFirst()) {
+            ret = l1.getFirst();
+            l1.removeFirst();
+            l2.removeFirst();
         }
-        double sum = Math.pow(dim, n);
-        for (int i = n; i <= dim * n; i++) {
-            System.out.println(i + ": " + String.format("%.5f", count[index][i] / sum));
-        }
+        return ret;
     }
 
-    public void printProbabilityOptimal(int n) {
-        if (n <= 0)
-            return;
-        int max = dim * n;
-        int[][] arr = new int[2][max + 1];
-        int index = 0;
-        for (int i = 1; i <= dim; i++) {
-            arr[index][i] = 1;
+    private LinkedList<TreeNode> getPath(TreeNode root, TreeNode r) {
+        LinkedList<TreeNode> list = new LinkedList<>();
+        if (root == null || r == null)
+            return list;
+        getPathHelp(list, root, r);
+        return list;
+    }
+
+    private boolean getPathHelp(LinkedList<TreeNode> list, TreeNode root, TreeNode r) {
+        if (root == null)
+            return false;
+        if (root == r) {
+            list.add(root);
+            return true;
         }
-        for (int i = 2; i <= n; i++) {
-            index = 1 - index;
-            for (int j = i; j <= i * dim; j++) {
-                arr[index][j] = 0;
-                for (int t = 1; t <= dim && j - t >= i - 1; t++) {
-                    arr[index][j] += arr[1 - index][j - t];
-                }
-            }
+        list.add(root);
+        boolean found = false;
+        Iterator<TreeNode> it = root.child.iterator();
+        while (!found && it.hasNext()) {
+            found = getPathHelp(list, it.next(), r);
         }
-        double sum = Math.pow(dim, n);
-        for (int i = n; i <= dim * n; i++) {
-            System.out.println(i + ": " + String.format("%.5f", arr[index][i] / sum));
-        }
+        if (!found)
+            list.removeLast();
+        return found;
     }
 }

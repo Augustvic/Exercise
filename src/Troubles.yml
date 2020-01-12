@@ -30,7 +30,7 @@ Concurrency: 1115
 
 Passed:
   SwordToOffer:
-    60, 67
+    60
   CyC2018:
     Sort: 347
     Search: 79, 257, 46
