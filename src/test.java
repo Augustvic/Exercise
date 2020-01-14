@@ -1,54 +1,28 @@
-import DataStructure.*;
-
-import java.util.Iterator;
-import java.util.LinkedList;
-
 public class test {
     public static void main(String[] args) {
-        TreeNode root = Tree.treeInstance();
-        TreeNode ret = t.getCommonParentNode(root, root.child.get(0), root.child.get(1));
-        System.out.println(ret.val);
+        String s1 = "1234";
+        String s2 = "2468";
+        String s3 = "435";
+        System.out.println(t.add(s1, s2));
+        System.out.println(t.add(s2, s3));
     }
 
     private static test t = new test();
 
-    public TreeNode getCommonParentNode(TreeNode root, TreeNode r1, TreeNode r2) {
-        if (root == null || r1 == null || r2 == null)
-            return null;
-        LinkedList<TreeNode> l1 = getPath(root, r1);
-        LinkedList<TreeNode> l2 = getPath(root, r2);
-        TreeNode ret = null;
-        while (!l1.isEmpty() && !l2.isEmpty() && l1.getFirst() == l2.getFirst()) {
-            ret = l1.getFirst();
-            l1.removeFirst();
-            l2.removeFirst();
+    public String add(String s1, String s2) {
+        StringBuilder sb1 = new StringBuilder(s1).reverse();
+        StringBuilder sb2 = new StringBuilder(s2).reverse();
+        int i = 0, j = 0;
+        int carry = 0;
+        StringBuilder ret = new StringBuilder();
+        while (i < sb1.length() || j < sb2.length()) {
+            int a =  i < sb1.length() ? sb1.charAt(i) - '0' : 0;
+            int b = j < sb2.length() ? sb2.charAt(j) - '0' : 0;
+            int sum = a + b + carry;
+            carry = sum / 10;
+            ret.append(sum % 10);
+            i++;j++;
         }
-        return ret;
-    }
-
-    private LinkedList<TreeNode> getPath(TreeNode root, TreeNode r) {
-        LinkedList<TreeNode> list = new LinkedList<>();
-        if (root == null || r == null)
-            return list;
-        getPathHelp(list, root, r);
-        return list;
-    }
-
-    private boolean getPathHelp(LinkedList<TreeNode> list, TreeNode root, TreeNode r) {
-        if (root == null)
-            return false;
-        if (root == r) {
-            list.add(root);
-            return true;
-        }
-        list.add(root);
-        boolean found = false;
-        Iterator<TreeNode> it = root.child.iterator();
-        while (!found && it.hasNext()) {
-            found = getPathHelp(list, it.next(), r);
-        }
-        if (!found)
-            list.removeLast();
-        return found;
+        return ret.reverse().toString();
     }
 }
