@@ -1,51 +1,73 @@
 package Algorithm.Sort;
 
 import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 public class TimeCostForSortTest {
 
     // 待排序数组长度
-    public static final int N = 1000000;
+    private static final int N = 100000;
 
-    public static final int numOfSortAl = 7;
+    // 生成随机数的最大值
+    private static final int randValue = 10000;
 
+    // 排序方法个数
+    private static final int numOfSortAl = 7;
+
+    // 各种排序的方法名
     public static final String[] sort = {"selectSort", "bubbleSort", "insertSort", "shellSort",
             "mergeSort", "quickSort", "heapSort"};
 
+    // main 函数
     public static void main(String[] args) {
         TimeCostForSortTest t = new TimeCostForSortTest();
-        List<int[]> list = t.initialArrayList(N, numOfSortAl);
+        // 生成待排序数组
+        List<int[]> list = t.initialArrayList();
         for (int i = 0; i < numOfSortAl; i++) {
             String al = sort[i];
             int[] nums = list.get(i);
             long startTime = System.currentTimeMillis();
             try {
+                // 调用某个排序方法
                 t.callForSortByName(al, nums);
             } catch (Exception e) {
                 e.printStackTrace();
             }
             long endTime = System.currentTimeMillis();
+            // 打印出排序所用的时间
             System.out.println(al + ": " + (endTime - startTime) + "ms");
         }
     }
 
+    /**
+     * 调用指定的方法
+     * @param al 方法名
+     * @param nums 参数
+     * @throws Exception 异常
+     */
     public void callForSortByName(String al, int[] nums) throws Exception {
         if (al == null || al.length() == 0)
             throw new NumberFormatException();
-        Method method = this.getClass().getMethod(al, int[].class);
+        // 使用装载当前类的类装载器来装载指定的类
+        Class<?> alClass = Class.forName("Algorithm.Sort.TimeCostForSortTest");
+        // 获得指定的对象中的方法
+        Method method = alClass.getMethod(al, int[].class);
+        // 调用 this 对象的 method 方法
         method.invoke(this, new Object[]{nums});
     }
 
-    // 生成待排序数组
-    public List<int[]> initialArrayList(int n, int numOfSortAl) {
-        int[] nums = new int[n];
+
+
+    /**
+     * 生成待排序数组，数字随机
+     * 列表中每一个待排序数组完全相同
+     * @return 生成的数组列表
+     */
+    private List<int[]> initialArrayList() {
+        int[] nums = new int[N];
         Random rand = new Random();
-        for (int j = 0; j < n; j++)
-            nums[j] = rand.nextInt(1000) + 1;
+        for (int j = 0; j < N; j++)
+            nums[j] = rand.nextInt(randValue) + 1;
         List<int[]> list = new ArrayList<>();
         list.add(nums);
         for (int i = 1; i < numOfSortAl; i++) {
@@ -54,6 +76,10 @@ public class TimeCostForSortTest {
         return list;
     }
 
+    /**
+     * 选择排序
+     * @param nums 待排序数组
+     */
     public void selectSort(int[] nums) {
         int n = nums.length;
         for (int i = 0; i < n - 1; i++) {
@@ -66,6 +92,10 @@ public class TimeCostForSortTest {
         }
     }
 
+    /**
+     * 冒泡排序
+     * @param nums 待排序数组
+     */
     public void bubbleSort(int[] nums) {
         int n = nums.length;
         for (int i = n; i > 0; i--) {
@@ -76,6 +106,10 @@ public class TimeCostForSortTest {
         }
     }
 
+    /**
+     * 插入排序
+     * @param nums 待排序数组
+     */
     public void insertSort(int[] nums) {
         int n = nums.length;
         for (int i = 1; i < n; i++) {
@@ -85,6 +119,10 @@ public class TimeCostForSortTest {
         }
     }
 
+    /**
+     * shell 排序
+     * @param nums 待排序数组
+     */
     public void shellSort(int[] nums) {
         if (nums == null || nums.length <= 1) {
             return;
@@ -105,6 +143,10 @@ public class TimeCostForSortTest {
         }
     }
 
+    /**
+     * 归并排序
+     * @param nums 待排序数组
+     */
     public void mergeSort(int[] nums) {
         if (nums == null || nums.length == 0)
             return;
@@ -112,12 +154,20 @@ public class TimeCostForSortTest {
         mergeSortHelp(nums, 0, nums.length - 1);
     }
 
+    /**
+     * 快速排序
+     * @param nums 待排序数组
+     */
     public void quickSort(int[] nums) {
         if (nums == null || nums.length == 0)
             return;
         quickSortHelp(nums, 0, nums.length - 1);
     }
 
+    /**
+     * 堆排序
+     * @param nums 待排序数组
+     */
     public void heapSort(int[] nums) {
         if (nums == null)
             return;
@@ -129,7 +179,7 @@ public class TimeCostForSortTest {
         }
     }
 
-    public void swap(int[] nums, int x, int y) {
+    private void swap(int[] nums, int x, int y) {
         int tmp = nums[x];
         nums[x] = nums[y];
         nums[y] = tmp;
@@ -137,7 +187,7 @@ public class TimeCostForSortTest {
 
     private int[] helper;
 
-    public void mergeSortHelp(int[] nums, int l, int r) {
+    private void mergeSortHelp(int[] nums, int l, int r) {
         if (l < r) {
             int mid = (l + r) / 2;
             mergeSortHelp(nums, l, mid);
@@ -146,7 +196,7 @@ public class TimeCostForSortTest {
         }
     }
 
-    public void merge(int[] nums, int l, int mid, int r) {
+    private void merge(int[] nums, int l, int mid, int r) {
         for (int i = l; i <= r; i++)
             helper[i] = nums[i];
         int p1 = mid;
@@ -164,7 +214,7 @@ public class TimeCostForSortTest {
             nums[index--] = helper[p2--];
     }
 
-    public void quickSortHelp(int[] nums, int l, int r) {
+    private void quickSortHelp(int[] nums, int l, int r) {
         if (l < r) {
             int index = partition(nums, l, r);
             quickSortHelp(nums, l, index - 1);
@@ -172,7 +222,7 @@ public class TimeCostForSortTest {
         }
     }
 
-    public int partition(int[] nums, int l, int r) {
+    private int partition(int[] nums, int l, int r) {
         int pivot = r;
         while (l < r) {
             while (l < r && nums[l] < nums[pivot]) l++;
@@ -183,7 +233,7 @@ public class TimeCostForSortTest {
         return l;
     }
 
-    public void adjustHeap(int[] nums, int i, int length) {
+    private void adjustHeap(int[] nums, int i, int length) {
         int temp = nums[i];
         for (int k = 2 * i + 1; k < length; k = 2 * k + 1) {
             if (k + 1 < length && nums[k] < nums[k + 1])
