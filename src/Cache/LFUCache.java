@@ -1,4 +1,4 @@
-package OtherTest.Cache;
+package Cache;
 
 import java.util.Collections;
 import java.util.HashMap;

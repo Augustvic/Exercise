@@ -1,4 +1,4 @@
-package OtherTest.Cache;
+package Cache;
 
 import java.text.NumberFormat;
 import java.util.Random;

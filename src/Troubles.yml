@@ -1,13 +1,11 @@
 Algorithm:
-  BinaryTree:
-
   Sort:
-    shellSort, mergeSort, quickSort, heapSort, threeWayQuickSort
+    heapSort, shellSort, mergeSort, threeWayQuickSort
 
 CyC2018:
   TwoPointer: 680, 524
   Sort: 75
-  Greedy***: 455, 435, 452, 406, 763, 605, 392, 665, 122
+  Greedy: 455, 435, 452, 406, 763, 605, 392, 665, 122
   BinarySearch: 69, 540, 34
   DivideAndConquer: 241, 95
   Search: minPathLength, 279, 127, 547, 417, 93, 47, 40, 131, 37, 51
@@ -23,14 +21,13 @@ CyC2018:
   BitOperation: 268, 190, 231, 342, 693, 476, 318
 
 SwordToOffer:
-  34, 38, 39, 43, 49, 68
-  
-Concurrency: 1115
 
 
 Passed:
-  SwordToOffer:
-    20, 36, 60
+  Algorithm:
+    Sort:
+      quickSort
+
   CyC2018:
     Sort: 347
     Search: 79, 257, 46

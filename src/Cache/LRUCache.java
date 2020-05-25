@@ -1,4 +1,4 @@
-package OtherTest.Cache;
+package Cache;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

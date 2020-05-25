@@ -2,12 +2,222 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="810b39e3-4d5e-4d39-aaa3-ed5986a49b8c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/OtherTest/Cache/LFUCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OtherTest/Cache/LRUCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OtherTest/Cache/test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithm/Sort/TimeCostForSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithm/Sort/TimeCostForSortTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Concurrent/ProducerToComsumer/Consumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Concurrent/ProducerToComsumer/Producer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Concurrent/ProducerToComsumer/Transporter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Concurrent/ProducerToComsumer/support/BlockingQueueTransporter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Concurrent/ProducerToComsumer/support/ConditionTransporter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Concurrent/ProducerToComsumer/support/ExchangerTransporter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Concurrent/ProducerToComsumer/support/SemaphoreTransporter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Concurrent/ProducerToComsumer/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithm/Sort/Exercise.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithm/String/KMP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/ArrayAndMatrix/P240.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/ArrayAndMatrix/P240.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/ArrayAndMatrix/P283.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/ArrayAndMatrix/P283.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/ArrayAndMatrix/P287.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/ArrayAndMatrix/P287.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/ArrayAndMatrix/P378.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/ArrayAndMatrix/P378.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/ArrayAndMatrix/P442.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/ArrayAndMatrix/P442.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/ArrayAndMatrix/P448.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/ArrayAndMatrix/P448.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/ArrayAndMatrix/P485.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/ArrayAndMatrix/P485.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/ArrayAndMatrix/P565.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/ArrayAndMatrix/P565.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/ArrayAndMatrix/P566.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/ArrayAndMatrix/P566.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/ArrayAndMatrix/P645.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/ArrayAndMatrix/P645.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/ArrayAndMatrix/P667.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/ArrayAndMatrix/P667.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/ArrayAndMatrix/P697.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/ArrayAndMatrix/P697.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/ArrayAndMatrix/P766.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/ArrayAndMatrix/P766.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/ArrayAndMatrix/P769.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/ArrayAndMatrix/P769.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/ArrayAndMatrix/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/ArrayAndMatrix/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/BinarySearch/P153.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/BinarySearch/P153.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/BinarySearch/P154.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/BinarySearch/P154.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/BinarySearch/P278.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/BinarySearch/P278.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/BinarySearch/P34.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/BinarySearch/P34.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/BinarySearch/P540.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/BinarySearch/P540.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/BinarySearch/P69.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/BinarySearch/P69.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/BinarySearch/P744.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/BinarySearch/P744.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/BitOperation/P136.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/BitOperation/P136.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/BitOperation/P190.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/BitOperation/P190.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/BitOperation/P231.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/BitOperation/P231.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/BitOperation/P260.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/BitOperation/P260.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/BitOperation/P268.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/BitOperation/P268.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/BitOperation/P318.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/BitOperation/P318.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/BitOperation/P338.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/BitOperation/P338.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/BitOperation/P342.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/BitOperation/P342.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/BitOperation/P371.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/BitOperation/P371.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/BitOperation/P461.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/BitOperation/P461.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/BitOperation/P476.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/BitOperation/P476.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/BitOperation/P693.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/BitOperation/P693.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/BitOperation/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/BitOperation/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/DivideAndConquer/P241.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/DivideAndConquer/P241.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/DivideAndConquer/P95.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/DivideAndConquer/P95.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/DynamicProgramming/01背包" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/DynamicProgramming/01背包" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/DynamicProgramming/P123.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/DynamicProgramming/P123.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/DynamicProgramming/P139.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/DynamicProgramming/P139.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/DynamicProgramming/P198.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/DynamicProgramming/P198.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/DynamicProgramming/P213.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/DynamicProgramming/P213.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/DynamicProgramming/P279.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/DynamicProgramming/P279.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/DynamicProgramming/P300.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/DynamicProgramming/P300.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/DynamicProgramming/P303.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/DynamicProgramming/P303.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/DynamicProgramming/P309.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/DynamicProgramming/P309.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/DynamicProgramming/P322.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/DynamicProgramming/P322.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/DynamicProgramming/P343.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/DynamicProgramming/P343.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/DynamicProgramming/P376.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/DynamicProgramming/P376.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/DynamicProgramming/P377.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/DynamicProgramming/P377.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/DynamicProgramming/P413.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/DynamicProgramming/P413.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/DynamicProgramming/P416.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/DynamicProgramming/P416.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/DynamicProgramming/P474.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/DynamicProgramming/P474.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/DynamicProgramming/P494.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/DynamicProgramming/P494.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/DynamicProgramming/P518.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/DynamicProgramming/P518.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/DynamicProgramming/P583.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/DynamicProgramming/P583.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/DynamicProgramming/P62.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/DynamicProgramming/P62.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/DynamicProgramming/P64.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/DynamicProgramming/P64.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/DynamicProgramming/P646.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/DynamicProgramming/P646.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/DynamicProgramming/P650.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/DynamicProgramming/P650.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/DynamicProgramming/P70.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/DynamicProgramming/P70.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/DynamicProgramming/P714.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/DynamicProgramming/P714.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/DynamicProgramming/P718.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/DynamicProgramming/P718.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/DynamicProgramming/P72.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/DynamicProgramming/P72.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/DynamicProgramming/P91.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/DynamicProgramming/P91.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/DynamicProgramming/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/DynamicProgramming/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Graph/P207.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Graph/P207.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Graph/P684.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Graph/P684.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Graph/P785.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Graph/P785.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Graph/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Graph/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Greedy/P121.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Greedy/P121.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Greedy/P122.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Greedy/P122.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Greedy/P392.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Greedy/P392.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Greedy/P406.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Greedy/P406.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Greedy/P435.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Greedy/P435.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Greedy/P452.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Greedy/P452.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Greedy/P455.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Greedy/P455.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Greedy/P53.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Greedy/P53.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Greedy/P605.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Greedy/P605.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Greedy/P665.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Greedy/P665.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Greedy/P763.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Greedy/P763.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/HashTable/P1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/HashTable/P1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/HashTable/P128.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/HashTable/P128.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/HashTable/P217.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/HashTable/P217.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/HashTable/P594.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/HashTable/P594.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/HashTable/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/HashTable/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/LinkedList/P160.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/LinkedList/P160.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/LinkedList/P19.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/LinkedList/P19.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/LinkedList/P206.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/LinkedList/P206.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/LinkedList/P21.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/LinkedList/P21.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/LinkedList/P234.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/LinkedList/P234.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/LinkedList/P24.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/LinkedList/P24.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/LinkedList/P328.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/LinkedList/P328.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/LinkedList/P445.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/LinkedList/P445.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/LinkedList/P725.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/LinkedList/P725.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/LinkedList/P83.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/LinkedList/P83.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/LinkedList/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/LinkedList/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Math/GCDAndLCM.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Math/GCDAndLCM.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Math/P168.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Math/P168.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Math/P169.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Math/P169.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Math/P172.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Math/P172.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Math/P204.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Math/P204.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Math/P238.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Math/P238.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Math/P326.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Math/P326.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Math/P367.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Math/P367.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Math/P405.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Math/P405.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Math/P415.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Math/P415.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Math/P462.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Math/P462.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Math/P504.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Math/P504.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Math/P628.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Math/P628.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Math/P67.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Math/P67.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Math/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Math/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Math/位操作和减法求最大公约数.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Math/位操作和减法求最大公约数.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Search/P127.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Search/P127.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Search/P130.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Search/P130.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Search/P131.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Search/P131.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Search/P17.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Search/P17.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Search/P200.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Search/P200.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Search/P216.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Search/P216.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Search/P257.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Search/P257.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Search/P279.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Search/P279.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Search/P37.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Search/P37.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Search/P39.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Search/P39.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Search/P40.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Search/P40.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Search/P417.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Search/P417.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Search/P46.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Search/P46.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Search/P47.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Search/P47.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Search/P51.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Search/P51.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Search/P547.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Search/P547.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Search/P695.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Search/P695.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Search/P77.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Search/P77.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Search/P78.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Search/P78.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Search/P79.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Search/P79.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Search/P90.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Search/P90.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Search/P93.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Search/P93.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Search/ShortestPathLength.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Search/ShortestPathLength.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Sort/HeapSort.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Sort/HeapSort.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Sort/P215.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Sort/P215.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Sort/P347.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Sort/P347.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Sort/P451.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Sort/P451.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Sort/P75.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Sort/P75.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/StackAndQueue/P155.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/StackAndQueue/P155.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/StackAndQueue/P20.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/StackAndQueue/P20.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/StackAndQueue/P225.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/StackAndQueue/P225.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/StackAndQueue/P232.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/StackAndQueue/P232.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/StackAndQueue/P503.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/StackAndQueue/P503.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/StackAndQueue/P739.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/StackAndQueue/P739.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/StackAndQueue/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/StackAndQueue/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/String/P205.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/String/P205.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/String/P242.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/String/P242.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/String/P409.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/String/P409.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/String/P647.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/String/P647.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/String/P696.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/String/P696.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/String/P9.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/String/P9.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/String/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/String/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Tree/BST/P108.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Tree/BST/P108.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Tree/BST/P109.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Tree/BST/P109.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Tree/BST/P230.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Tree/BST/P230.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Tree/BST/P235.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Tree/BST/P235.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Tree/BST/P236.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Tree/BST/P236.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Tree/BST/P501.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Tree/BST/P501.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Tree/BST/P530.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Tree/BST/P530.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Tree/BST/P538.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Tree/BST/P538.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Tree/BST/P653.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Tree/BST/P653.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Tree/BST/P669.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Tree/BST/P669.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Tree/BST/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Tree/BST/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Tree/LevelOrderTraversal/P513.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Tree/LevelOrderTraversal/P513.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Tree/LevelOrderTraversal/P637.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Tree/LevelOrderTraversal/P637.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Tree/LevelOrderTraversal/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Tree/LevelOrderTraversal/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Tree/Recursive/P101.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Tree/Recursive/P101.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Tree/Recursive/P104.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Tree/Recursive/P104.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Tree/Recursive/P110.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Tree/Recursive/P110.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Tree/Recursive/P111.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Tree/Recursive/P111.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Tree/Recursive/P112.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Tree/Recursive/P112.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Tree/Recursive/P226.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Tree/Recursive/P226.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Tree/Recursive/P337.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Tree/Recursive/P337.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Tree/Recursive/P404.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Tree/Recursive/P404.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Tree/Recursive/P437.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Tree/Recursive/P437.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Tree/Recursive/P543.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Tree/Recursive/P543.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Tree/Recursive/P572.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Tree/Recursive/P572.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Tree/Recursive/P617.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Tree/Recursive/P617.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Tree/Recursive/P671.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Tree/Recursive/P671.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Tree/Recursive/P687.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Tree/Recursive/P687.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Tree/Recursive/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Tree/Recursive/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Tree/Traversal/P144.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Tree/Traversal/P144.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Tree/Traversal/P145.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Tree/Traversal/P145.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Tree/Traversal/P94.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Tree/Traversal/P94.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Tree/Traversal/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Tree/Traversal/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Tree/Trie/P208.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Tree/Trie/P208.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Tree/Trie/P677.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Tree/Trie/P677.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/Tree/Trie/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Tree/Trie/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/TwoPointer/P141.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/TwoPointer/P141.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/TwoPointer/P345.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/TwoPointer/P345.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/TwoPointer/P524.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/TwoPointer/P524.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/TwoPointer/P633.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/TwoPointer/P633.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/TwoPointer/P680.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/TwoPointer/P680.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CyC2018/TwoPointer/P88.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/TwoPointer/P88.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OtherTest/Cache/LFUCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cache/LFUCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OtherTest/Cache/LRUCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cache/LRUCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OtherTest/Cache/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cache/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P39.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/SwordToOffer/P39.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P9B.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/SwordToOffer/P9B.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/SwordToOffer/test.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Troubles.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Troubles.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,57 +230,48 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
-              <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Troubles.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+      <find>tryAcquire</find>
+      <find>CANCELLED</find>
+      <find>acquire</find>
+      <find>tryAcquireShared</find>
+      <find>helpTransfer</find>
+      <find>MOVED</find>
+      <find>transfer</find>
+      <find>ceil</find>
+      <find>nextInt</find>
+      <find>nextLong(</find>
       <find>put</find>
+      <find>Entry</find>
       <find>putVal</find>
-      <find>siftUp</find>
-      <find>Node</find>
-      <find>Iterator</find>
-      <find>asList</find>
-      <find>loadClass</find>
+      <find>put(</find>
+      <find>add</find>
+      <find>add(</find>
+      <find>unpark</find>
+      <find>take(</find>
+      <find>awaitMatch</find>
+      <find>head</find>
+      <find>await</find>
+      <find>awaitMat</find>
+      <find>xfer</find>
+      <find>scheduled</find>
+      <find>allowCoreThreadTimeOut</find>
+      <find>newCach</find>
       <find>submit</find>
-      <find>execute</find>
-      <find>remove</find>
-      <find>getLast</find>
-      <find>invoke</find>
-      <find>getFields()</find>
-      <find>cause</find>
-      <find>reload</find>
-      <find>providers</find>
-      <find>PREFIX</find>
-      <find>parse</find>
+      <find>iterator</find>
+      <find>iterator(</find>
+      <find>preStart</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -86,16 +287,34 @@
         <option value="$PROJECT_DIR$/src/OtherTest/People.java" />
         <option value="$PROJECT_DIR$/src/OtherTest/MyClassLoader.java" />
         <option value="$PROJECT_DIR$/src/Algorithm/Sort/TimeCostForSortTest.java" />
-        <option value="$PROJECT_DIR$/src/test.java" />
         <option value="$PROJECT_DIR$/src/com/alibaba/dubbo/common/bytecode/Wrapper0.java" />
+        <option value="$PROJECT_DIR$/src/SwordToOffer/P39.txt" />
+        <option value="$PROJECT_DIR$/src/Phaser.java" />
+        <option value="$PROJECT_DIR$/src/test.java" />
         <option value="$PROJECT_DIR$/src/Troubles.yml" />
+        <option value="$PROJECT_DIR$/src/Test.java" />
+        <option value="$PROJECT_DIR$/src/Concurrent/ProviderToComsumer/Exchanger.java" />
+        <option value="$PROJECT_DIR$/src/Concurrent/ProviderToComsumer/Transporter.java" />
+        <option value="$PROJECT_DIR$/src/Concurrent/ProviderToComsumer/Provider.java" />
+        <option value="$PROJECT_DIR$/src/Concurrent/ProviderToComsumer/Consumer.java" />
+        <option value="$PROJECT_DIR$/src/Concurrent/ProviderToComsumer/SemaphoreTransporter.java" />
+        <option value="$PROJECT_DIR$/src/Concurrent/ProviderToComsumer/test.java" />
+        <option value="$PROJECT_DIR$/src/Concurrent/ProducerToComsumer/Producer.java" />
+        <option value="$PROJECT_DIR$/src/Concurrent/ProducerToComsumer/SemaphoreTransporter.java" />
+        <option value="$PROJECT_DIR$/src/Concurrent/ProducerToComsumer/ExchangerTransporter.java" />
+        <option value="$PROJECT_DIR$/src/Concurrent/ProducerToComsumer/ConditionTransporter.java" />
+        <option value="$PROJECT_DIR$/src/Concurrent/ProducerToComsumer/Transporter/ConditionTransporter.java" />
+        <option value="$PROJECT_DIR$/src/Concurrent/ProducerToComsumer/support/SemaphoreTransporter.java" />
+        <option value="$PROJECT_DIR$/src/Concurrent/ProducerToComsumer/support/BlockingQueueTransporter.java" />
+        <option value="$PROJECT_DIR$/src/Concurrent/ProducerToComsumer/test.java" />
+        <option value="$PROJECT_DIR$/src/Concurrent/ProducerToComsumer/Consumer.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="948" />
-    <option name="width" value="981" />
-    <option name="height" value="1032" />
+    <option name="x" value="949" />
+    <option name="width" value="980" />
+    <option name="height" value="1031" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -105,6 +324,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -121,8 +342,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -136,9 +355,14 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="debugger.stepping" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
       <recent name="com.alibaba.dubbo.common.bytecode" />
     </key>
   </component>
@@ -154,7 +378,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.test">
+  <component name="RunManager" selected="Application.test (1)">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="Exercise" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TimeCostForSortTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Algorithm.Sort.TimeCostForSortTest" />
       <module name="Exercise" />
@@ -169,18 +400,24 @@
       </method>
     </configuration>
     <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="Cache.test" />
       <module name="Exercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Cache.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="OtherTest.Cache.test" />
+      <option name="MAIN_CLASS_NAME" value="Concurrent.ProducerToComsumer.test" />
       <module name="Exercise" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="OtherTest.Cache.*" />
+          <option name="PATTERN" value="Concurrent.ProducerToComsumer.support.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -190,7 +427,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.test" />
+        <item itemvalue="Application.test (1)" />
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.TimeCostForSortTest" />
       </list>
     </recent_temporary>
@@ -230,34 +468,97 @@
       <workItem from="1583463009621" duration="1176000" />
       <workItem from="1583544667030" duration="2178000" />
       <workItem from="1583752085027" duration="3059000" />
+      <workItem from="1583844259425" duration="567000" />
+      <workItem from="1583891227930" duration="729000" />
+      <workItem from="1583975772435" duration="1809000" />
+      <workItem from="1584061947965" duration="639000" />
+      <workItem from="1584167853481" duration="1196000" />
+      <workItem from="1584235777487" duration="1310000" />
+      <workItem from="1584321056712" duration="2595000" />
+      <workItem from="1584407043867" duration="1197000" />
+      <workItem from="1584494178818" duration="629000" />
+      <workItem from="1584578058580" duration="688000" />
+      <workItem from="1584666499064" duration="844000" />
+      <workItem from="1584756506794" duration="611000" />
+      <workItem from="1584852894695" duration="1315000" />
+      <workItem from="1584876598379" duration="592000" />
+      <workItem from="1584925715550" duration="1994000" />
+      <workItem from="1585008247204" duration="2994000" />
+      <workItem from="1585031434674" duration="1304000" />
+      <workItem from="1585136954144" duration="1893000" />
+      <workItem from="1585181488250" duration="623000" />
+      <workItem from="1585268399207" duration="75000" />
+      <workItem from="1585268783490" duration="8381000" />
+      <workItem from="1585365892247" duration="364000" />
+      <workItem from="1585366384395" duration="1895000" />
+      <workItem from="1585440402566" duration="3079000" />
+      <workItem from="1585484819423" duration="5000" />
+      <workItem from="1585528367609" duration="611000" />
+      <workItem from="1585614333672" duration="7178000" />
+      <workItem from="1585655625652" duration="924000" />
+      <workItem from="1585701370466" duration="4892000" />
+      <workItem from="1585788793006" duration="1843000" />
+      <workItem from="1585874066328" duration="1282000" />
+      <workItem from="1585959654176" duration="624000" />
+      <workItem from="1586003948350" duration="7000" />
+      <workItem from="1586045389051" duration="1213000" />
+      <workItem from="1586135638803" duration="644000" />
+      <workItem from="1586217932925" duration="1241000" />
+      <workItem from="1586424206092" duration="727000" />
+      <workItem from="1586848424002" duration="137000" />
+      <workItem from="1586849221679" duration="105000" />
+      <workItem from="1588044906465" duration="5489000" />
+      <workItem from="1588117543101" duration="13033000" />
+      <workItem from="1588666665818" duration="757000" />
+      <workItem from="1589166981168" duration="4432000" />
+      <workItem from="1589338466974" duration="2612000" />
+      <workItem from="1589508908419" duration="1895000" />
+      <workItem from="1589588408037" duration="617000" />
+      <workItem from="1589680268121" duration="1530000" />
+      <workItem from="1589764069025" duration="7858000" />
+      <workItem from="1589846819691" duration="11103000" />
+      <workItem from="1589934476822" duration="2804000" />
+      <workItem from="1590022028852" duration="11170000" />
+      <workItem from="1590166505510" duration="580000" />
+      <workItem from="1590366981572" duration="3550000" />
+      <workItem from="1590383997799" duration="6220000" />
+      <workItem from="1590403886884" duration="8327000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80132000" />
+    <option name="totallyTimeSpent" value="220865000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24090542" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22473727" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3283859" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2987013" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.51391464" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3272727" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4995958" weight="0.94434136" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3710575" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3283859" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5004042" side_tool="true" weight="0.43042672" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3283582" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -266,379 +567,498 @@
       <window_info anchor="right" id="Database" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22473727" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3272727" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4995958" visible="true" weight="0.1502783" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.37126866" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3283859" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5004042" side_tool="true" weight="0.43042672" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3283582" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/concurrent/CompletableFuture.java</url>
+          <line>1813</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-defaults>
+        <breakpoint suspend="THREAD" type="java-line" />
+      </breakpoints-defaults>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/math/BigDecimal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="219" column="34" lean-forward="true" selection-start-line="219" selection-start-column="34" selection-end-line="219" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/concurrent/atomic/AtomicBoolean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2466">
-          <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/Number.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="54" column="22" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/concurrent/atomic/Striped64.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5122">
-          <caret line="46" column="36" selection-start-line="46" selection-start-column="36" selection-end-line="46" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/concurrent/atomic/LongAdder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="85" column="19" lean-forward="true" selection-start-line="85" selection-start-column="19" selection-end-line="85" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/concurrent/locks/StampedLock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3978">
-          <caret line="190" column="13" selection-start-line="190" selection-start-column="13" selection-end-line="190" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/concurrent/TimeUnit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2430">
-          <caret line="70" column="12" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/concurrent/CountedCompleter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="410" column="22" selection-start-line="410" selection-start-column="22" selection-end-line="410" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/nio/channels/SocketChannel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10318">
-          <caret line="115" column="22" selection-start-line="115" selection-start-column="22" selection-end-line="115" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/nio/channels/NetworkChannel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="53" column="21" lean-forward="true" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/nio/channels/SelectableChannel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6262">
-          <caret line="91" column="22" selection-start-line="91" selection-start-column="22" selection-end-line="91" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/nio/channels/ServerSocketChannel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5274">
-          <caret line="73" column="22" selection-start-line="73" selection-start-column="22" selection-end-line="73" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/Runtime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
-          <folding>
-            <element signature="e#1272#1273#0" expanded="true" />
-            <element signature="e#1309#1310#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/Appendable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-220">
-          <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/AbstractStringBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="46" column="23" lean-forward="true" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/StringBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="76" column="23" selection-start-line="76" selection-start-column="23" selection-end-line="76" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/OtherTest/DesignPattern/Singleton.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="110" column="17" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/AbstractList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1130">
-          <caret line="70" column="82" lean-forward="true" selection-start-line="70" selection-start-column="82" selection-end-line="70" selection-end-column="82" />
-          <folding>
-            <element signature="e#4990#4991#0" expanded="true" />
-            <element signature="e#5047#5048#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/Arrays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-455">
-          <caret line="3805" column="52" selection-start-line="3805" selection-start-column="52" selection-end-line="3805" selection-end-column="52" />
-          <folding>
-            <element signature="e#176939#176967#0" expanded="true" />
-            <element signature="e#177013#177014#0" expanded="true" />
-            <element signature="e#177054#177055#0" expanded="true" />
-            <element signature="e#177353#177354#0" expanded="true" />
-            <element signature="e#177410#177411#0" expanded="true" />
-            <element signature="e#177457#177458#0" expanded="true" />
-            <element signature="e#177496#177497#0" expanded="true" />
-            <element signature="e#177551#177552#0" expanded="true" />
-            <element signature="e#177591#177592#0" expanded="true" />
-            <element signature="e#178082#178083#0" expanded="true" />
-            <element signature="e#178121#178122#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/OtherTest/People.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/jre/lib/rt.jar!/sun/instrument/TransformerManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="107" selection-start-line="107" selection-end-line="107" />
-          <folding>
-            <element signature="e#2416#2417#0" expanded="true" />
-            <element signature="e#2460#2461#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/jre/lib/rt.jar!/sun/instrument/InstrumentationImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="211" selection-start-line="211" selection-end-line="211" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/net/URLClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="368" selection-start-line="368" selection-end-line="368" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/OtherTest/MyClassLoader.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/Comparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1650">
-          <caret line="108" column="17" selection-start-line="108" selection-start-column="17" selection-end-line="108" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/Iterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="53" column="21" lean-forward="true" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
-          <folding>
-            <element signature="e#2496#2497#0" expanded="true" />
-            <element signature="e#2561#2562#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/concurrent/ExecutorService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2158">
-          <caret line="56" column="19" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/concurrent/Executor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="130" column="14" selection-start-line="130" selection-start-column="7" selection-end-line="130" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="717" column="31" selection-start-line="717" selection-start-column="25" selection-end-line="717" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/LinkedList.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/concurrent/locks/ReentrantLock.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
-          <caret line="248" selection-start-line="248" selection-end-line="249" />
+          <caret line="115" column="28" selection-start-line="115" selection-start-column="28" selection-end-line="115" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/reflect/Constructor.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/concurrent/locks/ReentrantReadWriteLock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="59" column="19" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
+        <state relative-caret-position="51">
+          <caret line="618" column="55" lean-forward="true" selection-start-line="618" selection-start-column="55" selection-end-line="618" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/reflect/Field.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="64" column="37" lean-forward="true" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
+        <state relative-caret-position="274">
+          <caret line="1302" column="28" selection-start-line="1302" selection-start-column="12" selection-end-line="1302" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/reflect/Method.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/concurrent/Semaphore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-156">
-          <caret line="483" column="34" selection-start-line="483" selection-start-column="34" selection-end-line="483" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithm/Sort/TimeCostForSortTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="56" column="5" lean-forward="true" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/Exception.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-234">
-          <caret line="100" column="11" selection-start-line="100" selection-start-column="11" selection-end-line="100" selection-end-column="11" />
-          <folding>
-            <element signature="e#3173#3174#0" expanded="true" />
-            <element signature="e#3201#3202#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/io/IOException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1229">
-          <caret line="38" column="6" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/Throwable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="185" selection-start-line="185" selection-end-line="185" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/ClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="760" selection-start-line="760" selection-end-line="760" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataStructure/Tree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="8" selection-start-line="8" selection-end-line="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataStructure/TreeNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        <state relative-caret-position="1427">
+          <caret line="228" column="30" selection-start-line="228" selection-start-column="30" selection-end-line="228" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SwordToOffer/P68.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+        <state relative-caret-position="458">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/Class.java">
+    <entry file="file://$PROJECT_DIR$/src/Algorithm/Sort/Exercise.txt" />
+    <entry file="file://$PROJECT_DIR$/src/Algorithm/Sort/QuickSort.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-530" />
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/Arrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="3798" column="30" selection-start-line="3798" selection-start-column="30" selection-end-line="3798" selection-end-column="30" />
+          <folding>
+            <element signature="e#177013#177014#0" expanded="true" />
+            <element signature="e#177054#177055#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/PriorityQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="321" selection-start-line="321" selection-end-line="321" />
+          <folding>
+            <element signature="e#4308#4309#0" expanded="true" />
+            <element signature="e#4360#4361#0" expanded="true" />
+            <element signature="e#12189#12190#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algorithm/Sort/SimpleSort.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algorithm/Sort/MergeSort.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algorithm/Sort/ShellSort.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algorithm/String/KMP.java" />
+    <entry file="file://$PROJECT_DIR$/src/Algorithm/Sort/HeapSort.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/concurrent/ConcurrentHashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="2283" column="24" selection-start-line="2283" selection-start-column="24" selection-end-line="2283" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/concurrent/ConcurrentNavigableMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="52" column="37" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/NavigableMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="166" column="23" selection-start-line="166" selection-start-column="19" selection-end-line="166" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/Random.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="3366" column="13" selection-start-line="3366" selection-start-column="13" selection-end-line="3366" selection-end-column="13" />
+          <caret line="421" column="16" selection-start-line="421" selection-start-column="16" selection-end-line="421" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/Enumeration.java">
+    <entry file="file://$PROJECT_DIR$/src/Algorithm/Sort/TimeCostForSortTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="678">
-          <caret line="77" column="6" selection-start-line="77" selection-start-column="6" selection-end-line="77" selection-end-column="6" />
+        <state relative-caret-position="286">
+          <caret line="37" column="30" selection-start-line="37" selection-end-line="38" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/net/URL.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/TreeMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1910">
-          <caret line="139" column="19" selection-start-line="139" selection-start-column="19" selection-end-line="139" selection-end-column="19" />
+        <state relative-caret-position="153">
+          <caret line="2064" column="8" selection-start-line="2064" selection-start-column="8" selection-end-line="2064" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/io/BufferedReader.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/concurrent/ConcurrentSkipListMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1268">
-          <caret line="311" column="11" selection-start-line="311" selection-start-column="11" selection-end-line="311" selection-end-column="11" />
+        <state relative-caret-position="151">
+          <caret line="864" column="48" lean-forward="true" selection-start-line="864" selection-start-column="48" selection-end-line="864" selection-end-column="48" />
+          <folding>
+            <element signature="e#35976#36006#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/ServiceLoader.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="254" column="28" selection-start-line="254" selection-start-column="28" selection-end-line="254" selection-end-column="28" />
+        <state relative-caret-position="153">
+          <caret line="139" column="9" selection-start-line="139" selection-start-column="9" selection-end-line="139" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/alibaba/dubbo/common/bytecode/Hello.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/alibaba/dubbo/common/bytecode/Wrapper0.java" />
-    <entry file="file://$PROJECT_DIR$/src/test.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/concurrent/BlockingQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+        <state relative-caret-position="-491">
+          <caret line="231" column="11" lean-forward="true" selection-start-line="231" selection-start-column="11" selection-end-line="231" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="757" selection-start-line="757" selection-end-line="757" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/concurrent/locks/LockSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="172" column="16" lean-forward="true" selection-start-line="172" selection-start-column="16" selection-end-line="172" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/concurrent/LinkedTransferQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3544">
+          <caret line="736" column="29" lean-forward="true" selection-start-line="736" selection-start-column="29" selection-end-line="736" selection-end-column="29" />
+          <folding>
+            <element signature="e#48689#48690#0" expanded="true" />
+            <element signature="e#48728#48729#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/Integer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="830" selection-start-line="830" selection-end-line="830" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/concurrent/Executor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="139" column="9" selection-start-line="139" selection-start-column="9" selection-end-line="139" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/concurrent/SynchronousQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="744">
+          <caret line="912" selection-start-line="912" selection-end-line="912" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/concurrent/FutureTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-191">
+          <caret line="62" column="15" selection-start-line="62" selection-start-column="15" selection-end-line="62" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/concurrent/Executors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="214" column="41" selection-start-line="214" selection-start-column="34" selection-end-line="214" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/concurrent/AbstractExecutorService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="108" column="27" selection-start-line="108" selection-start-column="21" selection-end-line="108" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/concurrent/ArrayBlockingQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="311" column="23" selection-start-line="311" selection-start-column="23" selection-end-line="311" selection-end-column="23" />
+          <folding>
+            <element signature="e#9697#9698#0" expanded="true" />
+            <element signature="e#9732#9733#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/AbstractQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-571">
+          <caret line="63" column="22" selection-start-line="63" selection-start-column="22" selection-end-line="63" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/io/Serializable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="168" column="17" selection-start-line="168" selection-start-column="17" selection-end-line="168" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/concurrent/LinkedBlockingQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="773" column="32" selection-start-line="773" selection-start-column="23" selection-end-line="773" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/concurrent/ScheduledThreadPoolExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="121" column="25" selection-start-line="121" selection-start-column="25" selection-end-line="121" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="322" column="48" lean-forward="true" selection-start-line="322" selection-start-column="48" selection-end-line="322" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Concurrent/ProviderToComsumer/Exchanger.java" />
+    <entry file="file://$PROJECT_DIR$/src/Troubles.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Troubles.yml">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/Map.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        <state relative-caret-position="6526">
+          <caret line="374" column="14" selection-start-line="374" selection-start-column="14" selection-end-line="374" selection-end-column="14" />
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42692">
+          <caret line="1806" column="23" selection-start-line="1806" selection-start-column="23" selection-end-line="1806" selection-end-column="23" />
+          <folding>
+            <element signature="e#19103#19104#0" expanded="true" />
+            <element signature="e#19161#19162#0" expanded="true" />
+            <element signature="e#31056#31057#0" expanded="true" />
+            <element signature="e#31094#31095#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Concurrent/ProducerToComsumer/Transporter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Concurrent/ProducerToComsumer/support/SemaphoreTransporter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Concurrent/ProducerToComsumer/support/ExchangerTransporter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Concurrent/ProducerToComsumer/support/ConditionTransporter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Concurrent/ProducerToComsumer/support/BlockingQueueTransporter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#344#345#0" expanded="true" />
+            <element signature="e#393#394#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Concurrent/ProducerToComsumer/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+          <folding>
+            <element signature="e#183#184#0" expanded="true" />
+            <element signature="e#229#230#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Concurrent/ProducerToComsumer/Producer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Concurrent/ProducerToComsumer/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1022">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#104#105#0" expanded="true" />
+            <element signature="e#135#136#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.27835053" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
