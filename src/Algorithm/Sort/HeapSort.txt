@@ -1,33 +1,39 @@
 public class HeapSort {
     public void heapSort(int[] nums) {
-        if (nums == null)
+        if (nums == null || nums.length == 0)
             return;
-        for (int i = nums.length / 2 - 1; i >= 0; i--)
-            adjustHeap(nums, i, nums.length);
+        buildHeap(nums);
         for (int i = nums.length - 1; i > 0; i--) {
             swap(nums, 0, i);
-            adjustHeap(nums, 0, i);
+            siftDown(nums, 0, i - 1);
         }
     }
 
-    public void adjustHeap(int[] nums, int i, int length) {
-        int temp = nums[i];
-        for (int k = 2 * i + 1; k < length; k = 2 * k + 1) {
-            if (k + 1 < length && nums[k] < nums[k + 1])
+    public void buildHeap(int[] nums) {
+        for (int i = nums.length / 2 - 1; i >= 0; i--) {
+            siftDown(nums, i, nums.length - 1);
+        }
+    }
+
+    public void siftDown(int[] nums, int low, int high) {
+        int t = nums[low];
+        for (int k = 2 * low + 1; k <= high; k = 2 * k + 1) {
+            if (k + 1 <= high && nums[k] < nums[k + 1])
                 k = k + 1;
-            if (temp < nums[k]) {
-                nums[i] = nums[k];
-                i = k;
+            if (t < nums[k]) {
+                nums[low] = nums[k];
+                low = k;
             }
-            else
+            else {
                 break;
+            }
         }
-        nums[i] = temp;
+        nums[low] = t;
     }
 
-    public void swap(int[] nums, int i, int j) {
-        int t = nums[i];
-        nums[i] = nums[j];
-        nums[j] = t;
+    public void swap(int[] nums, int l, int r) {
+        int t = nums[l];
+        nums[l] = nums[r];
+        nums[r] = t;
     }
 }

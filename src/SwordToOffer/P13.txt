@@ -1,31 +1,33 @@
 public class P13 {
-    public int movingCount(int threshold, int m, int n) {
-        if (threshold <= 0)
-            return 0;
+    private final int[][] position = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
+
+    public int movingCount(int m, int n, int k) {
         boolean[][] visited = new boolean[m][n];
-        return movingCountHelp(threshold, visited, m, n, 0, 0);
+        return help(0, 0, m, n, k, visited);
     }
 
-    public int movingCountHelp(int threshold, boolean[][] visited, int m, int n, int i, int j) {
-        if(i < 0 || i >= m || j < 0 || j >= n || visited[i][j] || !check(threshold, i, j))
+    private int help(int i, int j, int m, int n, int k, boolean[][] visited) {
+        if (i < 0 || i >= m || j < 0 || j >= n || visited[i][j] || !canReach(i, j, k)) {
             return 0;
-        visited[i][j] = true;
-        return 1 + movingCountHelp(threshold, visited, m, n, i + 1, j) +
-                movingCountHelp(threshold, visited, m, n, i - 1, j) +
-                movingCountHelp(threshold, visited, m, n, i, j + 1) +
-                movingCountHelp(threshold, visited, m, n, i, j - 1);
-    }
-
-    public boolean check(int threshold, int i, int j) {
-          return getSum(i) + getSum(j) <= threshold;
-    }
-
-    public int getSum(int k) {
-        int sum = 0;
-        while (k != 0) {
-            sum += k % 10;
-            k = k / 10;
         }
-        return sum;
+        int ret = 1;
+        visited[i][j] = true;
+        for (int[] pos : position) {
+            ret += help(i + pos[0], j + pos[1], m, n, k, visited);
+        }
+        return ret;
+    }
+
+    private boolean canReach(int i, int j, int k) {
+        int sum = 0;
+        while (i > 0) {
+            sum += i % 10;
+            i = i / 10;
+        }
+        while (j > 0) {
+            sum += j % 10;
+            j = j / 10;
+        }
+        return sum <= k;
     }
 }

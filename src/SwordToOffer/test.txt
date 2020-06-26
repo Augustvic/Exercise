@@ -1,4 +1,4 @@
-public class Test {
+public class Main {
     public void heapSort(int[] nums) {
         if (nums == null || nums.length == 0)
             return;

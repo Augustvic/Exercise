@@ -1,22 +1,18 @@
 public class P44 {
-    public int digitOfIndex(int index) {
-        if (index < 0)
-            return -1;
-        int num = 1;
-        int count = 0;
-        while (index > (count = numOfDigits(num))) {
-            index = index - count;
-            num++;
+    public int findNthDigit(int n) {
+        if (n == 0)
+            return 0;
+        if (n < 10)
+            return n;
+        n -= 10;
+        int a = 2;
+        while (n - a * (long)(Math.pow(10, a - 1) * 9) >= 0) {
+            n -= a * (long)(Math.pow(10, a - 1) * 9);
+            a++;
         }
-        int kthNum = index / num;
-        int kthDigit = index % num;
-        String s = String.valueOf(Math.pow(10, num - 1) + kthNum);
-        return s.charAt(kthDigit) - '0';
-    }
-
-    private int numOfDigits(int num) {
-        if (num == 1)
-            return 10;
-        return 9 * (int)Math.pow(10, num - 1);
+        int b = n / a;
+        int c = n % a;
+        String s = String.valueOf((long)Math.pow(10, a - 1) + b);
+        return s.charAt(c) - '0';
     }
 }

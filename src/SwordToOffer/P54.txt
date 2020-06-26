@@ -16,13 +16,13 @@ public class P54 {
     private void findHelp(BinaryTreeNode root, LinkedList<BinaryTreeNode> l) {
         if (root == null || kGlobal == 0)
             return;
-        findHelp(root.left, l);
+        findHelp(root.right, l);
         if (kGlobal == 0)
             return;
         l.add(root);
         kGlobal--;
         if (kGlobal == 0)
             return;
-        findHelp(root.right, l);
+        findHelp(root.left, l);
     }
 }

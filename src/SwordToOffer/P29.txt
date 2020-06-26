@@ -1,11 +1,18 @@
 public class P29 {
-    public void print(int[][] matrix) {
-        if (ArrayUtil.isEmpty(matrix))
-            return;
-        int bound = Math.min(matrix.length / 2, matrix[0].length / 2);
-        for (int i = 0; i <= bound; i++) {
+
+    private int[] ret;
+    private int pos;
+
+    public int[] spiralOrder(int[][] matrix) {
+        if (matrix == null || matrix.length == 0 || matrix[0].length == 0)
+            return new int[0];
+        ret = new int[matrix.length * matrix[0].length];
+        pos = 0;
+        int bound = Math.min((matrix.length + 1) / 2, (matrix[0].length + 1) / 2);
+        for (int i = 0; i < bound; i++) {
             printCircle(matrix, i);
         }
+        return ret;
     }
 
     public void printCircle(int[][] matrix, int start) {
@@ -14,16 +21,16 @@ public class P29 {
         int startColumn = start;
         int endColumn = matrix[0].length - start - 1;
         for (int j = startColumn; j <= endColumn; j++)
-            System.out.print(matrix[startRow][j] + " ");
+            ret[pos++] = matrix[startRow][j];
         for (int i = startRow + 1; i <= endRow; i++)
-            System.out.print(matrix[i][endColumn] + " ");
+            ret[pos++] = matrix[i][endColumn];
         if (endColumn > startColumn && endRow > startRow) {
             for (int j = endColumn - 1; j >= startColumn; j--)
-                System.out.print(matrix[endRow][j] + " ");
+                ret[pos++] = matrix[endRow][j];
         }
         if (endColumn > startColumn && endRow > startRow) {
             for (int i = endRow - 1; i > startRow; i--)
-                System.out.print(matrix[i][startColumn] + " ");
+                ret[pos++] = matrix[i][startColumn];
         }
     }
 }

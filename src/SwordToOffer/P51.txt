@@ -1,31 +1,40 @@
 public class P51 {
-    public int inverse(int[] nums) {
-        if (nums == null || nums.length == 0)
-            return -1;
-        int[] sorted = new int[nums.length];
-        for (int i = 0; i < nums.length; i++)
-            sorted[i] = nums[i];
-        return inverseHelp(nums, sorted);
+    private int[] helper;
+
+    public int reversePairs(int[] nums) {
+        helper = new int[nums.length];
+        for (int i = 0; i < nums.length; i++) {
+            helper[i] = nums[i];
+        }
+        return merge(nums, 0, nums.length - 1);
     }
 
-    public int inverseHelp(int[] nums, int[] sorted, int l, int r) {
-        if (l <= r)
+    private int merge(int[] nums, int l, int r) {
+        if (l >= r) {
             return 0;
+        }
         int mid = l + (r - l) / 2;
-        int countLeft = inverseHelp(nums, sorted, l, mid);
-        int countRight = inverseHelp(nums, sorted, mid + 1, r);
-
+        int cl = merge(nums, l, mid);
+        int cr = merge(nums, mid + 1, r);
+        System.arraycopy(nums, l, helper, l, r - l + 1);
         int count = 0;
         int p1 = mid;
         int p2 = r;
         int index = r;
-        while (p1 >= l && p2 > mid) {
-            if (nums[p1] > nums[p2]) {
+        while (p1 >= l && p2 >= mid + 1) {
+            if (helper[p1] > helper[p2]) {
                 count += (p2 - mid);
-                sorted[index--] = nums[p1--];
+                nums[index--] = helper[p1--];
+            } else {
+                nums[index--] = helper[p2--];
             }
-            else
-
         }
+        while (p1 >= l) {
+            nums[index--] = helper[p1--];
+        }
+        while (p2 >= mid + 1) {
+            nums[index--] = helper[p2--];
+        }
+        return count + cl + cr;
     }
 }

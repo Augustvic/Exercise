@@ -2,7 +2,7 @@ public class P59A {
     public int[] max(int[] nums, int size) {
         if (nums == null || nums.length == 0 || nums.length < size)
             return null;
-        if (nums.length == 1)
+        if (nums.length == 1 || size == 1)
             return nums;
         Deque<Integer> dq = new ArrayDeque<>();
         int[] res = new int[nums.length - size + 1];

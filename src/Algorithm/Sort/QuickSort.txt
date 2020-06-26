@@ -43,6 +43,8 @@ public class threeWayQuickSort {
         if (l >= r)
             return;
         int pivot = nums[l];
+        // lt 是中间段的起点，rt 是中间段的终点
+        // 把小的移到左边，大的移到右边，中间剩下的就是等于
         int lt = l;
         int i = l + 1;
         int rt = r;
