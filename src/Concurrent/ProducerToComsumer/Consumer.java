@@ -14,7 +14,7 @@ public class Consumer implements Runnable{
         while (true) {
             try {
                 if ((s = transporter.get()) != null) {
-                    System.out.println("[" + Thread.currentThread().getName() + "] " + "Consume: " + s);
+                    System.out.println("[" + Thread.currentThread().getName() + "] " + "consume: " + s);
                 } else {
                     Thread.sleep(100);
                 }

@@ -3,7 +3,7 @@ public class P9B {
     private Queue<Integer> q1;
     private Queue<Integer> q2;
 
-    public Main() {
+    public Exam.Exam.Meituan() {
         q1 = new LinkedList<>();
         q2 = new LinkedList<>();
     }

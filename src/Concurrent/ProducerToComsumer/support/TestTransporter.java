@@ -4,30 +4,32 @@ import Concurrent.ProducerToComsumer.Transporter;
 
 import java.util.LinkedList;
 import java.util.concurrent.Semaphore;
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.ReentrantLock;
 
-public class Test<E> implements Transporter<E> {
+public class TestTransporter<E> implements Transporter<E> {
 
-    private LinkedList<E> buffer;
-    private Semaphore semProducer;
-    private Semaphore semConsumer;
+    private final LinkedList<E> buffer;
+    private final Semaphore producer;
+    private final Semaphore consumer;
 
-    public Test(int capacity) {
+    public TestTransporter(int capacity) {
+        producer = new Semaphore(capacity);
+        consumer = new Semaphore(0);
         this.buffer = new LinkedList<>();
-        this.semProducer = new Semaphore(capacity);
-        this.semConsumer = new Semaphore(0);
     }
 
     @Override
     public E get() {
         try {
-            semConsumer.acquire();
+            consumer.acquire();
             synchronized (this) {
                 return buffer.removeFirst();
             }
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            semProducer.release();
+            producer.release();
         }
         return null;
     }
@@ -35,14 +37,13 @@ public class Test<E> implements Transporter<E> {
     @Override
     public void put(E obj) {
         try {
-            semProducer.acquire();
+            producer.acquire();
             synchronized (this) {
                 buffer.addLast(obj);
             }
+            consumer.release();
         } catch (Exception e) {
             e.printStackTrace();
-        } finally {
-            semConsumer.release();
         }
     }
 }

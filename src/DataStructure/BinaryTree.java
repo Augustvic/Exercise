@@ -13,6 +13,7 @@ public class BinaryTree {
         root.right.left = new BinaryTreeNode(16);
         return root;
     }
+
     //满二叉树
     public static BinaryTreeNode full_binary_tree() {
         BinaryTreeNode root = new BinaryTreeNode(1);
@@ -24,11 +25,13 @@ public class BinaryTree {
         root.right.right = new BinaryTreeNode(17);
         return root;
     }
+
     //只有一个节点的二叉树
     public static BinaryTreeNode one_node_binary_tree() {
         BinaryTreeNode root = new BinaryTreeNode(1);
         return root;
     }
+
     //所有节点都只有左子节点的二叉树
     public static BinaryTreeNode left_node_only_binary_tree() {
         BinaryTreeNode root = new BinaryTreeNode(1);
@@ -37,6 +40,7 @@ public class BinaryTree {
         root.left.left.left = new BinaryTreeNode(4);
         return root;
     }
+
     //所有节点都只有右子节点的二叉树
     public static BinaryTreeNode right_node_only_binary_tree() {
         BinaryTreeNode root = new BinaryTreeNode(1);
@@ -45,6 +49,7 @@ public class BinaryTree {
         root.right.right.right = new BinaryTreeNode(4);
         return root;
     }
+
     //所有元素相等的二叉树
     public static BinaryTreeNode equal_node_binary_tree() {
         BinaryTreeNode root = new BinaryTreeNode(16);
@@ -66,6 +71,7 @@ public class BinaryTree {
         root.right.left = new BinaryTreeNode(6);
         return root;
     }
+
     //满二叉检索树
     public static BinaryTreeNode full_binary_search_tree() {
         BinaryTreeNode root = new BinaryTreeNode(5);
@@ -77,11 +83,13 @@ public class BinaryTree {
         root.right.right = new BinaryTreeNode(8);
         return root;
     }
+
     //只有一个节点的二叉检索树
     public static BinaryTreeNode one_node_binary_search_tree() {
         BinaryTreeNode root = new BinaryTreeNode(1);
         return root;
     }
+
     //所有节点都只有左子节点的二叉检索树
     public static BinaryTreeNode left_node_only_binary_search_tree() {
         BinaryTreeNode root = new BinaryTreeNode(4);
@@ -90,6 +98,7 @@ public class BinaryTree {
         root.left.left.left = new BinaryTreeNode(1);
         return root;
     }
+
     //所有节点都只有右子节点的二叉检索树
     public static BinaryTreeNode right_node_only_binary_search_tree() {
         BinaryTreeNode root = new BinaryTreeNode(1);
@@ -99,4 +108,18 @@ public class BinaryTree {
         return root;
     }
 
+    // 普通
+    public static BinaryTreeNode commonTree() {
+        BinaryTreeNode root = new BinaryTreeNode(1);
+        root.left = new BinaryTreeNode(2);
+        root.right = new BinaryTreeNode(3);
+        root.left.left = new BinaryTreeNode(4);
+        root.left.right = new BinaryTreeNode(5);
+        root.left.left.left = new BinaryTreeNode(6);
+        root.left.left.right = new BinaryTreeNode(7);
+        root.left.left.right.left = new BinaryTreeNode(8);
+        root.left.right.left = new BinaryTreeNode(9);
+        root.left.right.left.left = new BinaryTreeNode(10);
+        return root;
+    }
 }

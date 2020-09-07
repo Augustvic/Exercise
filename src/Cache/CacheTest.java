@@ -6,7 +6,7 @@ import java.util.*;
 public class CacheTest {
     public static void main(String[] args) {
         // 缓存区大小
-        final int nCache = 100;
+        final int nCache = 500;
         // 数据量
         final int nNum = 100000;
         // 数据出现 1 次的比率-数据出现 2 次的比率-数据出现 4 次的比率-数据出现 8 次的比率-数据出现 100 次的比率

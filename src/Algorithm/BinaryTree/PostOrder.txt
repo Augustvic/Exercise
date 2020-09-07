@@ -1,4 +1,5 @@
 public class PostOrder {
+    // 不改变树的结构
     public void postOrder(BinaryTreeNode root) {
         if (root == null)
             return;
@@ -10,10 +11,8 @@ public class PostOrder {
                 st2.push(root);
                 root = root.right;
             }
-            if (!st1.isEmpty()) {
-                root = st1.pop();
-                root = root.left;
-            }
+            root = st1.pop();
+            root = root.left;
         }
         while (!st2.isEmpty()) {
             root = st2.pop();
@@ -24,4 +23,33 @@ public class PostOrder {
     private void visit(BinaryTreeNode root) {
         System.out.print(root.val + " ");
     }
+
+    // 改变树的结构
+    private void postOrder(BinaryTreeNode root) {
+        LinkedList<BinaryTreeNode> stack = new LinkedList<>();
+        stack.addLast(root);
+        while (!stack.isEmpty()) {
+            BinaryTreeNode tmp = stack.removeLast();
+            if (tmp.left != null) {
+                BinaryTreeNode t1 = tmp;
+                while (t1 != null) {
+                    BinaryTreeNode left = t1.left;
+                    t1.left = null;
+                    stack.addLast(t1);
+                    t1 = left;
+                }
+            } else if (tmp.right != null) {
+                BinaryTreeNode t2 = tmp;
+                while (t2 != null) {
+                    BinaryTreeNode right = t2.right;
+                    t2.right = null;
+                    stack.addLast(t2);
+                    t2 = right;
+                }
+            } else {
+                visit(tmp);
+            }
+        }
+    }
+
 }
