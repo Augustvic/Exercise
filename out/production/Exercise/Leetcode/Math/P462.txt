@@ -1,0 +1,54 @@
+public class P462 {
+    public int minMoves2(int[] nums) {
+        Arrays.sort(nums);
+        int move = 0;
+        int l = 0;
+        int r = nums.length - 1;
+        while (l < r) {
+            move += nums[r] - nums[l];
+            l++;
+            r--;
+        }
+        return move;
+    }
+
+    public int minMoves2Optimal(int[] nums) {
+        int move = 0;
+        int median = findKthSmallest(nums, nums.length / 2);
+        for (int val : nums)
+            move += Math.abs(val - median);
+        return move;
+    }
+
+    public int findKthSmallest(int[] nums, int k) {
+        int l = 0;
+        int r = nums.length - 1;
+        while (l < r) {
+            int index = partition(nums, l, r);
+            if (index == k)
+                break;
+            else if (index > k)
+                r = index - 1;
+            else
+                l = index + 1;
+        }
+        return nums[k];
+    }
+
+    public int partition(int[] nums, int l, int r) {
+        int pivot = r;
+        while (l < r) {
+            while (l < r && nums[l] < nums[pivot]) l++;
+            while (l < r && nums[pivot] <= nums[r]) r--;
+            swap(nums, l, r);
+        }
+        swap(nums, l, pivot);
+        return l;
+    }
+
+    public void swap(int[] nums, int l, int r) {
+        int t = nums[l];
+        nums[l] = nums[r];
+        nums[r] = t;
+    }
+}

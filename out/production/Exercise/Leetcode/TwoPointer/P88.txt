@@ -1,0 +1,19 @@
+public class P88 {
+    public void merge(int[] nums1, int m, int[] nums2, int n) {
+        int index = nums1.length - 1;
+        int p2 = nums2.length - 1;
+        int p1 = index - p2 - 1;
+        while (index >= 0) {
+            if (p1 < 0)
+                nums1[index--] = nums2[p2--];
+            else if (p2 < 0)
+                break;
+            else {
+                if (nums1[p1] >= nums2[p2])
+                    nums1[index--] = nums1[p1--];
+                else
+                    nums1[index--] = nums2[p2--];
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+public class P448 {
+    public List<Integer> findDisappearedNumbers(int[] nums) {
+        List<Integer> ret = new LinkedList<>();
+        if (nums == null || nums.length == 0)
+            return ret;
+        int index = 0;
+        while (index < nums.length) {
+            if (nums[index] != index + 1 && nums[nums[index] - 1] != nums[index]) {
+                swap(nums, index, nums[index] - 1);
+            }
+            else {
+                index++;
+            }
+        }
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] != i + 1)
+                ret.add(i);
+        }
+        return ret;
+    }
+
+    public void swap(int[] nums, int a, int b) {
+        int t = nums[a];
+        nums[a] = nums[b];
+        nums[b] = t;
+    }
+}

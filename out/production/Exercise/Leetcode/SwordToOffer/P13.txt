@@ -1,0 +1,33 @@
+public class P13 {
+    private final int[][] position = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
+
+    public int movingCount(int m, int n, int k) {
+        boolean[][] visited = new boolean[m][n];
+        return help(0, 0, m, n, k, visited);
+    }
+
+    private int help(int i, int j, int m, int n, int k, boolean[][] visited) {
+        if (i < 0 || i >= m || j < 0 || j >= n || visited[i][j] || !canReach(i, j, k)) {
+            return 0;
+        }
+        int ret = 1;
+        visited[i][j] = true;
+        for (int[] pos : position) {
+            ret += help(i + pos[0], j + pos[1], m, n, k, visited);
+        }
+        return ret;
+    }
+
+    private boolean canReach(int i, int j, int k) {
+        int sum = 0;
+        while (i > 0) {
+            sum += i % 10;
+            i = i / 10;
+        }
+        while (j > 0) {
+            sum += j % 10;
+            j = j / 10;
+        }
+        return sum <= k;
+    }
+}

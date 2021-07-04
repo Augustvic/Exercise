@@ -1,0 +1,22 @@
+public class P160 {
+    public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
+        Stack<ListNode> stA = new Stack<>();
+        Stack<ListNode> stB = new Stack<>();
+        while (headA != null || headB != null) {
+            if (headA != null) {
+                stA.push(headA);
+                headA = headA.next;
+            }
+            if (headB != null) {
+                stB.push(headB);
+                headB = headB.next;
+            }
+        }
+        ListNode ret = null;
+        while (!stA.isEmpty() && !stB.isEmpty() && stA.peek() == stB.peek()) {
+            ret = stA.pop();
+            stB.pop();
+        }
+        return ret;
+    }
+}

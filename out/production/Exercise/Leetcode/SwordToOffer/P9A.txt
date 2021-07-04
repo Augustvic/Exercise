@@ -1,0 +1,22 @@
+public class P9A {
+
+    private Stack<Integer> s1;
+    private Stack<Integer> s2;
+
+    public P9A() {
+        s1 = new Stack<>();
+        s2 = new Stack<>();
+    }
+
+    public void appendTail(int k) {
+        s1.push(k);
+    }
+
+    public int deleteHead() {
+        if (s2.isEmpty()) {
+            while (!s1.isEmpty())
+                s2.push(s1.pop());
+        }
+        return s2.pop();
+    }
+}

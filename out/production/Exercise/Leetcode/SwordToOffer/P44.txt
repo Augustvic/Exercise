@@ -1,0 +1,18 @@
+public class P44 {
+    public int findNthDigit(int n) {
+        if (n == 0)
+            return 0;
+        if (n < 10)
+            return n;
+        n -= 10;
+        int a = 2;
+        while (n - a * (long)(Math.pow(10, a - 1) * 9) >= 0) {
+            n -= a * (long)(Math.pow(10, a - 1) * 9);
+            a++;
+        }
+        int b = n / a;
+        int c = n % a;
+        String s = String.valueOf((long)Math.pow(10, a - 1) + b);
+        return s.charAt(c) - '0';
+    }
+}

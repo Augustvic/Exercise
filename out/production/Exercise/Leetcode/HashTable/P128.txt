@@ -1,0 +1,28 @@
+public class P128 {
+    public int longestConsecutive(int[] nums) {
+        Map<Integer, Integer> hm = new HashMap<>();
+        for (int k : nums)
+            hm.put(k, 1);
+        for (int k : nums)
+            count(hm, k);
+        return longest(hm);
+    }
+
+    public int count(Map<Integer, Integer> hm, int key) {
+        if (!hm.containsKey(key))
+            return 0;
+        int cnt = hm.get(key);
+        if (cnt > 1)
+            return cnt;
+        cnt = count(hm, key + 1) + 1;
+        hm.put(key, cnt);
+        return cnt;
+    }
+
+    public int longest(Map<Integer, Integer> hm) {
+        int max = 0;
+        for (int key : hm.keySet())
+            max = Math.max(max, hm.get(key));
+        return max;
+    }
+}

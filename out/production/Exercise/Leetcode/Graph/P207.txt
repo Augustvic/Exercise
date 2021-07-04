@@ -1,0 +1,33 @@
+class Solution {
+    public boolean canFinish(int numCourses, int[][] prerequisites) {
+        List<Integer>[] graphic = new List[numCourses];
+        for (int i = 0; i < numCourses; i++) {
+            graphic[i] = new ArrayList<>();
+        }
+        for (int[] pre : prerequisites) {
+            graphic[pre[0]].add(pre[1]);
+        }
+        boolean[] globalMarked = new boolean[numCourses];
+        boolean[] localMarked = new boolean[numCourses];
+        for (int i = 0; i < numCourses; i++) {
+            if (hasCycle(numCourses, graphic, i, globalMarked, localMarked))
+                return false;
+        }
+        return true;
+    }
+
+    private boolean hasCycle(int numCourses, List<Integer>[] graphic, int i, boolean[] globalMarked, boolean[] localMarked) {
+        if (localMarked[i])
+            return true;
+        if (globalMarked[i])
+            return false;
+        localMarked[i] = true;
+        globalMarked[i] = true;
+        for (int next : graphic[i]) {
+            if (hasCycle(numCourses, graphic, next, globalMarked, localMarked))
+                return true;
+        }
+        localMarked[i] = false;
+        return false;
+    }
+}

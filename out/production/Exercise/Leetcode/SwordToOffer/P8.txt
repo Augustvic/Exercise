@@ -1,0 +1,23 @@
+public class P8 {
+    public BinaryTreeNode find(BinaryTreeNode root) {
+        if (root == null)
+            return null;
+        // 若右节点不为空，那么下一个节点必定在右子树上
+        if (root.right != null) {
+            root = root.right;
+            while (root.left != null)
+                root = root.left;
+            return root;
+        }
+        // 若父节点为空，那么没有下一个节点
+        if (root.parent == null)
+            return null;
+        // 父节点不为空，那么找到最近的未遍历的根节点，即为下一个节点
+        while (root.parent.left != root) {
+            root = root.parent;
+            if (root == null || root.parent == null)
+                return null;
+        }
+        return root.parent;
+    }
+}

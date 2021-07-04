@@ -1,0 +1,23 @@
+public class P785 {
+    public boolean isBipartite(int[][] graph) {
+        int[] colors = new int[graph.length];
+        Arrays.fill(colors, -1);
+        for (int i = 0; i < graph.length; i++) {
+            if (colors[i] == -1 && !isBipartiteWithEachNode(graph, colors, i, 0))
+                return false;
+        }
+        return true;
+    }
+
+    public boolean isBipartiteWithEachNode(int[][] graph, int[] colors, int currNode, int currColor) {
+        if (colors[currNode] != -1) {
+            return colors[currNode] == currColor;
+        }
+        colors[currNode] = currColor;
+        for(int nodeIndex : graph[currNode]) {
+            if (!isBipartiteWithEachNode(graph, colors, nodeIndex, 1 - currColor))
+                return false;
+        }
+        return true;
+    }
+}

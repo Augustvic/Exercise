@@ -1,0 +1,35 @@
+public class P20 {
+
+    private int pos = 0;
+
+    public boolean isNumeric(String s) {
+        pos = 0;
+        if (s == null || s.length() == 0)
+            return false;
+        // scanInteger 函数有返回值是为了检测小数点前后必须至少有一个整数
+        boolean res = scanInteger(s);
+        if (pos < s.length() && s.charAt(pos) == '.') {
+            pos++;
+            res = scanUnsignedInteger(s) || res;
+        }
+        if (pos < s.length() && (s.charAt(pos) == 'e' || s.charAt(pos) == 'E')) {
+            pos++;
+            res = res && scanInteger(s);
+        }
+        return res && (pos == s.length());
+    }
+
+    public boolean scanInteger(String s) {
+        if (pos < s.length() && (s.charAt(pos) == '+' || s.charAt(pos) == '-'))
+            pos++;
+        return scanUnsignedInteger(s);
+    }
+
+    public boolean scanUnsignedInteger(String s) {
+        int start = pos;
+        while (pos < s.length() && s.charAt(pos) >= '0' && s.charAt(pos) <= '9') {
+            pos++;
+        }
+        return pos > start;
+    }
+}

@@ -1,0 +1,49 @@
+public class P37 {
+    // Encodes a tree to a single string.
+    public String serialize(BinaryTreeNode root) {
+        if (root == null)
+            return "[]";
+        LinkedList<BinaryTreeNode> queue = new LinkedList<>();
+        StringBuilder sb = new StringBuilder("[");
+        queue.addLast(root);
+        while (!queue.isEmpty()) {
+            BinaryTreeNode t = queue.removeFirst();
+            if (t != null) {
+                sb.append(t.val + ",");
+                queue.addLast(t.left);
+                queue.addLast(t.right);
+            } else {
+                sb.append("null,");
+            }
+        }
+        sb.deleteCharAt(sb.length() - 1);
+        sb.append("]");
+        return sb.toString();
+    }
+
+    // Decodes your encoded data to tree.
+    public BinaryTreeNode deserialize(String data) {
+        if (data == null || data.length() == 0 || data == "[]") {
+            return null;
+        }
+        String[] strs = data.substring(1, data.length() - 1).split(",");
+        BinaryTreeNode root = new BinaryTreeNode(Integer.valueOf(strs[0]));
+        LinkedList<BinaryTreeNode> queue = new LinkedList<>();
+        queue.addLast(root);
+        int index = 1;
+        while (!queue.isEmpty()) {
+            BinaryTreeNode t = queue.removeFirst();
+            if (!strs[index].equals("null")) {
+                t.left = new BinaryTreeNode(Integer.valueOf(strs[index]));
+                queue.addLast(t.left);
+            }
+            index++;
+            if (!strs[index].equals("null")) {
+                t.right = new BinaryTreeNode(Integer.valueOf(strs[index]));
+                queue.addLast(t.right);
+            }
+            index++;
+        }
+        return root;
+    }
+}

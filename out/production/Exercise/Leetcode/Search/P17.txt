@@ -1,0 +1,29 @@
+/**
+ * 因为 Backtracking 不是立即就返回，而要继续求解，因此在程序实现时，需要注意对元素的标记问题：
+ * 在访问一个新元素进入新的递归调用时，需要将新元素标记为已经访问，这样才能在继续递归调用时不用重复
+ * 访问该元素；
+ * 但是在递归返回时，需要将元素标记为未访问，因为只需要保证在一个递归链中不同时访问一个元素，可以访
+ * 问已经访问过但是不在当前递归链中的元素。
+ **/
+public class P17 {
+    private String[] keys = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+    public List<String> letterCombinations(String digits) {
+        List<String> res = new ArrayList<>();
+        if (digits == null || digits.length() == 0)
+            return res;
+        combination(new StringBuilder(), res, digits);
+        return res;
+    }
+    public void combination(StringBuilder sb, List<String> list, String digits) {
+        if (digits.length() == 0) {
+            list.add(sb.toString());
+            return;
+        }
+        String s = keys[digits.charAt(0) - '0'];
+        for (char c : s.toCharArray()) {
+            sb.append(c);
+            combination(sb, list, digits.substring(1));
+            sb.deleteCharAt(sb.length() - 1);
+        }
+    }
+}

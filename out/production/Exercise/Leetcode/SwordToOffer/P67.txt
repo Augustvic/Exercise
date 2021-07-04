@@ -1,0 +1,30 @@
+public class P67 {
+    public boolean isInt = true;
+
+    public int converse(String s) {
+        if (s == null || s.length() == 0) {
+            isInt = false;
+            return -1;
+        }
+        boolean isNegative = (s.charAt(0) == '-');
+        char c;
+        if ((c = s.charAt(0)) == '-' || c == '+') {
+            s = s.substring(1);
+        }
+        long ret = 0;
+        for (int i = 0; i < s.length(); i++) {
+            if ((c = s.charAt(i)) >= '0' && c <= '9') {
+                ret = ret * 10 + (c - '0');
+                if ((!isNegative && ret > Integer.MAX_VALUE) || (isNegative && 0 - ret < Integer.MIN_VALUE)) {
+                    isInt = false;
+                    return -1;
+                }
+            }
+            else {
+                isInt = false;
+                return -1;
+            }
+        }
+        return (int)(isNegative ? 0 - ret : ret);
+    }
+}

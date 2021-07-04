@@ -1,0 +1,38 @@
+public class MergeSort {
+
+    private int[] helper;
+
+    public void mergeSort(int[] nums) {
+        if (nums == null || nums.length == 0)
+            return;
+        helper = new int[nums.length];
+        mergeSortHelp(nums, 0, nums.length - 1);
+    }
+
+    public void mergeSortHelp(int[] nums, int l, int r) {
+        if (l < r) {
+            int mid = (l + r) / 2;
+            mergeSortHelp(nums, l, mid);
+            mergeSortHelp(nums, mid + 1, r);
+            merge(nums, l, mid, r);
+        }
+    }
+
+    public void merge(int[] nums, int l, int mid, int r) {
+        for (int i = l; i <= r; i++)
+            helper[i] = nums[i];
+        int p1 = mid;
+        int p2 = r;
+        int index = r;
+        while (p1 >= l && p2 >= mid + 1) {
+            if (helper[p1] > helper[p2])
+                nums[index--] = helper[p1--];
+            else
+                nums[index--] = helper[p2--];
+        }
+        while (p1 >= l)
+            nums[index--] = helper[p1--];
+        while (p2 >= mid + 1)
+            nums[index--] = helper[p2--];
+    }
+}

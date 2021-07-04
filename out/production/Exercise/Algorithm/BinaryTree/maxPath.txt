@@ -1,0 +1,47 @@
+public class Main {
+
+    // 任意两点最长路径节点数
+    public int maxPath(TreeNode root) {
+        maxPath = 0;
+        help(root);
+        return maxPath;
+    }
+
+    private int maxPath = 0;
+
+    private int help(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+        int leftHeight = help(root.left);
+        int rightHeight = help(root.right);
+        int sum = leftHeight + rightHeight + 1;
+        maxPath = Math.max(maxPath, sum);
+        return Math.max(leftHeight, rightHeight) + 1;
+    }
+
+
+    // 任意两点最长路径
+    public int maxPathSum(TreeNode root) {
+        maxPathSum = Integer.MIN_VALUE;
+        help(root);
+        return maxPathSum;
+    }
+
+    private int maxPathSum = Integer.MIN_VALUE;
+
+    public int help(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+        int leftSum = help(root.left);
+        int rightSum = help(root.right);
+        int sum = maxOfFour(leftSum + root.val, rightSum + root.val, leftSum + rightSum + root.val, root.val);
+        maxPathSum = Math.max(maxPathSum, sum);
+        return Math.max(Math.max(leftSum, rightSum) + root.val, root.val);
+    }
+
+    private int maxOfFour(int a, int b, int c, int d) {
+        return Math.max(Math.max(a, Math.max(b, c)), d);
+    }
+}
