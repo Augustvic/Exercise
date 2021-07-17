@@ -2,126 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="810b39e3-4d5e-4d39-aaa3-ed5986a49b8c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Leetcode/ArrayAndMatrix/P31.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Leetcode/ArrayAndMatrix/P41.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Leetcode/ArrayAndMatrix/P42.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Leetcode/Backtracking/P17.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Leetcode/Backtracking/P22.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Leetcode/Backtracking/P37.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Leetcode/Backtracking/P39.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Leetcode/Backtracking/P40.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Leetcode/Backtracking/P47.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Leetcode/Backtracking/P51.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Leetcode/Backtracking/log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Leetcode/BinarySearch/P29.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Leetcode/BinarySearch/P33.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Leetcode/BinarySearch/P4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Leetcode/BinarySearch/log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Leetcode/DynamicProgramming/P32.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Leetcode/DynamicProgramming/P44.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Leetcode/Greedy/P45.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Leetcode/Greedy/P55.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Leetcode/Greedy/log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Leetcode/HashTable/P1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Leetcode/HashTable/P3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Leetcode/HashTable/P30.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Leetcode/HashTable/P49.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Leetcode/LinkedList/ListNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Leetcode/LinkedList/P2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Leetcode/LinkedList/P25.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Leetcode/Math/P50.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Leetcode/String/P10.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Leetcode/String/P14.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Leetcode/String/P38.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Leetcode/String/P43.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Leetcode/String/P5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Leetcode/String/P6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Leetcode/TwoPointer/P11.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Leetcode/TwoPointer/P15.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Leetcode/TwoPointer/P16.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Leetcode/TwoPointer/P18.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Leetcode/TwoPointer/log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/smartfox/common_info.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Leetcode/20210717Pass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Leetcode/ArrayAndMatrix/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/ArrayAndMatrix/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Leetcode/DynamicProgramming/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/DynamicProgramming/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Leetcode/HashTable/P1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Leetcode/HashTable/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/HashTable/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Leetcode/Math/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/Math/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Leetcode/String/P9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Leetcode/String/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/String/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P10.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P10.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P11.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P11.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P12.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P12.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P13.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P13.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P14.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P14.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P15.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P15.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P16.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P16.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P17.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P17.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P18.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P18.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P19.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P19.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P20.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P20.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P21.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P21.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P22.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P22.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P23.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P23.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P24.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P24.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P25.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P25.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P26.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P26.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P27.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P27.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P28.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P28.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P29.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P29.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P30.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P30.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P31.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P31.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P32.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P32.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P33.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P33.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P34.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P34.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P35.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P35.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P36.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P36.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P37.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P37.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P38.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P38.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P39.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P39.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P40.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P40.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P41.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P41.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P42.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P42.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P43.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P43.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P44.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P44.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P45.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P45.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P46.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P46.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P47.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P47.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P48.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P48.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P49.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P49.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P5.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P50.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P50.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P51.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P51.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P52.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P52.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P53.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P53.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P54.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P54.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P55.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P55.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P56.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P56.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P57.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P57.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P58.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P58.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P59A.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P59A.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P59B.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P59B.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P6.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P60.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P60.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P61.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P61.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P62.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P62.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P63.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P63.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P64.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P64.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P65.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P65.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P66.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P66.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P67.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P67.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P68.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P68.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P7.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P7.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P8.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P9A.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P9A.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/P9B.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/P9B.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SwordToOffer/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode/SwordToOffer/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Exercise/META-INF/Exercise.kotlin_module" beforeDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -143,31 +29,6 @@
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Leetcode/Backtracking/P51.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Leetcode/Greedy/P55.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="10" selection-start-line="10" selection-end-line="16" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -286,6 +147,7 @@
     <option name="width" value="945" />
     <option name="height" value="1035" />
   </component>
+  <component name="ProjectId" id="1usCNmDPwTGOJ8q0PIcrg0plZJH" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -327,6 +189,10 @@
       <pane id="Scope" />
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -350,35 +216,23 @@
       <recent name="com.alibaba.dubbo.common.bytecode" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager" selected="Application.P55">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+    <configuration name="Didi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Exam.Didi" />
       <module name="Exercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Exam.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="P49" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Leetcode.HashTable.P49" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Exercise" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Leetcode.HashTable.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -422,16 +276,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.P55" />
+        <item itemvalue="Application.Didi" />
         <item itemvalue="Application.P51" />
         <item itemvalue="Application.P50" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.P49" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -760,6 +628,8 @@
       <workItem from="1624446037520" duration="4643000" />
       <workItem from="1624580944924" duration="598000" />
       <workItem from="1624692282605" duration="4652000" />
+      <workItem from="1625444890970" duration="91000" />
+      <workItem from="1626487332667" duration="1882000" />
     </task>
     <servers />
   </component>
@@ -833,7 +703,7 @@
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -841,13 +711,11 @@
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/src/Leetcode/TwoPointer/P18.java</url>
           <line>17</line>
-          <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/src/Leetcode/LinkedList/P25.java</url>
           <line>31</line>
-          <properties />
           <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
