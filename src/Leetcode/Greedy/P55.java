@@ -1,8 +1,11 @@
 package Leetcode.Greedy;
 
+import java.util.Date;
+
 public class P55 {
 
     public static void main(String[] args) {
+        System.out.println((new Date()).getTime());
         int[] nums = {2, 3, 1, 1, 4};
         System.out.println(canJump(nums));
     }
