@@ -6,24 +6,25 @@ import java.util.*;
 public class TimeCostForSortTest {
 
     // 待排序数组长度
-    private static final int N = 100000;
+    private static final int N = 10000000;
 
     // 生成随机数的最大值
-    private static final int randValue = 10000;
+    private static final int randValue = 100000000;
 
     // 排序方法个数
     private static final int numOfSortAl = 7;
 
     // 各种排序的方法名
-    public static final String[] sort = {"selectSort", "bubbleSort", "insertSort", "shellSort",
-            "mergeSort", "quickSort", "heapSort"};
+//    public static final String[] sort = {"selectSort", "bubbleSort", "insertSort", "shellSort",
+//            "mergeSort", "quickSort", "heapSort"};
+    public static final String[] sort = {"shellSort", "mergeSort", "quickSort", "heapSort"};
 
     // main 函数
     public static void main(String[] args) {
         TimeCostForSortTest t = new TimeCostForSortTest();
         // 生成待排序数组
         List<int[]> list = t.initialArrayList();
-        for (int i = 0; i < numOfSortAl; i++) {
+        for (int i = 0; i < sort.length; i++) {
             String al = sort[i];
             int[] nums = list.get(i);
             long startTime = System.currentTimeMillis();
@@ -70,7 +71,7 @@ public class TimeCostForSortTest {
             nums[j] = rand.nextInt(randValue) + 1;
         List<int[]> list = new ArrayList<>();
         list.add(nums);
-        for (int i = 1; i < numOfSortAl; i++) {
+        for (int i = 1; i < sort.length; i++) {
             list.add(Arrays.copyOf(nums, nums.length));
         }
         return list;

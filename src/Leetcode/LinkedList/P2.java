@@ -1,5 +1,6 @@
 package Leetcode.LinkedList;
 
+import static Leetcode.LinkedList.ListNode.print;
 
 public class P2 {
 
@@ -11,47 +12,50 @@ public class P2 {
         l2.next = new ListNode(6);
         l2.next.next = new ListNode(4);
         l2.next.next.next = new ListNode(9);
-        ListNode head =addTwoNumbers(l1, l2);
-        System.out.println();
+        ListNode head =addTwoNumbers2(l1, l2);
+        print(head);
     }
 
-    public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+    public static ListNode addTwoNumbers2(ListNode l1, ListNode l2) {
+        if (l1 == null && l2 == null) {
+            return null;
+        }
+        if (l1 == null) {
+            return l2;
+        }
+        if (l2 == null) {
+            return  l1;
+        }
+        ListNode sList = l1, lList = l2;
+        int len1 = getLen(l1);
+        int len2 = getLen(l2);
+        if (len1 > len2) {
+            sList = l2;
+            lList = l1;
+        }
+        ListNode head = lList;
+        ListNode tail = lList;
         int carry = 0;
-        int len1 = length(l1);
-        int len2 = length(l2);
-        if (len1 < len2) {
-            ListNode temp = l1;
-            l1 = l2;
-            l2 = temp;
+        while (lList != null) {
+            int lEle = lList.val;
+            int sEle = sList == null ? 0 : sList.val;
+            lList.val = (lEle + sEle + carry) % 10;
+            carry = (lEle + sEle + carry) / 10;
+            tail = lList;
+            lList = lList.next;
+            sList = sList == null ? null : sList.next;
         }
-        ListNode preFirst = new ListNode(-1, l1);
-        ListNode pre = preFirst;
-        while (l2 != null) {
-            int sum = l1.val + l2.val + carry;
-            l1.val = sum % 10;
-            carry = sum / 10;
-            pre = pre.next;
-            l1 = l1.next;
-            l2 = l2.next;
+        if (carry != 0) {
+            tail.next = new ListNode(carry);
         }
-        while (l1 != null && carry != 0) {
-            int sum = l1.val + carry;
-            l1.val = sum % 10;
-            carry = sum / 10;
-            pre = pre.next;
-            l1 = l1.next;
-        }
-        if (l1 == null && carry != 0) {
-            pre.next = new ListNode(carry);
-        }
-        return preFirst.next;
+        return head;
     }
 
-    private static int length(ListNode l) {
+    private static int getLen(ListNode l1) {
         int len = 0;
-        while (l != null) {
+        while (l1 != null) {
             len++;
-            l = l.next;
+            l1 = l1.next;
         }
         return len;
     }
