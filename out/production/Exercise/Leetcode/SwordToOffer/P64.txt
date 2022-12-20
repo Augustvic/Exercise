@@ -1,7 +1,0 @@
-public class P64 {
-    public int sum(int n) {
-        int res = n;
-        boolean flag = (n > 0) && ((res += sum(n - 1)) > 0);
-        return res;
-    }
-}
