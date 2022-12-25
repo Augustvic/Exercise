@@ -7,35 +7,41 @@ public class P14 {
     }
 
     public static String longestCommonPrefix(String[] strs) {
-        String shortest = shortestString(strs);
+        String shortest = shortest(strs);
+        if (shortest == null || shortest.length() == 0) {
+            return "";
+        }
         for (String str : strs) {
             shortest = commonPrefix(shortest, str);
             if (shortest.length() == 0) {
-                return shortest;
+                return "";
             }
         }
         return shortest;
     }
 
-    public static String shortestString(String[] strs) {
-        if (strs.length == 1) {
-            return strs[0];
+    public static String shortest(String[] strs) {
+        if (strs == null || strs.length == 0) {
+            return "";
         }
-        String shortest = strs[0];
+        String shortest = null;
         for (String str : strs) {
-            if (str.length() < shortest.length()) {
+            if (shortest == null || (str != null && str.length() < shortest.length())) {
                 shortest = str;
             }
         }
         return shortest;
     }
 
-    public static String commonPrefix(String str1, String str2) {
-        int range = Math.min(str1.length(), str2.length());
-        int end = 0;
-        while (end < range && (str1.charAt(end) == str2.charAt(end))) {
-            end++;
+    public static String commonPrefix(String s1, String s2) {
+        if (s1 == null || s1.length() == 0 || s2 == null || s2.length() == 0) {
+            return "";
         }
-        return str1.substring(0, end);
+        for (int i = 0; i < s1.length() && i < s2.length(); i++) {
+            if (s1.charAt(i) != s2.charAt(i)) {
+                return s1.substring(0, i);
+            }
+        }
+        return s1.length() < s2.length() ? s1 : s2;
     }
 }
