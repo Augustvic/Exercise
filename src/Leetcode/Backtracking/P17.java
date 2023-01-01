@@ -1,17 +1,13 @@
 package Leetcode.Backtracking;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class P17 {
 
     public static void main(String[] args) {
         String digits = "23";
-        List<String> ret = letterCombinations(digits);
-        for (String str : ret) {
-            System.out.println(str);
-        }
+        System.out.println(letterCombinationsWithNoRecur(digits));
     }
 
     public static final HashMap<Character, String> digitToLetter = new HashMap<>();
@@ -27,23 +23,42 @@ public class P17 {
     }
 
     public static List<String> letterCombinations(String digits) {
-        List<String> ret = new ArrayList<>();
-        if (digits.length() == 0) {
-            return ret;
+        List<String> result = new ArrayList<>();
+        if (digits == null || digits.length() == 0) {
+            return result;
         }
-        reverse(ret, new StringBuilder(), digits, 0);
-        return ret;
+        recursion(digits, 0, new StringBuilder(), result);
+        return result;
     }
 
-    public static void reverse(List<String> ret, StringBuilder sb, String digits, int pos) {
-        if (pos == digits.length()) {
-            ret.add(sb.toString());
+    public static void recursion(String digits, int index, StringBuilder sb, List<String> result) {
+        if (index >= digits.length()) {
+            result.add(sb.toString());
             return;
         }
-        for (char c : digitToLetter.get(digits.charAt(pos)).toCharArray()) {
+        String letter = digitToLetter.get(digits.charAt(index));
+        for (char c : letter.toCharArray()) {
             sb.append(c);
-            reverse(ret, sb, digits, pos + 1);
+            recursion(digits, index + 1, sb, result);
             sb.deleteCharAt(sb.length() - 1);
         }
+    }
+
+    public static List<String> letterCombinationsWithNoRecur(String digits) {
+        List<String> result = new ArrayList<>();
+        if (digits == null || digits.length() == 0) {
+            return result;
+        }
+        result.add("");
+        for (char c : digits.toCharArray()) {
+            List<String> currList = new ArrayList<>();
+            for (String str : result) {
+                for (char currChar : digitToLetter.get(c).toCharArray()) {
+                    currList.add(str + currChar);
+                }
+            }
+            result = currList;
+        }
+        return result;
     }
 }
