@@ -11,32 +11,32 @@ public class P31 {
     }
 
     public static void nextPermutation(int[] nums) {
-        int l = nums.length - 2;
-        while (l >= 0 && nums[l] >= nums[l + 1]) l--;
-        if (l == -1) {
+        if (nums == null || nums.length == 0) {
+            return;
+        }
+        int pre = nums.length - 1;
+        while (pre > 0 && nums[pre - 1] >= nums[pre]) pre--;
+        if (pre == 0) {
             reverse(nums, 0, nums.length - 1);
             return;
         }
-        int r = nums.length - 1;
-        while (l < r && nums[r] <= nums[l]) r--;
-        swap(nums, l, r);
-        reverse(nums, l + 1, nums.length - 1);
+        int post = nums.length - 1;
+        while (post > pre && nums[post] <= nums[pre - 1]) post--;
+        swap(nums, pre - 1, post);
+        reverse(nums, pre, nums.length - 1);
     }
 
     public static void reverse(int[] nums, int l, int r) {
-        if (l > r || r < 0 || l >= nums.length) return;
-        if (l < 0) l = 0;
-        if (r >= nums.length) r = nums.length - 1;
         while (l < r) {
-            swap(nums, l ,r);
+            swap(nums, l, r);
             l++;
             r--;
         }
     }
 
     public static void swap(int[] nums, int l, int r) {
-        int t = nums[l];
+        int temp = nums[l];
         nums[l] = nums[r];
-        nums[r] = t;
+        nums[r] = temp;
     }
 }
