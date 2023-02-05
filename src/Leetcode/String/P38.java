@@ -6,6 +6,29 @@ public class P38 {
         System.out.println(countAndSay(5));
     }
 
+    public String countAndSay(int n) {
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     public static String countAndSay(int n) {
         StringBuilder[] sb = new StringBuilder[2];
         int index = 1;

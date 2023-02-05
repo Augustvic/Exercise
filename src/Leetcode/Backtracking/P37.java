@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class P37 {
 
+    @SuppressWarnings("DuplicatedCode")
     public static void main(String[] args) {
         char[][] board = {{'5', '3', '.', '.', '7', '.', '.', '.', '.'},
                 {'6', '.', '.', '1', '9', '5', '.', '.', '.'},
@@ -20,57 +21,57 @@ public class P37 {
         }
     }
 
-    static boolean[][] rowUsed = new boolean[9][10];
-    static boolean[][] columnUsed = new boolean[9][10];
-    static boolean[][] cubeUsed = new boolean[9][10];
-
     public static void solveSudoku(char[][] board) {
+        boolean[][] rowUsed = new boolean[9][10];
+        boolean[][] columnUsed = new boolean[9][10];
+        boolean[][] cubeUsed = new boolean[9][10];
         for (int i = 0; i < 9; i++) {
             for (int j = 0; j < 9; j++) {
-                if (board[i][j] != '.') {
-                    int k = board[i][j] - '0';
-                    rowUsed[i][k] = true;
-                    columnUsed[j][k] = true;
-                    cubeUsed[cubeNum(i, j)][k] = true;
+                if (board[i][j] == '.') {
+                    continue;
                 }
+                int k = board[i][j] - '0';
+                rowUsed[i][k] = true;
+                columnUsed[j][k] = true;
+                cubeUsed[getCubeNum(i, j)][k] = true;
             }
         }
-        help(board, 0, 0, 9, 9);
+        backTracking(board, 0, 0, rowUsed, columnUsed, cubeUsed);
     }
 
-    public static boolean help(char[][] board, int i, int j, int m, int n) {
+    public static boolean backTracking(char[][] board, int i, int j, boolean[][] rowUsed, boolean[][] columnUsed, boolean[][] cubeUsed) {
         if (i >= 9) {
             return true;
         }
-        int nextI = (j == 8) ? i + 1 : i;
-        int nextJ = (j == 8) ? 0 : j + 1;
-        if (board[i][j] == '.') {
-            for (int k = 1; k <= 9; k++) {
-                if (validNum(i, j, k)) {
-                    board[i][j] = (char) (k + '0');
-                    rowUsed[i][k] = true;
-                    columnUsed[j][k] = true;
-                    cubeUsed[cubeNum(i, j)][k] = true;
-                    if (help(board, nextI, nextJ, m, n)) {
-                        return true;
-                    }
-                    board[i][j] = '.';
-                    rowUsed[i][k] = false;
-                    columnUsed[j][k] = false;
-                    cubeUsed[cubeNum(i, j)][k] = false;
-                }
+        int nextI = j >= 8 ? i + 1 : i;
+        int nextJ = j >= 8 ? 0 : j + 1;
+        if (board[i][j] != '.') {
+            return backTracking(board, nextI, nextJ, rowUsed, columnUsed, cubeUsed);
+        }
+        for (int k = 1; k <= 9; k++) {
+            if (isNotValidNum(k, i, j, rowUsed, columnUsed, cubeUsed)) {
+                continue;
             }
-        } else {
-            return help(board, nextI, nextJ, m, n);
+            rowUsed[i][k] = true;
+            columnUsed[j][k] = true;
+            cubeUsed[getCubeNum(i, j)][k] = true;
+            board[i][j] = (char)(k + '0');
+            if (backTracking(board, nextI, nextJ, rowUsed, columnUsed, cubeUsed)) {
+                return true;
+            }
+            rowUsed[i][k] = false;
+            columnUsed[j][k] = false;
+            cubeUsed[getCubeNum(i, j)][k] = false;
+            board[i][j] = '.';
         }
         return false;
     }
 
-    public static boolean validNum(int i, int j, int k) {
-        return !(rowUsed[i][k] || columnUsed[j][k] || cubeUsed[cubeNum(i, j)][k]);
+    public static boolean isNotValidNum(int k, int i, int j, boolean[][] rowUsed, boolean[][] columnUsed, boolean[][] cubeUsed) {
+        return rowUsed[i][k] || columnUsed[j][k] || cubeUsed[getCubeNum(i, j)][k];
     }
 
-    public static int cubeNum(int i, int j) {
-        return (i / 3) * 3 + j / 3;
+    public static int getCubeNum(int i, int j) {
+        return i / 3 * 3 + j / 3;
     }
 }
