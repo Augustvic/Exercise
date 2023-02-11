@@ -6,48 +6,23 @@ public class P38 {
         System.out.println(countAndSay(5));
     }
 
-    public String countAndSay(int n) {
-
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     public static String countAndSay(int n) {
-        StringBuilder[] sb = new StringBuilder[2];
-        int index = 1;
-        sb[0] = new StringBuilder("1");
+        StringBuilder sb = new StringBuilder("1");
         for (int k = 2; k <= n; k++) {
-            int lastLen = sb[1 - index].length();
-            StringBuilder lastSb =  sb[1 - index];
             StringBuilder currSb = new StringBuilder();
-            for (int i = 0, j; i < lastLen; i = j) {
-                j = i + 1;
-                while (j < lastLen && lastSb.charAt(j) == lastSb.charAt(i)) {
-                    j++;
+            int index = 0;
+            while (index < sb.length()) {
+                int end = index + 1;
+                while (end < sb.length() && sb.charAt(index) == sb.charAt(end)) {
+                    end++;
                 }
-                currSb.append(j - i);
-                currSb.append(lastSb.charAt(i));
+                currSb.append(end - index);
+                currSb.append(sb.charAt(index));
+                index = end;
             }
-            sb[index] = currSb;
-            index = 1 - index;
+            sb = currSb;
+
         }
-        return sb[1-index].toString();
+        return sb.toString();
     }
 }
