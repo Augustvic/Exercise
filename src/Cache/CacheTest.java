@@ -21,15 +21,18 @@ public class CacheTest {
         LFUCache<Integer, Object> lfuCache = new LFUCache<>(nCache);
         LRUCache<Integer, Object> lruCache = new LRUCache<>(nCache);
         LRU2Cache<Integer, Object> lru2Cache = new LRU2Cache<>(nCache);
+        PureLRUCache<Integer, Object> pureLruCache = new PureLRUCache<>(nCache);
         // 开始测试
         for (Ratio ratio : ratioSet) {
             int[] data = test.getData(nNum, ratio);
             double lfuRate = test.hitRate(lfuCache, data);
             double lruRate = test.hitRate(lruCache, data);
             double lru2Rate = test.hitRate(lru2Cache, data);
+            double pureLruRate = test.hitRate(pureLruCache, data);
             System.out.println("LFU-ratio-" + ratio.toString() + ": " + lfuRate);
             System.out.println("LRU-ratio-" + ratio.toString() + ": " + lruRate);
             System.out.println("LRU2-ratio-" + ratio.toString() + ": " + lru2Rate);
+            System.out.println("PureLRU-ratio-" + ratio.toString() + ": " + pureLruRate);
         }
     }
 
@@ -81,6 +84,15 @@ public class CacheTest {
             return ((double) hits) / data.length;
         } else if (cache instanceof Map){
             Map<Integer, Object> cacheT = (Map<Integer, Object>) cache;
+            int hits = 0;
+            for (int k : data) {
+                if (cacheT.containsKey(k))
+                    hits++;
+                cacheT.put(k, value);
+            }
+            return ((double) hits) / data.length;
+        } else if (cache instanceof PureLRUCache){
+            PureLRUCache<Integer, Object> cacheT = (PureLRUCache<Integer, Object>) cache;
             int hits = 0;
             for (int k : data) {
                 if (cacheT.containsKey(k))
